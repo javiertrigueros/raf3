@@ -1,0 +1,18 @@
+all:
+  arquematics:
+    gallery_width: 350 # ancho normal de los recursos
+    gallery_width_max: 1024 # ancho máximo de los recursos en pixels
+    gallery_height_max: 600 # alto máximo en pixels
+    gallery_sizes:   # Tamaño de recursos de la galería primero el mas grande
+     - 1300
+     - 1000
+     - 700
+     - 300
+     - 200
+    
+     
+  arquematics_slots_width:
+    image_mini: 370
+    image_normal: 520
+    image_big: 700
+  arquematics_slots_max_height: 300

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd" >
+<xliff version="1.0">
+  <file original="global" source-language="en" target-language="en" datatype="plaintext">
+    <header />
+    <body>
+     
+      <trans-unit>
+        <source>Admin CMS</source>
+        <target>Admin CMS</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Configure lists</source>
+        <target>Configure lists</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Configure subscribers</source>
+        <target>Configure subscribers</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Edit my profile</source>
+        <target>Edit my profile</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Logout</source>
+        <target>Logout</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Back</source>
+        <target>Back</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Go to Wall</source>
+        <target>Go to Wall</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Go to Blog</source>
+        <target>Go to Blog</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Go to Events</source>
+        <target>Go to Events</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Go to Admin Blog</source>
+        <target>Go to Admin Blog</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Go to Admin Events</source>
+        <target>Go to Admin Events</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Show menu name</source>
+        <target>Show menu name</target>
+      </trans-unit>
+     
+      <trans-unit>
+        <source>Navigation Menu</source>
+        <target>Navigation Menu</target>
+      </trans-unit>
+      
+       <trans-unit>
+        <source>Change menu name</source>
+        <target>Change menu name</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Menu name</source>
+        <target>Menu name</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>More Options...</source>
+        <target>More Options...</target>
+      </trans-unit>
+      
+       <trans-unit>
+        <source>Add Tag</source>
+        <target>Add Tag</target>
+      </trans-unit>
+      
+       <trans-unit>
+        <source>Tags and Metadata</source>
+        <target>Tags and Metadata</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Description</source>
+        <target>Description</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Leave blank to use the navigation title as the title tag.</source>
+        <target>Leave blank to use the navigation title as the title tag.</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Home page</source>
+        <target>Home page</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Go to Admin Categories</source>
+        <target>Go to Admin Categories</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Go to Admin Tags</source>
+        <target>Go to Admin Tags</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Go to Admin Media</source>
+        <target>Go to Admin Media</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Manage pages / Main Menu</source>
+        <target>Manage pages / Main Menu</target>
+      </trans-unit>
+      
+      
+      
+    </body>
+  </file>
+</xliff>

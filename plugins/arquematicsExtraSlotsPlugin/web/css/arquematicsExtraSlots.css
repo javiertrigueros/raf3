@@ -1,0 +1,11 @@
+.respondImg{width:100%; height:auto}
+
+.dragTree
+{
+  width:100%;
+  min-height: 200px;
+  height:auto;
+  border: 1px dashed #DDDDDD;
+}
+
+

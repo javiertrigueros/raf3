@@ -1,0 +1,42 @@
+
+    <% if (trash === 0) { %>
+    <li>
+            <a href="#" class="user-menu cmd-share">
+                <i class="fa fa-share-square-o"></i>
+                <span class="hidden-xxs">{{ i18n('Share') }}</span>
+            </a>
+    </li>
+    <% } %>
+    <li>
+            <% if (diagramType == 'note') { %>
+            <a href="#{{ uri }}note/edit/{{id}}" data-diagram-type="{{diagramType}}" class="cmd-edit user-menu">
+                <i class="fa fa-pencil"></i>
+                <span class="hidden-xxs">{{ i18n('Edit') }}</span>
+            </a>
+            <% } else { %>
+            <a href="/docvector/{{diagramType}}/{{id}}" data-diagram-type="{{diagramType}}" class="cmd-edit user-menu">
+                <i class="fa fa-pencil"></i>
+                <span class="hidden-xxs">{{ i18n('Edit') }}</span>
+            </a>
+            <% } %>
+    </li>
+    <% if (trash === 1) { %>
+    <li>
+      <a href="#" class="cmd-restore user-menu">
+         <i class="fa fa-undo"></i>
+         <span class="hidden-xxs">{{ i18n('Restore') }}</span>
+      </a>
+    </li>
+    <% } %>
+    <li>
+       <a href="#{{ uri }}{{diagramType}}/remove/{{id}}" class="cmd-remove user-menu">
+                <i class="fa fa-trash-o"></i>
+                <span class="hidden-xxs">
+                    <% if (trash === 0) { %>
+                        {{ i18n('Delete') }}
+                    <% }  else { %>
+                        {{ i18n('Forever') }}
+                    <% } %>
+                </span>
+       </a>
+    </li>

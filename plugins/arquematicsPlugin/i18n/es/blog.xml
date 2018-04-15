@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd" >
+<xliff version="1.0">
+  <file original="global" source-language="en" target-language="es" datatype="plaintext">
+    <header />
+    <body>
+      <trans-unit>
+        <source>Add Content</source>
+        <target>Agregar contenido</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Draft</source>
+        <target>Borrador</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Update</source>
+        <target>Actualizar</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Save</source>
+        <target>Guardar</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Status</source>
+        <target>Estado</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Author</source>
+        <target>Autor</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Editors</source>
+        <target>Editores</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Template</source>
+        <target>Plantilla</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Allow Comments</source>
+        <target>Permitir Comentarios</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Categories</source>
+        <target>Categorías</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Set by admin:</source>
+        <target>Añadidas por el administrador:</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Tags</source>
+        <target>Etiquetas</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Categories:</source>
+        <target>Categorías:</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Preview</source>
+        <target>Previsualizar</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Delete Post</source>
+        <target>Borrar Post</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Are you sure? You want to delete this post?</source>
+        <target>¿Está seguro? ¿Quiere borrar este post?</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Choose Editors</source>
+        <target>Seleccionar editores</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Choose Categories</source>
+        <target>Seleccionar categorías</target>
+      </trans-unit>
+      <trans-unit>
+        <source>+ New Category</source>
+        <target>+ Nueva categoría</target>
+      </trans-unit>
+      <trans-unit>
+        <source>+ New Category</source>
+        <target>+ Nueva categoría</target>
+      </trans-unit>
+      <trans-unit>
+        <source>You are changing template. Be sure to save any changes.</source>
+        <target>Están cambiando la plantilla. Asegúrese de guardar los cambios.</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Allow others to edit this post</source>
+        <target>Permitir que otros lo editen este post</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Add Tag</source>
+        <target>Agregar etiqueta</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Add</source>
+        <target>Agregar</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Publication scheduled</source>
+        <target>Publicación programada</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Published</source>
+        <target>Publicado</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Posted By:</source>
+        <target>Escrito por:</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Tags:</source>
+        <target>Etiquetas:</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Add new category</source>
+        <target>Añadir nueva categoría</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Add new tag</source>
+        <target>Añadir nueva etiqueta</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Select categories</source>
+        <target>Seleccionar categorías</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Selected</source>
+        <target>Selecionadas</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Publish</source>
+        <target>Publicar</target>
+      </trans-unit>
+      
+      
+      
+      <trans-unit>
+        <source>Edit</source>
+        <target>Editar</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Publish now</source>
+        <target>Publicar ahora</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Scheduled on %time%</source>
+        <target>Prevista para %time%</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Scheduled on</source>
+        <target>Prevista para</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Published %time%</source>
+        <target>Publicado %time%</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Published</source>
+        <target>Publicada</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Accept</source>
+        <target>Aceptar</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Start date</source>
+        <target>Fecha inicio</target>
+      </trans-unit>
+      <trans-unit>
+        <source>End date</source>
+        <target>Fecha fin</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Add end date</source>
+        <target>Añadir fecha fin</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Remove end date</source>
+        <target>Eliminar fecha fin</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Undefined start date</source>
+        <target>Fecha de inicio sin definir</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Start date %datetime%</source>
+        <target>Fecha inicio %datetime%</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>End date %datetime%</source>
+        <target>Fecha fin %datetime%</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>The selected items have been published successfully.</source>
+        <target>Los elementos seleccionados se han publicado con éxito.</target>
+      </trans-unit>
+      
+       <trans-unit>
+        <source>The selected items have been unpublished successfully.</source>
+        <target>Los artículos seleccionados han sido desactivados con éxito.</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>draft</source>
+        <target>borrador</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>published</source>
+        <target>publicado</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>schedule</source>
+        <target>programado</target>
+      </trans-unit>
+      
+      
+      <trans-unit>
+        <source>Confirm Delete</source>
+        <target>Confirmar Borrar</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>You want to delete post %item%?</source>
+        <target>¿Desea borrar el post %item%?</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>You want to delete event "%item%"?</source>
+        <target>¿Desea borrar el evento "%item%"?</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Accept</source>
+        <target>Aceptar</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Cancel</source>
+        <target>Cancelar</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Deleting...</source>
+        <target>Borrando...</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Deleting multiple post</source>
+        <target>Borrando varios post</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Deleting multiple events</source>
+        <target>Borrando varios eventos</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Read More</source>
+        <target>Leer Más</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Edit this entry</source>
+        <target>Editar esta entrada</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Enabled</source>
+        <target>Habilitados</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Disabled</source>
+        <target>Inhabilitados</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Comments</source>
+        <target>Comentarios</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Leave a Comment</source>
+        <target>Dejar un comentario</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Logged in as %user%</source>
+        <target>Conectado como %user%</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Want to go out?</source>
+        <target>¿Quieres salir?</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Submit</source>
+        <target>Enviar</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>You can use these HTML tags and attributes:</source>
+        <target>Se pueden usar las siguientes etiquetas y atributos HTML:</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Comment</source>
+        <target>Comentario</target>
+      </trans-unit>
+      
+       <trans-unit>
+        <source>Cancel reply</source>
+        <target>Cancelar respuesta</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Your email address will not be published.</source>
+        <target>Tu dirección de correo electrónico no será publicada.</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Required fields are marked *</source>
+        <target>Los campos obligatorios están marcados con *</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>E-mail</source>
+        <target>Correo electrónico</target>
+      </trans-unit>
+      
+      
+      <trans-unit>
+        <source>Web</source>
+        <target>Web</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Name</source>
+        <target>Nombre</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Reply</source>
+        <target>Responder</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Cancel Reply</source>
+        <target>Cancelar Respuesta</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Comments</source>
+        <target>Comentarios</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Your comment is awaiting moderation.</source>
+        <target>El comentario está pendiente de moderación.</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>One comment is awaiting moderation</source>
+        <target>Un comentario esta pendiente de moderación</target>
+      </trans-unit>
+      
+       <trans-unit>
+        <source>%comments% comments are awaiting moderation</source>
+        <target>%comments% comentarios están en espera de moderación</target>
+      </trans-unit>
+      
+       <trans-unit>
+        <source>Approved</source>
+        <target>Aprobado</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Pending</source>
+        <target>Pendiente</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Delete</source>
+        <target>Borrar</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Choose an action</source>
+        <target>Selecciona una acción</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Go</source>
+        <target>Ejecutar</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>The selected items have been changed status to pending successfully.</source>
+        <target>Los elementos seleccionados se han cambiado de estado a pendientes con éxito.</target>
+      </trans-unit>
+      
+       <trans-unit>
+        <source>The selected items have been approved successfully.</source>
+        <target>Los elementos seleccionados se han aprobado con éxito.</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>You want to delete comment?</source>
+        <target>¿Quiere borrar el comentario?</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Created at</source>
+        <target>Creación</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Delete ${count} comments. Are you sure?</source>
+        <target>Borrar ${count} comentarios. ¿Esta seguro?</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>n categories selected</source>
+        <target>{0} categorías selecionadas</target>
+      </trans-unit>
+      
+       <trans-unit>
+        <source>Save draft</source>
+        <target>Guardar borrador</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Su</source>
+        <target>Do</target>
+      </trans-unit>
+     
+     <trans-unit>
+        <source>M</source>
+        <target>Lu</target>
+     </trans-unit>
+      
+     <trans-unit>
+        <source>T</source>
+        <target>Ma</target>
+     </trans-unit>
+    
+     <trans-unit>
+        <source>W</source>
+        <target>Mi</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Th</source>
+        <target>Ju</target>
+     </trans-unit>
+
+    <trans-unit>
+        <source>F</source>
+        <target>Vi</target>
+     </trans-unit>
+
+     <trans-unit>
+        <source>S</source>
+        <target>Sa</target>
+     </trans-unit>
+
+     <trans-unit>
+        <source>Today</source>
+        <target>Hoy</target>
+     </trans-unit>
+    
+     <trans-unit>
+        <source>January</source>
+        <target>Enero</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>February</source>
+        <target>Febrero</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>March</source>
+        <target>Marzo</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>April</source>
+        <target>Abril</target>
+     </trans-unit>
+      
+     <trans-unit>
+        <source>May</source>
+        <target>Mayo</target>
+     </trans-unit> 
+     
+     <trans-unit>
+        <source>June</source>
+        <target>Junio</target>
+     </trans-unit> 
+
+     <trans-unit>
+        <source>July</source>
+        <target>Julio</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>August</source>
+        <target>Agosto</target>
+     </trans-unit>
+
+     <trans-unit>
+        <source>September</source>
+        <target>Septiembre</target>
+     </trans-unit>
+
+     <trans-unit>
+        <source>October</source>
+        <target>Octubre</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>November</source>
+        <target>Noviembre</target>
+     </trans-unit>
+
+     <trans-unit>
+        <source>December</source>
+        <target>Diciembre</target>
+     </trans-unit>
+      
+    </body>
+  </file>
+</xliff>

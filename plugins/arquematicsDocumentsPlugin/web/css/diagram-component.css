@@ -1,0 +1,47 @@
+.diagram-tool
+{
+   display:block;
+   float:left;
+   width: 80px;
+   height: 80px;
+   text-indent: -9999px;
+   background: url("/arquematicsWorkflowPlugin/images/sprites-tools.png") no-repeat scroll 0 0 transparent;
+}
+
+.paint
+{
+  background-position:0px 0px;  
+}
+.mindmaps
+{
+  background-position:-80px 0px;  
+}
+.bpmn
+{
+  background-position:-160px 0px;  
+}
+.epc
+{
+  background-position:-240px 0px;  
+}
+.uml
+{
+  background-position:-320px 0px; 
+}
+.umlsequence
+{
+  background-position:-400px 0px;
+}
+.umlusecase
+{
+  background-position:-480px 0px;
+}
+.petrinet
+{
+  background-position:-560px 0px;  
+}
+
+.wireframe
+{
+  background-position:-640px 0px;  
+}

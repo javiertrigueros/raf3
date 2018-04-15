@@ -1,0 +1,48 @@
+<div ng-include="'/arquematicsTelegramPlugin/js/partials/head.html'"></div>
+
+
+<div ng-cloak ng-show="userConfig != false" class="login_form_wrap">
+  <div class="error" ng-if="error.message">{{ error.message }}</div>
+  <form name="mySendCodeForm" ng-if="!credentials.phone_code_hash" ng-submit="sendCode()">
+    <h3 class="login_form_head">{{ 'Phone sign in' | translate }}</h3>
+    <p class="login_form_lead">{{ 'Please enter your full phone number with country code.' | translate }}</p>
+
+    <div class="form-group" ng-class="{'has-error': error.field == 'phone'}">
+      <label class="control-label" for="phone_number" ng-if="error.field == 'phone'">{{ 'Incorrect phone number' | translate }}</label>
+      <input type="tel" class="form-control" name="phone_number" ng-model="credentials.phone_number" placeholder="{{ 'Enter your phone' | translate }}" required>
+    </div>
+    <button ng-switch on="progress.enabled" class="btn btn-tg btn-block" ng-class="{disabled: progress.enabled}" ng-disabled="progress.enabled" type="submit">   
+        <span ng-switch-when="true">
+            {{'Generating keys...' | translate }}
+        </span>
+        <span ng-switch-default>
+            {{'Next' | translate }}
+        </span>
+    </button>
+  </form>
+
+  <form name="myLoginForm" ng-if="credentials.phone_code_hash" ng-submit="logIn()">
+    <h3 class="login_form_head">{{ credentials.phone_number | phoneNumber }}<small>(<a href="#/auth">{{ 'Edit' | translate }}</a>)</small></h3>
+    <p class="login_form_lead">{{ 'We have sent you a code via SMS.' | translate }}<br/>{{ 'Please enter it below.' | translate }}</p>
+
+    <p class="login_form_lead">
+      <span ng-show="callPending.remaining > 0">{{ 'Telegram will call you in' | translate }} {{callPending.remaining | duration}}</span>
+      <span ng-show="!callPending.remaining &amp;&amp; !callPending.success">{{ 'Telegram is calling you' | translate }}</span>
+      <span ng-show="!callPending.remaining &amp;&amp; callPending.success">{{ 'Telegram dialed your number' | translate }}</span>
+    </p>
+
+    <div class="form-group" ng-class="{'has-error': error.field == 'phone_code'}">
+      <label class="control-label" for="phone_code" ng-if="error.field == 'phone_code'">{{ 'Incorrect SMS code' | translate }}</label>
+      <input type="number" maxlength="5" class="form-control" name="phone_code" ng-model="credentials.phone_code" placeholder="{{ 'Enter your code' | translate }}" required>
+    </div>
+
+    <button ng-switch on="progress.enabled" class="btn btn-tg btn-block" type="submit" ng-class="{disabled: progress.enabled}" ng-disabled="progress.enabled" >
+        <span ng-switch-when="true">
+            {{'Checking code...' | translate }}
+        </span>
+        <span ng-switch-default>
+            {{'Sign in' | translate }}
+        </span>
+    </button>
+  </form>
+</div>

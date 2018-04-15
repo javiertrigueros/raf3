@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd" >
+<xliff version="1.0">
+  <file original="global" source-language="en" target-language="en" datatype="plaintext">
+    <header />
+    <body>
+      <trans-unit>
+        <source>User not authorized.</source>
+        <target>Usuario no autorizado.</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Error saving image.</source>
+        <target>Error salvando la imagen.</target>
+      </trans-unit>
+      
+       <!-- Mind Maps -->
+      
+      <trans-unit>
+        <source>Font size</source>
+        <target>Tamaño fuente</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Font style</source>
+        <target>Estilo fuente</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Font color</source>
+        <target>Color fuente</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Branch color</source>
+        <target>Color rama</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Inherit</source>
+        <target>Heredar</target>
+      </trans-unit>
+      
+       <trans-unit>
+        <source>Home</source>
+        <target>Inicio</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Error saving image.</source>
+        <target>Error salvando la imagen.</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Document types</source>
+        <target>Tipos de documento</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>New Document:</source>
+        <target>Nuevo documento:</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>types available</source>
+        <target>tipos disponibles</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>types available</source>
+        <target>tipos disponibles</target>
+      </trans-unit>
+      
+       <trans-unit>
+        <source>doc</source>
+        <target>Documento de texto</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>svg</source>
+        <target>Imagen vectorial</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>wireframe</source>
+        <target>Wireframe / Mockup</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>mindmaps</source>
+        <target>Mapas mentales</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>bpmn</source>
+        <target>BPMN 1.2</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>rawchart</source>
+        <target>Análisis de datos</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>epc</source>
+        <target>Diagrama de flujo</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>uml</source>
+        <target>UML</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>umlsequence</source>
+        <target>UML secuencia</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>umlusecase</source>
+        <target>UML casos de uso</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>paint</source>
+        <target>paint</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Laverna Doc</source>
+        <target>Documento de Texto</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Laverna Docs</source>
+        <target>Documentos de Texto</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>svgs</source>
+        <target>Imagenes Vectoriales</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>mindmapss</source>
+        <target>Mapas Mentales</target>
+      </trans-unit>
+    
+      <trans-unit>
+        <source>bpmns</source>
+        <target>BPMN 1.2</target>
+      </trans-unit>
+    
+      <trans-unit>
+        <source>epcs</source>
+        <target>Diagramas de Flujo</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>umls</source>
+        <target>UML</target>
+      </trans-unit>
+      
+       <trans-unit>
+        <source>note</source>
+        <target>Documentos de Texto</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>umlsequences</source>
+        <target>UML Secuencia</target>
+      </trans-unit>
+    
+      <trans-unit>
+        <source>umlusecases</source>
+        <target>UML Casos de Uso</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Previous</source>
+        <target>Anterior</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Next</source>
+        <target>Siguiente</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Edit</source>
+        <target>Editar</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Download</source>
+        <target>Descargar</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Toggle fullscreen</source>
+        <target>Pantalla completa</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Zoom in/out</source>
+        <target>Zoom +/-</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Close (Esc)</source>
+        <target>Cerrar (Esc)</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Previous (arrow left)</source>
+        <target>Anterior (flecha izquierda)</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Next (arrow right)</source>
+        <target>Siguiente (flecha derecha)</target>
+      </trans-unit>
+      
+    </body>
+  </file>
+</xliff>

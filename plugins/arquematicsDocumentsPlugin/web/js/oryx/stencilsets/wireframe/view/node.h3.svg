@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:oryx="http://www.b3mn.org/oryx"
+   version="1.0">
+  <g>
+    <rect x="0" y="0" width="214" height="19"
+      oryx:anchor="top bottom left right"
+      oryx:resize="vertical horizontal"
+      style="fill:blue;stroke:blue;stroke-width:0;opacity:0.01;" />
+
+	  <rect id="b1" 
+      oryx:anchor="top bottom left right" 
+      oryx:resize="horizontal" 
+      width="38" 
+      height="19" x="0" y="0" 
+      stroke="black" 
+      fill="black" 
+      stroke-width="2" />
+    <rect
+          id="b2"
+          oryx:anchor="top bottom left right"
+          oryx:resize="horizontal"
+          width="41"
+          height="19"
+          x="48" y="0"
+          stroke="black" fill="black" stroke-width="2" />
+
+    <rect
+          id="b3"
+          oryx:anchor="top bottom left right"
+          oryx:resize="horizontal"
+          width="54"
+          height="19"
+          x="99" y="0"
+          stroke="black" fill="black" stroke-width="2" />
+
+    <rect
+          id="b3"
+          oryx:anchor="top bottom left right"
+          oryx:resize="horizontal"
+          width="51"
+          height="19"
+          x="163" y="0"
+          stroke="black" fill="black" stroke-width="2" />
+  </g>
+</svg>

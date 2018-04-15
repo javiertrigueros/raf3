@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="48"
+   height="48"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="bpmn.svg">
+  <metadata
+     id="metadata31">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs29" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     id="namedview27"
+     showgrid="false"
+     inkscape:zoom="13.906433"
+     inkscape:cx="12.362295"
+     inkscape:cy="15.737963"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <g
+     id="none-0"
+     transform="matrix(0.14786705,0,0,0.11820945,6.7677541,20.881357)" />
+  <g
+     transform="matrix(0.403332,0,0,0.49538613,12.3092,-1.1608458)"
+     id="g3088">
+    <g
+       id="none" />
+  </g>
+  <g
+     id="g3230"
+     transform="matrix(0.231499,0,0,0.26578496,0.49983,2.512766)">
+    <g
+       style="font-size:11px;fill:none;stroke:#000000"
+       id="text_name" />
+  </g>
+  <g
+     id="g3742"
+     transform="matrix(0.221634,0,0,0.28968757,15.2461,32.836074)">
+    <g
+       style="font-size:11px;fill:none;stroke:#000000"
+       id="text_name-2" />
+  </g>
+  <path
+     id="frame"
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.50600000000000001;stroke-miterlimit:4;stroke-dasharray:none"
+     d="m 18.024445,9.1546588 7.459913,-7.7312849 7.388004,7.8751032 -7.388004,7.5874659 -7.459913,-7.7312842 m 13.214625,11.2141962 11.55907,0 c 0.800469,0 1.44489,0.845914 1.44489,1.896669 l 0,11.379993 c 0,1.050754 -0.644421,1.896669 -1.44489,1.896669 l -11.55907,0 c -0.800469,0 -1.44489,-0.845915 -1.44489,-1.896669 l 0,-11.379993 c 0,-1.050755 0.644421,-1.896669 1.44489,-1.896669 z m 1.615148,-11.1077068 4.248922,0.071909 0,10.7271898 -0.07241,-0.467371 m 0.342149,16.236645 0,5.289691 -8.286039,0 0,0 m -1.299886,-1.062017 c 0,1.43991 -0.893061,2.607188 -1.994706,2.607188 -1.101646,0 -1.994706,-1.167278 -1.994706,-2.607188 0,-1.439911 0.89306,-2.607189 1.994706,-2.607189 1.101645,0 1.994706,1.167278 1.994706,2.607189 z m 1.108175,-4e-6 c 0,2.23986 -1.389205,4.055626 -3.102876,4.055626 -1.713671,0 -3.102876,-1.815766 -3.102876,-4.055626 0,-2.23986 1.389205,-4.055626 3.102876,-4.055626 1.713671,0 3.102876,1.815766 3.102876,4.055626 z m -14.820319,-4.22767 0,5.289691 8.74481,0 0,0.07191 m -8.34107,-20.607557 0,-3.643729 11.313709,0 -0.359546,0 M 8.6508203,20.6562 l 11.5590697,0 c 0.800469,0 1.44489,0.845915 1.44489,1.89667 l 0,11.379992 c 0,1.050755 -0.644421,1.89667 -1.44489,1.89667 l -11.5590697,0 c -0.8004691,0 -1.4448901,-0.845915 -1.4448901,-1.89667 l 0,-11.379992 c 0,-1.050755 0.644421,-1.89667 1.4448901,-1.89667 z m 4.8928027,-11.484526 4.188406,0 0.408547,0 -0.408547,0 m -4.112834,5e-7 c 0,1.5763645 -1.197154,2.8542585 -2.673916,2.8542585 -1.4767641,0 -2.6739171,-1.277894 -2.6739171,-2.8542585 0,-1.576363 1.197153,-2.854258 2.6739171,-2.854258 1.476762,0 2.673916,1.277895 2.673916,2.854258 z"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cccccsssssssssccccccccssssssssssccccccccsssssssssccccsssss" />
+  <g
+     id="none-6"
+     transform="matrix(0.497214,0,0,0.52249638,17.528934,0.90258053)" />
+  <g
+     id="cross"
+     transform="matrix(0.497214,0,0,0.52249638,17.528934,0.90258053)">
+    <path
+       d="m 11.5,9.5 3,0 6,13 -3,0 -6,-13"
+       id="path3093"
+       style="fill:#000000;stroke:#000000;stroke-width:1"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m 11.5,22.5 6,-13 3,0 -6,13 -3,0"
+       id="path3095"
+       style="fill:#000000;stroke:#000000;stroke-width:1"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

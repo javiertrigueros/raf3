@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd" >
+<xliff version="1.0">
+  <file original="global" source-language="en" target-language="es" datatype="plaintext">
+    <header />
+    <body>
+
+      <trans-unit>
+        <source>Edit Menu</source>
+        <target>Edit Menu</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Pages</source>
+        <target>Pages</target>
+      </trans-unit>
+      <trans-unit>
+        <source>All pages</source>
+        <target>All pages</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Select all</source>
+        <target>Select all</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Add to Menu</source>
+        <target>Add to Menu</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Text link</source>
+        <target>Text link</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Menu Item</source>
+        <target>Menu Item</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Categories</source>
+        <target>Categories</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>More used</source>
+        <target>More used</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>View all</source>
+        <target>View all</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Links</source>
+        <target>Links</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Menu Structure</source>
+        <target>Menu Structure</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Place each item in the order you prefer. Click on the arrow to the right of the item to display more configuration options.</source>
+        <target>Place each item in the order you prefer. Click on the arrow to the right of the item to display more configuration options.</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Add menu items from the right column.</source>
+        <target>Add menu items from the right column.</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Save menu</source>
+        <target>Save menu</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Move one up</source>
+        <target>Move one up</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Move one down</source>
+        <target>Move one down</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Move to the first position</source>
+        <target>Move to the first position</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Move behind %s</source>
+        <target>Move behind %s</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Take it out under %s</source>
+        <target>Take it out under %s</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Behind %s</source>
+        <target>Behind %s</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Take %s</source>
+        <target>Take %s</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>%1$s. Menu item %2$d from %3$d.</source>
+        <target>%1$s. Menu item %2$d from %3$d.</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>%1$s. Subelement number %2$d from %3$s.</source>
+        <target>%1$s. Subelement number %2$d from %3$s.</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>subelement</source>
+        <target>subelement</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Personalized</source>
+        <target>Personalized</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Move up</source>
+        <target>Move up</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Move down</source>
+        <target>Move down</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>URL</source>
+        <target>URL</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Navigation label</source>
+        <target>Navigation label</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Edit menu item</source>
+        <target>Edit menu item</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Remove</source>
+        <target>Remove</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Original</source>
+        <target>Original</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Page</source>
+        <target>Page</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Send...</source>
+        <target>Send...</target>
+      </trans-unit>
+      
+       <trans-unit>
+        <source>Change title</source>
+        <target>Change title</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>New menu title</source>
+        <target>New menu title</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Save and exit</source>
+        <target>Save and exit</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Save menu and exit</source>
+        <target>Save menu and exit</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Title</source>
+        <target>Title</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Blog Category</source>
+        <target>Blog Category</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Event Category</source>
+        <target>Event Category</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Blog Categories</source>
+        <target>Blog Categories</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Events Categories</source>
+        <target>Events Categories</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Confirm Delete</source>
+        <target>Confirm Delete</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>You want to delete this page?</source>
+        <target>You want to delete this page?</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Accept</source>
+        <target>Accept</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Cancel</source>
+        <target>Cancel</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Deleting...</source>
+        <target>Deleting...</target>
+      </trans-unit>
+      
+      
+      <trans-unit>
+        <source>Save</source>
+        <target>Save</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Events</source>
+        <target>Events</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Page title</source>
+        <target>Page title</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>You want to delete ${pagename}?</source>
+        <target>You want to delete ${pagename}?</target>
+      </trans-unit>
+      
+    </body>
+  </file>
+</xliff>

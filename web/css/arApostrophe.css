@@ -1,0 +1,61 @@
+/*
+    Arreglos de  css de Apostrophe
+*/
+
+.force-left{
+    float:left !important;
+}
+
+.footer-widget div.a-area ul li 
+{
+    background: none ;
+    padding:0;
+}
+
+.a-area-options
+{
+   width: 100% !important;
+}
+
+.a-area-column-left
+{ 
+    float: left !important;
+    width: 33% !important;
+}
+.a-area-column-center
+{ 
+    float: left !important;
+    width: 33% !important;
+}
+
+.a-area-column-right
+{ 
+    float: left !important;
+    width: 33% !important;
+}
+
+@media only screen and ( min-width: 768px ) and ( max-width: 960px ) {
+
+    .a-area-column-left, .a-area-column-center, .a-area-column-right
+    { 
+        width: 248px !important; 
+    }
+}
+
+@media only screen and ( max-width: 767px ) {
+
+    .a-area-column-left, .a-area-column-center, .a-area-column-right
+    { display:none !important; }
+}
+
+@media only screen and ( max-width: 479px ) {
+    .a-area-slide
+    {
+     display:none !important;   
+    }
+    .a-area-column-left, .a-area-column-center, .a-area-column-right
+    { display:none !important; }
+}
+
+
+

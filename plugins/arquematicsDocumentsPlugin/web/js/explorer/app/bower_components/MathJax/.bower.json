@@ -1,0 +1,14 @@
+{
+  "name": "MathJax",
+  "homepage": "https://github.com/mathjax/MathJax",
+  "version": "2.2.0",
+  "_release": "2.2.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "2.2.0",
+    "commit": "54280bb4e0b4dba2689a3158542750767dc1d776"
+  },
+  "_source": "git://github.com/mathjax/MathJax.git",
+  "_target": "v2.2",
+  "_originalSource": "MathJax"
+}

@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd" >
+<xliff version="1.0">
+  <file original="global" source-language="en" target-language="en" datatype="plaintext">
+    <header />
+    <body>
+       <trans-unit>
+        <source>Home</source>
+        <target>Home</target>
+       </trans-unit>
+       <trans-unit>
+        <source>Welcome</source>
+        <target>Welcome</target>
+       </trans-unit>
+       <trans-unit>
+        <source>Hide Menu</source>
+        <target>Hide Menu</target>
+       </trans-unit>
+       <trans-unit>
+        <source>My Profile</source>
+        <target>My Profile</target>
+       </trans-unit>
+       <trans-unit>
+        <source>Removing</source>
+        <target>Removing</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Open panel</source>
+        <target>Open panel</target>
+      </trans-unit>
+       <trans-unit>
+        <source>Close panel</source>
+        <target>Close panel</target>
+      </trans-unit>  
+      <trans-unit>
+        <source>Subdomain</source>
+        <target>Subdomain</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Required</source>
+        <target>Required</target>
+      </trans-unit>
+      <trans-unit>
+        <source>The new subdomain will be housed in Telvy.net</source>
+        <target>The new subdomain will be housed in Telvy.net</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Subdomain already exists</source>
+        <target>Subdomain already exists</target>
+      </trans-unit>
+
+      <trans-unit>
+        <source>First name</source>
+        <target>First name</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Last name</source>
+        <target>Last name</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Email address</source>
+        <target>Email address</target>
+      </trans-unit>
+      <trans-unit>
+        <source>User name</source>
+        <target>User name</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Organization Name</source>
+        <target>Organization Name</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Sorry! Organization name already exists.</source>
+        <target>Sorry! Organization name already exists.</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>SEND PASSWORD RESET LINK</source>
+        <target>SEND PASSWORD RESET LINK</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Enter your email</source>
+        <target>Enter your email</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Password reset</source>
+        <target>Password reset</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Forgot your password?</source>
+        <target>Forgot your password?</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Password</source>
+        <target>Password</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>New Password</source>
+        <target>New Password</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Update password</source>
+        <target>Update password</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Repeat Password</source>
+        <target>Repeat Password</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Change current password</source>
+        <target>Change current password</target>
+      </trans-unit>
+      
+      
+      <trans-unit>
+        <source>You can change your password by clicking the below link which is only valid for 24 hours:</source>
+        <target>You can change your password by clicking the below link which is only valid for 24 hours:</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Click to change password</source>
+        <target>Click to change password</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>I have read and agree to the terms of service</source>
+        <target>I have read and agree to the terms of service</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>service</source>
+        <target>service</target>
+      </trans-unit>
+      
+    
+      <trans-unit>
+        <source>Sorry! User name already exists.</source>
+        <target>Sorry! User name already exists.</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Email address is invalid</source>
+        <target>Email address is invalid</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Sorry! A user with that email address already exists.</source>
+        <target>Sorry! A user with that email address already exists.</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Contains invalid characters such as "# ^ º"</source>
+        <target>Contiene caracteres no válidos como "# ^ º ¿"</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>The captcha is not valid</source>
+        <target>The captcha is not valid</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Enter the code</source>
+        <target>Enter the code</target>
+      </trans-unit>
+      
+      <!-- FORM REGISTER -->
+     
+      <trans-unit>
+        <source>Add new comment</source>
+        <target>Add new comment</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Deleted</source>
+        <target>Deleted</target>
+      </trans-unit>
+      <trans-unit>
+        <source>send</source>
+        <target>send</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Report a comment</source>
+        <target>Report a comment</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Comments list</source>
+        <target>Comments list</target>
+      </trans-unit>
+      <trans-unit>
+        <source>at</source>
+        <target>at</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Comment deleted by moderator</source>
+        <target>Comment deleted by moderator</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Be the first to post</source>
+        <target>Be the first to post</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Report this comment - New window</source>
+        <target>Report this comment - New window</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Reply to this comment</source>
+        <target>Reply to this comment</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Report sent.</source>
+        <target>Report sent.</target>
+      </trans-unit>
+      <trans-unit>
+        <source>The moderation team has been notified.</source>
+        <target>The moderation team has been notified.</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Close the popup</source>
+        <target>Cerrar el popup</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Delete the reply</source>
+        <target>Eliminar la respuesta</target>
+      </trans-unit>
+      <!-- FORM MESSAGES -->
+      <trans-unit>
+        <source>Required</source>
+        <target>Required</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Invalid Url</source>
+        <target>Invalid Url</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Required message</source>
+        <target>Required message</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Invalid Mail</source>
+        <target>Invalid Mail</target>
+      </trans-unit>
+      <trans-unit>
+        <source>The captcha is not valid (%error%).</source>
+        <target>The captcha is not valid (%error%).</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Unable to check the captcha from the server (%error%).</source>
+        <target>Unable to check the captcha from the server (%error%).</target>
+      </trans-unit>
+      <!-- FORM LABELS -->
+      <trans-unit>
+        <source>Name</source>
+        <target>Name</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Website</source>
+        <target>Website</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Reason</source>
+        <target>Reason</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Reply to</source>
+        <target>Reply to</target>
+      </trans-unit>
+      <!-- FORM HELPS -->
+      <trans-unit>
+        <source>Why this message should be moderated ?</source>
+        <target>Why this message should be moderated ?</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Your email will never be published</source>
+        <target>Your email will never be published</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Must start with http:// or https://</source>
+        <target>Must start with http:// or https://</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Please log in to comment</source>
+        <target>Please log in to comment</target>
+      </trans-unit>
+      <!-- Pagination -->
+      <trans-unit>
+        <source>First page of comments</source>
+        <target>First page of comments</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Previous page of comments</source>
+        <target>Previous page of comments</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Next page of comments</source>
+        <target>Next page of comments</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Last page of comments</source>
+        <target>Last page of comments</target>
+      </trans-unit>
+      <trans-unit>
+        <source>(page %%page%%/%%nb_pages%%)</source>
+        <target>(page %%page%%/%%nb_pages%%)</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Back to top</source>
+        <target>Back to top</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Comment</source>
+        <target>Comment</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Logo</source>
+        <target>Logo</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Site Pages</source>
+        <target>Site Pages</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Menu %menuname%</source>
+        <target>Menu %menuname%</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Menu Title</source>
+        <target>Menu Title</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Edit Menu</source>
+        <target>Edit Menu</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Change Title</source>
+        <target>Change Title</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>About</source>
+        <target>About ...</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Pages</source>
+        <target>Pages</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Invalid</source>
+        <target>Invalid</target>
+      </trans-unit>
+      
+      
+      <trans-unit>
+        <source>Edit profile</source>
+        <target>Edit profile</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Lists</source>
+        <target>Lists</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Subscribers</source>
+        <target>Subscribers</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Config</source>
+        <target>Config</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Admin CMS</source>
+        <target>Admin CMS</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Log Out</source>
+        <target>Log Out</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Configuration</source>
+        <target>Configuration</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>The selected users have been enabled successfully.</source>
+        <target>The selected users have been enabled successfully.</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>The selected users have been disable successfully.</source>
+        <target>The selected users have been disable successfully.</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>About long</source>
+        <target>We design beautiful websites and publish our best ideas. Find out more about us.</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Version</source>
+        <target>Version 0.1</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Close</source>
+        <target>Close</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Message</source>
+        <target>Message</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>%user%'s Subscribers.</source>
+        <target>%user%'s subscribers.</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Required field</source>
+        <target>Required field</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Same name lists</source>
+        <target>Same name lists</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Canceling</source>
+        <target>Canceling</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Accepting</source>
+        <target>Accepting</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Lists selected</source>
+        <target>Lists selected</target>
+      </trans-unit>
+
+      <trans-unit>
+        <source>List selected</source>
+        <target>List selected</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Add to lists</source>
+        <target>Add to lists</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Applications for subscription:</source>
+        <target>Applications for subscription:</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Documents</source>
+        <target>Documents</target>
+     </trans-unit>
+
+      <trans-unit>
+        <source>All notes</source>
+        <target>All notes</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Favourites</source>
+        <target>Favourites</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Trash</source>
+        <target>Trash</target>
+     </trans-unit> 
+     
+     <trans-unit>
+        <source>Notebooks</source>
+        <target>Notebooks</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Password must be at least %passLong% characters.</source>
+        <target>Password must be at least %passLong% characters.</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Midrange password</source>
+        <target>Midrange password: Make your password stronger with more capital letters, more lowercase letters, more numbers and more special characters.</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Midrange password no more lowercase letters</source>
+        <target>Midrange password: Make your password stronger with more lowercase letters.</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Midrange password no capital letters</source>
+        <target>Midrange password: Make your password stronger with more capital letters.</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Midrange password no more numbers</source>
+        <target>Midrange password: Make your password stronger with more numbers.</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Midrange password no more special characters</source>
+        <target>Midrange password: Make your password stronger with more special characters.</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Weak password</source>
+        <target>Weak password: try using numbers and capital letters.</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Strong password</source>
+        <target>Strong password: password fortress appropriate.</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Passwords must match!</source>
+        <target>Passwords must match!</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Sign In with %net%</source>
+        <target>Sign In with %net%</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Username or email</source>
+        <target>Username or email</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Username or email</source>
+        <target>Username or email</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Sign In to your account</source>
+        <target>Sign In to your account</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Log in</source>
+        <target>Log in</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Connect to %net%</source>
+        <target>Connect to %net%</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Compatible with common formats</source>
+        <target>Compatible with common formats</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Integrations with popular applications</source>
+        <target>Integrations with popular applications</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Crafted with love</source>
+        <target>Crafted with love</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Not a member?</source>
+        <target>Not a member?</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Sign up now</source>
+        <target>Sign up now</target>
+     </trans-unit>
+     
+      <trans-unit>
+        <source>Register new user</source>
+        <target>Register new user</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Register</source>
+        <target>Register</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Terms of service</source>
+        <target>Terms of service</target>
+     </trans-unit>
+     
+      <trans-unit>
+        <source>Accept terms</source>
+        <target>Accept terms</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Have an account?</source>
+        <target>Have an account?</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>New to %net%?</source>
+        <target>New to %net%?</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Sign up</source>
+        <target>Sign up</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>This e-mail is being sent because you requested information on how to reset your password.</source>
+        <target>This e-mail is being sent because you requested information on how to reset your password.</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Your username or e-mail address is required.</source>
+        <target>Your username or e-mail address is required.</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Username or email address not found please try again.</source>
+        <target>Username or email address not found please try again.</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>There is no event page!</source>
+        <target>There is no event page!</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>You need to create a page to post events.</source>
+        <target>You need to create a page to post events.</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>There is no blog page!</source>
+        <target>There is no blog page!</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>You don't currently have a blog engine page, please create one.</source>
+        <target>You don't currently have a blog engine page, please create one.</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>You must have a blog page somewhere on your site to use blog slots.</source>
+        <target>You must have a blog page somewhere on your site to use blog slots.</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>You must have a blog page somewhere on your site to use blog slots.</source>
+        <target>You must have a blog page somewhere on your site to use blog slots.</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>You don't currently have a blog or events engine page, please create one.</source>
+        <target>You don't currently have a blog or events engine page, please create one.</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>SOMETHING WENT WRONG, OR THAT PAGE DOESN'T EXIST... YET</source>
+        <target>SOMETHING WENT WRONG, OR THAT PAGE DOESN'T EXIST... YET</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>This email has been sent because it has been logged for the first time at %web_title%.</source>
+        <target>This email has been sent because it has been logged for the first time at %web_title%.</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>The following key is automatically generated:</source>
+        <target>The following key is automatically generated:</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>If you want to access from another browser or device you will require this key. Keep it, it is an encryption system and is required to access your information.</source>
+        <target>If you want to access from another browser or device you will require this key. Keep it, it is an encryption system and is required to access your information.</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Hello %first_name%</source>
+        <target>Hello %first_name%</target>
+     </trans-unit>
+     
+    </body>
+  </file>
+</xliff>

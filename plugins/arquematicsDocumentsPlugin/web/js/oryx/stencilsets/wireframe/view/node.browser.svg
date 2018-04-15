@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:oryx="http://www.b3mn.org/oryx"
+   version="1.0">
+  <oryx:magnets>
+    <oryx:magnet oryx:cx="150" oryx:cy="0" oryx:default="yes"/>
+    <oryx:magnet oryx:cx="150" oryx:cy="150"/>
+    <oryx:magnet oryx:cx="300" oryx:cy="75"/>
+    <oryx:magnet oryx:cx="0" oryx:cy="75"/>
+  </oryx:magnets>
+  <g>
+
+ 
+
+  <path
+      d="m 0,0 c 0,-35.821418 0,-35.821418 28.958447,-35.821418 l 608.222693,0 c 28.66738,0 28.66738,0 28.66738,35.821418"
+      oryx:anchor="top bottom left right"
+      oryx:resize="vertical horizontal"
+      x="0"
+      y="0"
+      id="headbrowser"
+      style="fill:#dedede;stroke:#000000;stroke-width:2.00901222" />
+
+   
+
+  <circle
+       id="circle3801"
+       oryx:anchor="top bottom left right"
+       oryx:resize="vertical horizontal"
+       cx="35"
+       cy="-17"
+       r="9"
+       style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+
+  <circle
+       id="circle3802"
+       oryx:anchor="top bottom left right"
+       oryx:resize="vertical horizontal"
+       cx="65"
+       cy="-17"
+       r="9"
+       style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+
+  <circle
+       id="circle38023"
+       oryx:anchor="top bottom left right"
+       oryx:resize="vertical horizontal"
+       cx="95"
+       cy="-17"
+       r="9"
+       style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+
+  <rect 
+      id="textInputRect"
+      oryx:resize="horizontal" 
+      x="120" 
+      y="-28"
+      width="450" 
+      height="20" 
+      stroke="black" stroke-width="1" fill="#ffffff"/>
+
+  <text 
+    id="textInputItem"
+    x="125"
+    y="-25"
+    oryx:resize="horizontal"
+    oryx:anchors="top"
+    oryx:align="top">
+  </text>
+  
+  
+  <rect
+      id="border"
+      oryx:anchor="top bottom left right"
+      oryx:resize="vertical horizontal"
+      width="666.10779"
+      height="550.04895"
+      x="0"
+      y="0"
+      style="fill:#ffffff;stroke:#000000;stroke-width:1.95106864" />
+
+  </g>
+</svg>

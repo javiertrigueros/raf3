@@ -1,0 +1,47 @@
+######################
+# arPageAdmin routes #
+######################
+ar_page_admin:
+  url:   /admin/page
+  param: { module: arPageAdmin, action: index }
+  class: sfRoute
+  
+ar_page_admin_update:
+  url:   /admin/page/update
+  param: { module: arPageAdmin, action: update }
+  class: sfRoute
+  requirements:
+    sf_method: [POST]
+    id: \d+
+    
+ar_page_admin_delete:
+  url:   /admin/page/delete
+  param: { module: arPageAdmin, action: delete }
+  class: sfRoute
+  requirements:
+    sf_method: [POST]
+    id: \d+
+
+#####################
+# arMenu routes     #
+#####################
+
+    
+menu_create:
+  url: /menuCreate
+  param: { module: arMenuAdmin, action: menuCreate }
+  class: aRoute
+  requirements:
+    sf_method: [GET]
+    root_id: '[\w-]+'
+    
+
+menu_edit:
+  url: /menuEdit
+  param: { module: arMenuAdmin, action: menuEdit }
+  class: aRoute
+  requirements:
+    sf_method: [GET]
+    root_id: '[\w-]+'
+    jsonTree: '[\w-]+'
+    

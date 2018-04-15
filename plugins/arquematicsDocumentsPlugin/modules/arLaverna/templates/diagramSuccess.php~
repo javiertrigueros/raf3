@@ -1,0 +1,75 @@
+<?php use_helper('I18N','a','ar') ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<?php // If this page is an admin page we don't want to present normal navigation relative to it. ?>
+<?php $page = aTools::getCurrentNonAdminPage() ?>
+<?php $root = aPageTable::retrieveBySlug('/') ?>
+<head>
+    <?php include_http_metas() ?>
+    <?php include_metas() ?>
+    <?php include_title() ?>
+    
+    <?php use_stylesheet("/arquematicsDocumentsPlugin/js/oryx/lib/ext-2.0.2/resources/css/ext-all.css"); ?>
+    <?php use_stylesheet("/arquematicsDocumentsPlugin/js/oryx/lib/ext-2.0.2/resources/css/xtheme-gray.css"); ?>
+    <?php use_stylesheet("/arquematicsDocumentsPlugin/js/oryx/css/theme_norm.css"); ?>
+    
+    <?php //use_stylesheet("/arquematicsDocumentsPlugin/css/font-awesome-ie7.css"); ?>
+    <?php //use_stylesheet("/arquematicsDocumentsPlugin/css/font-awesome.css"); ?>
+    
+    <?php use_stylesheet("/arquematicsDocumentsPlugin/css/mindmaps/common.css"); ?>
+    <?php use_stylesheet("/arquematicsDocumentsPlugin/css/mindmaps/app.css"); ?>
+    
+    <?php a_include_stylesheets() ?>
+    
+    <?php use_javascript("/arquematicsDocumentsPlugin/js/oryx/lib/prototype-1.5.1.js"); ?>
+    <?php use_javascript("/arquematicsDocumentsPlugin/js/oryx/lib/path_parser.js"); ?>
+    <?php use_javascript("/arquematicsDocumentsPlugin/js/oryx/lib/ext-2.0.2/adapter/ext/ext-base.js"); ?>
+    <?php use_javascript("/arquematicsDocumentsPlugin/js/oryx/lib/ext-2.0.2/ext-all.js"); ?>
+    <?php use_javascript("/arquematicsDocumentsPlugin/js/oryx/lib/ext-2.0.2/color-field.js"); ?>
+
+    
+    <?php // oryx editor language files ?>
+    <?php use_javascript("/arquematicsDocumentsPlugin/js/oryx/i18n/".$culture.".js"); ?>
+    <?php use_javascript("/arquematicsDocumentsPlugin/js/oryx/profiles/oryx.core.uncompressed.js"); ?>
+    <?php use_javascript("/arquematicsDocumentsPlugin/js/oryx/profiles/bpmn.js"); ?>
+    
+</head>
+
+<body>
+    
+   <form id="form_editor_image_send" name="form_editor_image_send" enctype="multipart/form-data" method="post">
+        <?php echo $form ?>
+    </form>
+    
+    <?php //include_component('arChat', 'normalView') ?>
+    
+    <?php a_include_javascripts() ?>
+    
+    <script type='text/javascript'>
+       
+        if(!ORYX) var ORYX = {};
+        if(!ORYX.CONFIG) ORYX.CONFIG = {};
+        ORYX.CONFIG.WEB_URL = '<?php echo url_for('@homepage') ?>';
+        ORYX.CONFIG.ROOT_PATH = '/arquematicsDocumentsPlugin/js/oryx/';
+        ORYX.CONFIG.PLUGINS_CONFIG  = '/arquematicsDocumentsPlugin/js/oryx/profiles/default.xml';
+        ORYX.CONFIG.SSET='stencilsets<?php echo $documentType['extra']; ?>';
+        ORYX.CONFIG.DIAGRAM_TYPE=<?php echo $documentType['id'] ?>;
+        ORYX.CONFIG.WAIT_ICON='<?php echo sfConfig::get('app_arquematics_waint_icon') ?>';
+        ORYX.CONFIG.HOME_LINK='<?php echo link_to(__('Back',array(),'profile'),'@wall') ?>';
+        ORYX.CONFIG.SSEXTS=[];
+        ORYX.CONFIG.SAVE='<?php echo url_for('@diagram_save?name='.$documentType['name'])?>';
+        ORYX.CONFIG.REDIR='<?php echo url_for('@wall')?>';
+       
+        //console.log(ORYX.CONFIG.PLUGINS_CONFIG);
+        
+        <?php if (isset($aDiagram)): ?>
+           ORYX.CONFIG.DATA=<?php echo $sf_data->getRaw('aDiagramJson'); ?>;
+        <?php else: ?>
+           ORYX.CONFIG.DATA = false; 
+        <?php endif ?>
+       
+        
+    </script>
+    <?php include_partial('API/globalArquematics') ?>
+</body>
+</html>

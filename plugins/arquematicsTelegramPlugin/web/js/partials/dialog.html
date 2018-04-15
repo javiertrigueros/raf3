@@ -1,0 +1,89 @@
+<a class="im_dialog" href="#/im?p={{dialogMessage.peerString}}">
+
+  <div class="im_dialog_meta pull-right text-right">
+    <div class="im_dialog_date" am-time-ago="dialogMessage.date">
+    </div>
+    <span
+      class="im_dialog_badge badge"
+      ng-show="dialogMessage.unreadCount > 0"
+      ng-bind="dialogMessage.unreadCount"
+    ></span>
+    <i
+      class="im_dialog_unread"
+      ng-show="dialogMessage.out && dialogMessage.unread"
+    ></i>
+  </div>
+
+  <div class="im_dialog_photo pull-left">
+    <img
+      class="im_dialog_photo"
+      my-load-thumb
+      thumb="dialogMessage.peerPhoto"
+    />
+  </div>
+
+  <div class="im_dialog_message_wrap">
+
+    <div class="im_dialog_peer">
+      <span class="im_dialog_chat" ng-if="dialogMessage.chatID">
+        <i class="icon icon-group"></i> <span  ng-bind-html="dialogMessage.peerData.rTitle"></span>
+      </span>
+      <span class="im_dialog_user" ng-if="dialogMessage.peerID > 0" ng-bind-html="dialogMessage.peerData.rFullName"></span>
+    </div>
+
+    <div class="im_dialog_message">
+      <span class="im_dialog_chat_from_wrap">
+        <span
+          class="im_dialog_chat_from"
+          ng-if="!dialogMessage.out &amp;&amp; dialogMessage.chatID"
+          ng-bind-html="dialogMessage.fromUser.rFirstName"
+        ></span>
+        <span
+          class="im_dialog_chat_from"
+          ng-if="dialogMessage.out"
+        >
+        {{'You' | translate}}
+        </span>{{((dialogMessage.out || dialogMessage.peerID < 0) && (dialogMessage.message.length || dialogMessage.media && dialogMessage.media._ != 'messageMediaEmpty')) ? ':' : ''}}
+      </span>
+
+      <span class="im_dialog_message_media" ng-if="dialogMessage.media && dialogMessage.media._ != 'messageMediaEmpty'" ng-switch="dialogMessage.media._">
+        <span ng-switch-when="messageMediaPhoto">{{ 'Photo' | translate }}</span>
+        <span ng-switch-when="messageMediaVideo">{{ 'Video' | translate }}</span>
+        <span ng-switch-when="messageMediaDocument">{{ 'Document' | translate }}</span>
+        <span ng-switch-when="messageMediaAudio">{{ 'Audio' | translate }}</span>
+        <span ng-switch-when="messageMediaGeo">{{ 'Location' | translate }}</span>
+        <span ng-switch-when="messageMediaContact">{{ 'Contact' | translate }}</span>
+      </span>
+
+      <span class="im_dialog_message_service" ng-if="dialogMessage._ == 'messageService'" ng-switch="dialogMessage.action._">
+        <span ng-switch-when="messageActionChatCreate">{{ 'group created' | translate }}  </span>
+        <span ng-switch-when="messageActionChatEditTitle">{{ 'changed group name' | translate }}</span>
+        <span ng-switch-when="messageActionChatEditPhoto">{{ 'changed group photo' | translate }}</span>
+        <span ng-switch-when="messageActionChatDeletePhoto">{{ 'removed group photo' | translate }}</span>
+
+        <span ng-switch-when="messageActionChatAddUser">
+          <span ng-if="dialogMessage.from_id != dialogMessage.action.user_id">
+            {{ 'invited' | translate }}
+            <span ng-bind-html="dialogMessage.action.user.rFullName"></span>
+          </span>
+          <span ng-if="dialogMessage.from_id == dialogMessage.action.user_id">
+            {{ 'returned to group' | translate }}
+          </span>
+        </span>
+
+        <span ng-switch-when="messageActionChatDeleteUser">
+          <span ng-if="dialogMessage.from_id != dialogMessage.action.user_id">
+            {{ 'kicked' | translate }}
+            <span ng-bind-html="dialogMessage.action.user.rFullName"></span>
+          </span>
+          <span ng-if="dialogMessage.from_id == dialogMessage.action.user_id">
+            {{ 'left group' | translate }}
+          </span>
+        </span>
+      </span>
+
+      <span class="im_dialog_message_text" ng-if="dialogMessage.message.length" ng-bind-html="dialogMessage.richMessage"></span>
+    </div>
+
+  </div>
+</a>

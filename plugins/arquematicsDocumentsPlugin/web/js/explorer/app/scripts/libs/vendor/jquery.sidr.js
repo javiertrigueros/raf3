@@ -1,0 +1,1 @@
+../../../../../../../../arquematicsMenuPlugin/web/js/jquery.sidr.js

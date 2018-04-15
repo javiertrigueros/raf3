@@ -1,0 +1,8 @@
+default:
+  layout:         layoutError
+  stylesheets:
+    - /arquematicsPlugin/assets/stylesheets/bootstrap.css: { data-asset-group: global }
+    - /arquematicsPlugin/assets/stylesheets/pixel-admin.css: { data-asset-group: global }
+    - /arquematicsPlugin/assets/stylesheets/pages.css: { data-asset-group: global }
+    - /arquematicsPlugin/assets/stylesheets/rtl.css: { data-asset-group: global }
+  javascripts:

@@ -1,0 +1,33 @@
+<div class="ui-row ui-scroll-y ui-body">
+    <div class="main">
+        <article class="editor">
+            <div class="alert alert-info alert-dark">
+                <% if (docType === 'trashed') {%> 
+                  {{ i18n('no trashed') }}
+                <% } else if (docType === 'favorite') {%>
+                  {{ i18n('no favorite') }}
+                <% } else if (docType === 'note') {%>
+                  {{ i18n('no notes') }}
+                <% } else if (docType === 'svg') {%>
+                  {{ i18n('no vector images') }}
+                <% } else if (docType === 'rawchart') {%>
+                  {{ i18n('no rawchart') }}
+                <% } else if (docType === 'mindmaps') {%>
+                  {{ i18n('no mindmaps') }}
+                <% } else if (docType === 'bpmn') {%>
+                  {{ i18n('no bpmn') }}
+                <% } else if (docType === 'epc') {%>
+                  {{ i18n('no epc') }}
+                <% } else if (docType === 'uml') {%>
+                  {{ i18n('no uml') }}
+                <% } else if (docType === 'wireframe') {%>
+                  {{ i18n('no wireframe') }}
+                <% } else if (docType === 'umlsequence') {%>
+                  {{ i18n('no umlsequence') }}
+                <% } else if (docType === 'umlusecase') {%>
+                  {{ i18n('no umlusecase') }}
+                <% } %>
+            </div>
+        </article>
+    </div>
+</div>

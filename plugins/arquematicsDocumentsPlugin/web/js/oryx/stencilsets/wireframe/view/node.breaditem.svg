@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:oryx="http://www.b3mn.org/oryx"
+   version="1.0">
+  <oryx:magnets>
+        <oryx:magnet oryx:cx="0" oryx:cy="0" oryx:default="yes"/>
+        <oryx:magnet oryx:cx="80" oryx:cy="34"/>
+  </oryx:magnets>
+
+  <g>
+     <rect x="0" y="0" width="80" height="20"
+      oryx:anchor="top bottom left right"
+      oryx:resize="vertical horizontal"
+      style="fill:blue;stroke:blue;stroke-width:0;opacity:0.01;" />
+
+    <path
+       id="todown"
+       oryx:anchor="top bottom left right"
+       d="M 5 5 L 10 10 L 5 15"
+       stroke="black" fill="white" stroke-width="2" />
+
+    <text 
+      id="textBreadItem" 
+      x="14" 
+      y="14" 
+      oryx:resize="vertical horizontal" 
+      oryx:align="left"></text> 
+
+  </g>
+</svg>

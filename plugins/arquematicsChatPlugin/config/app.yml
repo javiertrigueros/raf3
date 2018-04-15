@@ -1,0 +1,35 @@
+all:
+  #minutos que esta activo un tokken para una session
+  archat_token_active_min: 3
+  
+  archat_client: 
+   service_name: Alcoor
+   service_desc: 'Alcoor is Good'
+   jappix_resource: Jappix
+   lock_host: on
+   anonymous: on
+   registration: on
+   bosh_proxy: on
+   manager_link: off
+   groupchats_join: ""
+   encryption: off
+   https_storage: off
+   https_forge: off
+   compresion: off
+   multi_files: off
+   developer: off
+   anonymous_room: "null"
+   anonymous_nick: "null"
+   
+  archat_server:
+   host_main: homecoder
+   host_muc: homecoder
+   host_pubsub: homecoder
+   host_vjud: homecoder
+   host_anonymous: homecoder
+   host_bosh: "http://talk.alcoor.com:5282/http-bind"
+   host_bosh_main: ""
+   host_bosh_mini: ""
+   host_static: ""
+   host_upload: ""
+     

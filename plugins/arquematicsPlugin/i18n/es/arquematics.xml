@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd" >
+<xliff version="1.0">
+  <file original="global" source-language="en" target-language="es" datatype="plaintext">
+    <header />
+    <body>
+       <trans-unit>
+        <source>Home</source>
+        <target>Inicio</target>
+       </trans-unit>
+      <trans-unit>
+        <source>Close</source>
+        <target>Cerrar</target>
+     </trans-unit>
+      <trans-unit>
+        <source>Welcome</source>
+        <target>Bienvenido</target>
+       </trans-unit>
+      <trans-unit>
+        <source>Hide Menu</source>
+        <target>Ocultar Menú</target>
+      </trans-unit>
+      <trans-unit>
+        <source>My Profile</source>
+        <target>Mi Perfíl</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Open panel</source>
+        <target>Abrir panel</target>
+      </trans-unit>
+       <trans-unit>
+        <source>Close panel</source>
+        <target>Cerrar panel</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Subdomain</source>
+        <target>Subdominio</target>
+      </trans-unit>
+       <trans-unit>
+        <source>Required</source>
+        <target>Requerido</target>
+      </trans-unit>
+      <trans-unit>
+        <source>The new subdomain will be housed in Telvy.net</source>
+        <target>El nuevo subdominio estará alojado en Telvy.net</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Subdomain already exists</source>
+        <target>Ya existe el subdominio</target>
+      </trans-unit>
+
+      <trans-unit>
+        <source>Organization Name</source>
+        <target>Nombre de la organización</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Sorry! Organization name already exists.</source>
+        <target>¡Lo sentimos! Ya existe una organización con ese nombre.</target>
+      </trans-unit>
+      <trans-unit>
+        <source>The captcha is not valid</source>
+        <target>El código de la imagen no es válido</target>
+      </trans-unit>
+
+      <trans-unit>
+        <source>I have read and agree to the terms of service</source>
+        <target>He leído y estoy de acuerdo con las condiciones del servicio</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>service</source>
+        <target>servicio</target>
+      </trans-unit>
+      
+       <trans-unit>
+        <source>Enter the code</source>
+        <target>Introducir el código</target>
+      </trans-unit>
+      
+      <!-- FORM REGISTER -->
+       
+      <trans-unit>
+        <source>First name</source>
+        <target>Nombre</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Last name</source>
+        <target>Apellidos</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Email address</source>
+        <target>Correo electrónico</target>
+      </trans-unit>
+      <trans-unit>
+        <source>User name</source>
+        <target>Nombre de usuario</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>SEND PASSWORD RESET LINK</source>
+        <target>ENVIAR ENLACE PARA RESETEAR CONTRASEÑA</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Enter your email</source>
+        <target>Introducir correo electrónico</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Password reset</source>
+        <target>Restablecer contraseña</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Forgot your password?</source>
+        <target>¿Olvido su contraseña?</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Password</source>
+        <target>Contraseña</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>New Password</source>
+        <target>Nueva Contraseña</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Update password</source>
+        <target>Actualizar contraseña</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Repeat Password</source>
+        <target>Repetir Contraseña</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Change current password</source>
+        <target>Cambiar contraseña actual</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Click to change password</source>
+        <target>Haga clic para cambiar la contraseña</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>You can change your password by clicking the below link which is only valid for 24 hours:</source>
+        <target>Puede cambiar su contraseña haciendo clic en el enlace de más abajo, que sólo es válido durante 24 horas:</target>
+      </trans-unit>
+      
+       <trans-unit>
+        <source>Sorry! A user with that email address already exists.</source>
+        <target>¡Lo sentimos! Ya existe un usuario con esta dirección de correo electrónico.</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Contains invalid characters such as "# ^ º"</source>
+        <target>Contains invalid characters such as "# ^ º"</target>
+      </trans-unit>
+      
+     <trans-unit>
+        <source>Sorry! User name already exists.</source>
+        <target>¡Lo siento! El nombre de usuario ya existe.</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Email address is invalid</source>
+        <target>El correo electrónico no es válido</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Add new comment</source>
+        <target>Enviar un comentario</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Deleted</source>
+        <target>Eliminar</target>
+      </trans-unit>
+      <trans-unit>
+        <source>send</source>
+        <target>enviar</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Removing</source>
+        <target>Borrando</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Report a comment</source>
+        <target>Reportar un comentario</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Comments list</source>
+        <target>Lista de comentarios</target>
+      </trans-unit>
+      <trans-unit>
+        <source>at</source>
+        <target>en</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Comment deleted by moderator</source>
+        <target>Comentario eliminado por moderador</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Be the first to post</source>
+        <target>Haz el primer comentario!</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Report this comment - New window</source>
+        <target>Reportar este comentario - Nueva ventana</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Reply to this comment</source>
+        <target>Responder a este comentario</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Report sent.</source>
+        <target>Reporte enviado</target>
+      </trans-unit>
+      <trans-unit>
+        <source>The moderation team has been notified.</source>
+        <target>El equipo de moderacion ha sido notificado</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Close the popup</source>
+        <target>Cerrar el popup</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Delete the reply</source>
+        <target>Eliminar la respuesta</target>
+      </trans-unit>
+      <!-- FORM MESSAGES -->
+      <trans-unit>
+        <source>Required</source>
+        <target>Requerido</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Invalid Url</source>
+        <target>URL invalido</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Required message</source>
+        <target>Mensaje obligatorio</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Invalid Mail</source>
+        <target>Email invalido</target>
+      </trans-unit>
+      <trans-unit>
+        <source>The captcha is not valid (%error%).</source>
+        <target>El captcha no es valido (%error%).</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Unable to check the captcha from the server (%error%).</source>
+        <target>No fue posible verificar el captcha del servidor (%error%).</target>
+      </trans-unit>
+      <!-- FORM LABELS -->
+      <trans-unit>
+        <source>Name</source>
+        <target>Nombre</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Website</source>
+        <target>Sitio/ Blog</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Reason</source>
+        <target>Razón</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Reply to</source>
+        <target>Responder </target>
+      </trans-unit>
+      <!-- FORM HELPS -->
+      <trans-unit>
+        <source>Why this message should be moderated ?</source>
+        <target>Porque este mensaje debe ser moderado</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Your email will never be published</source>
+        <target>Su email no será publicado</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Must start with http:// or https://</source>
+        <target>Debe empezar con  http:// o https://</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Please log in to comment</source>
+        <target>Inicia sesión para comentar</target>
+      </trans-unit>
+      <!-- Pagination -->
+      <trans-unit>
+        <source>First page of comments</source>
+        <target>Primer pagina de comentarios</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Previous page of comments</source>
+        <target>Pagina anterior de comentarios</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Next page of comments</source>
+        <target>Siguiente pagina de comentarios</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Last page of comments</source>
+        <target>Ultima pagina de comentarios</target>
+      </trans-unit>
+      <trans-unit>
+        <source>(page %%page%%/%%nb_pages%%)</source>
+        <target>(page %%page%%/%%nb_pages%%)</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Back to top</source>
+        <target>Regresar arriba</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Comment</source>
+        <target>Comentario</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Logo</source>
+        <target>Logo</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Site Pages</source>
+        <target>Páginas Sitio</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Menu %menuname%</source>
+        <target>Menu %menuname%</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Menu Title</source>
+        <target>Título Menu</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Edit Menu</source>
+        <target>Editar Menu</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Select</source>
+        <target>Selecionar</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Change Title</source>
+        <target>Cambiar Título</target>
+      </trans-unit>
+      
+       <trans-unit>
+        <source>About</source>
+        <target>Acerca de ...</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Pages</source>
+        <target>Páginas</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Invalid</source>
+        <target>No válido</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Edit profile</source>
+        <target>Editar perfíl</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Lists</source>
+        <target>Listas</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Subscribers</source>
+        <target>Suscriptores</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Config</source>
+        <target>Configuración</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Admin CMS</source>
+        <target>Administrar CMS</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Log Out</source>
+        <target>Salir</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Configuration</source>
+        <target>Configuración</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>The selected users have been enabled successfully.</source>
+        <target>Los usuarios seleccionados se han activado.</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>The selected users have been disable successfully.</source>
+        <target>Los usuarios seleccionados se han desactivado.</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>About long</source>
+        <target>Diseñamos sitios hermosos y publicamos nuestras mejores ideas. Para saber más.</target>
+      </trans-unit>
+      
+       <trans-unit>
+        <source>Version</source>
+        <target>Versión 0.1</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Message</source>
+        <target>Mensajes</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>%user%'s Subscribers.</source>
+        <target>Suscriptores de %user%.</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Required field</source>
+        <target>Campo requerido</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Same name lists</source>
+        <target>Mismo nombre de lista</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Canceling</source>
+        <target>Cancelando</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Accepting</source>
+        <target>Aceptando</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>List selected</source>
+        <target>Lista selecionada</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Lists selected</source>
+        <target>Listas selecionadas</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Add to lists</source>
+        <target>Agregar a las listas</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Applications for subscription:</source>
+        <target>Solicitudes de suscripción:</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Documents</source>
+        <target>Documentos</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>All notes</source>
+        <target>Notas</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Favourites</source>
+        <target>Favoritos</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Trash</source>
+        <target>Papelera</target>
+     </trans-unit> 
+     
+     <trans-unit>
+        <source>Notebooks</source>
+        <target>Cuadernos</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Password must be at least %passLong% characters.</source>
+        <target>La contraseña debe tener al menos %passLong% caracteres.</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Midrange password</source>
+        <target>Seguridad de contraseña nivel medio: Intente hacer su contraseña más fuerte con mayúsculas, más minusculas, más números y más caracteres especiales.</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Midrange password no more lowercase letters</source>
+        <target>Seguridad de contraseña nivel medio: Intente hacer su contraseña más fuerte con minusculas.</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Midrange password no capital letters</source>
+        <target>Seguridad de contraseña nivel medio: Intente hacer su contraseña más fuerte con mayúsculas.</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Midrange password no more numbers</source>
+        <target>Seguridad de contraseña nivel medio: Intente hacer su contraseña más fuerte con caracteres numéricos.</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Midrange password no more special characters</source>
+        <target>Seguridad de contraseña nivel medio: Intente hacer su contraseña más fuerte con caracteres especiales.</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Weak password</source>
+        <target>Contraseña debil: intente utilizar números y letras mayúsculas.</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Strong password</source>
+        <target>Contraseña segura: la fortaleza de la contraseña es adecuada.</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Passwords must match!</source>
+        <target>¡Las contraseñas deben coincidir!</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Sign In with %net%</source>
+        <target>Iniciar sesión con %net%</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Username or email</source>
+        <target>Usuario o correo electrónico</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Sign In to your account</source>
+        <target>Iniciar sesión en su cuenta</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Log in</source>
+        <target>Iniciar sesión</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Connect to %net%</source>
+        <target>Conectar con %net%</target>
+     </trans-unit>
+     
+      <trans-unit>
+        <source>Compatible with common formats</source>
+        <target>Compatible formatos más frecuentes</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Integrations with popular applications</source>
+        <target>Integración aplicaciones populares</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Crafted with love</source>
+        <target>Hecho con amor</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Not a member?</source>
+        <target>¿No es miembro?</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Sign up now</source>
+        <target>Inscríbase ahora</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Register new user</source>
+        <target>Registrar nuevo usuario</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Register</source>
+        <target>Registrar</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Terms of service</source>
+        <target>Condiciones del servicio</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Accept terms</source>
+        <target>Aceptar términos</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Have an account?</source>
+        <target>¿Tiene una cuenta?</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>New to %net%?</source>
+        <target>¿Nuevo en %net%?</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Sign up</source>
+        <target>Regístrase</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>This e-mail is being sent because you requested information on how to reset your password.</source>
+        <target>Se ha enviado este correo electrónico ya que solicitó restablecer su contraseña.</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Your username or e-mail address is required.</source>
+        <target>Se requiere su nombre de usuario o correo electrónico.</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Username or email address not found please try again.</source>
+        <target>Nombre de usuario o dirección de correo electrónico no se encontraron por favor intente de nuevo.</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>There is no event page!</source>
+        <target>¡¡No existe página de eventos!!</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>You need to create a page to post events.</source>
+        <target>Es necesario crear una página para publicar los eventos.</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>There is no blog page!</source>
+        <target>¡¡No existe página de blogs!!</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>You don't currently have a blog engine page, please create one.</source>
+        <target>Actualmente no tiene una página de blogs, por favor, cree una para publicar nuevos post.</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>You must have a blog page somewhere on your site to use blog slots.</source>
+        <target>Actualmente no tiene una página de motor de blogs, por favor, cree una.</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>You don't currently have a blog or events engine page, please create one.</source>
+        <target>Actualmente no tiene una página de blog o eventos, por favor, cree una.</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>SOMETHING WENT WRONG, OR THAT PAGE DOESN'T EXIST... YET</source>
+        <target>ALGO SALIO MAL, O LA PÁGINA NO EXISTE ... TODAVÍA</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>This email has been sent because it has been logged for the first time at %web_title%.</source>
+        <target>Este email se ha enviado porque ha iniciado una sesión por primera vez en %web_title%.</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>The following key is automatically generated:</source>
+        <target>Se generó la siguiente clave automáticamente:</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>If you want to access from another browser or device you will require this key. Keep it, it is an encryption system and is required to access your information.</source>
+        <target>Si desea acceder desde otro navegador o dispositivo se requerirá esta clave. Conservela, es un sistema de cifrado y es imprescindible para acceder a la información.</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Hello %first_name%</source>
+        <target>Hola %first_name%</target>
+     </trans-unit>
+     
+    </body>
+  </file>
+</xliff>

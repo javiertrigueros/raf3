@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:oryx="http://www.b3mn.org/oryx"
+   version="1.0">
+  <g>
+    <rect x="0" y="0" width="50" height="20"
+      oryx:anchor="top bottom left right"
+      oryx:resize="vertical horizontal"
+      style="fill:blue;stroke:blue;stroke-width:0;opacity:0.01;" />
+
+    <rect 
+      id="border"
+      oryx:resize="vertical horizontal" 
+      x="0" 
+      y="0"
+      rx="2" 
+      ry="2"  
+      width="50" 
+      height="20" 
+      stroke="black" stroke-width="1" fill="#eea236"/>
+
+    <text fill="white" id="guardConditionText" x="25" y="10" oryx:resize="horizontal" oryx:align="middle center"></text>
+
+
+  </g>
+</svg>

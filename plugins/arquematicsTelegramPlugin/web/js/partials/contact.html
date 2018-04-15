@@ -1,0 +1,20 @@
+<a class="im_dialog" href="#/im?p={{contact.peerString}}">
+
+  <div class="im_dialog_photo pull-left">
+    <img
+      class="im_dialog_photo"
+      my-load-thumb
+      thumb="contact.userPhoto"
+    />
+    <i class="icon status_online" ng-show="contact.user.status._ == 'userStatusOnline'"></i>
+  </div>
+ 
+  <div class="im_dialog_message_wrap">
+
+    <div class="im_dialog_message" ng-bind-html="contact.user.rFullName">
+     
+    </div>
+    {{contact.user | userStatus}}
+    {{contact.user.status._}}
+  </div>
+</a>

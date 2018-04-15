@@ -1,0 +1,26 @@
+Setup
+=====
+
+Do not forget to configure your plugin, editing config/app.yml and add your twitter app's keys.
+
+Add the following line in config/ProjectConfiguration.class.php:
+
+``$this->enablePlugins('syTwitterPlugin');``
+
+
+Notes
+=====
+
+Once enable, this plugin add two routes:
+
+* /login
+* /logout
+
+Once logged, the sfUser will be authenticated and following sfUser attributes will be set:
+
+* screen_name
+* oauth_token
+* oauth_token_secret
+
+After authentication, the /login will redirect using to @homepage.
+

@@ -1,0 +1,65 @@
+Options +FollowSymLinks +ExecCGI
+AddType text/javascript .jsgz
+AddType text/css .cssgz
+AddEncoding x-gzip .jsgz .cssgz
+
+# BEGIN GZIP modulos deflate y filter
+<IfModule mod_filter.c>
+	AddOutputFilterByType DEFLATE application/atom+xml application/javascript application/json application/rss+xml application/xhtml+xml application/xml image/svg+xml image/x-icon text/css text/html text/plain text/x-component text/xml
+</IfModule>
+# END GZIP
+
+<ifModule mod_headers.c>
+  Header always set Access-Control-Allow-Origin "*"
+  Header set Access-Control-Allow-Credentials true
+</ifModule>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  
+  # uncomment the following line, if you are having trouble
+  # getting no_script_name to work
+  RewriteBase /
+
+  #configuracion load balancer
+  #RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  #RewriteRule .* https://www.%{HTTP_HOST}%{REQUEST_URI} [R,L]  
+
+
+  ###### BEGIN special handling for the media module's cached scaled images
+  # If it exists, just deliver it
+  RewriteCond %{REQUEST_URI} ^/uploads/media_items/.+$
+  RewriteCond %{REQUEST_FILENAME} -f
+  RewriteRule .* - [L]
+  # If it doesn't exist, render it via the front end controller
+  RewriteCond %{REQUEST_URI} ^/uploads/media_items/.+$
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^(.*)$ index.php [QSA,L]
+  ###### END special handling for the media module's cached scaled images
+
+  
+  RewriteCond %{REQUEST_URI} ^/uploads/.+$
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^(.*)$ index.php [QSA,L]
+
+  # we skip all files with .something
+  RewriteCond %{REQUEST_URI} \..+$
+  RewriteCond %{REQUEST_URI} !\.html$
+  RewriteRule .* - [L]
+
+  # we check if the .html version is here (caching)
+  RewriteRule ^$ index.html [QSA]
+  RewriteRule ^([^.]+)$ $1.html [QSA]
+  RewriteCond %{REQUEST_FILENAME} !-f
+
+  # no, so we redirect to our front web controller
+  RewriteRule ^(.*)$ index.php [QSA,L] 
+</IfModule>
+
+# Apostrophe currently requires this, but don't try to force it on
+# environments that don't have php_value (those environments can
+# still do it in php.ini if they have altered the default)
+<IfModule mod_php5.c>
+	php_value arg_separator.output "&"
+</IfModule>

@@ -1,0 +1,96 @@
+li.group-item a span.group-text i
+{
+    display:none;
+}
+
+li.active-group a span.group-text i
+{
+    display: inline-block !important;
+}
+
+li.disable-group a span.group-container-input
+{
+  text-decoration:line-through;  
+}
+
+
+.group-icon-ok
+{
+    color:#55c855;
+    margin-top:3px;
+    margin-right:2px;
+    font-size: 14px;
+}
+
+.group-icon-cancel
+{
+   color:#e0534e;
+   margin-top:3px;
+   margin-right:2px;
+   font-size: 14px;  
+}
+
+
+#cmd-configure
+{
+  margin-top:-6px; 
+  margin-left:12px;
+  font-size: 16px;
+  color: #808080;
+  cursor: pointer;
+}
+
+#cmd-configure:hover
+{
+  color: #000000;
+}
+
+.menu-dropdown-extended
+{
+  width: 320px;   
+}
+
+.menu-dropdown-normal
+{
+  width: 150px;   
+}
+
+.dropdown-menu a
+{
+    position:relative;
+    white-space:normal;
+}
+
+.group-text
+{
+  float:left;
+}
+
+.group-container-input
+{
+  float:right;
+}
+
+.group-input
+{
+  
+}
+
+.active-group
+{
+  background-color: #edeff4;
+  border-top: 1px dotted #FFF;
+  border-bottom: 1px dotted #FFF;
+}
+
+.group-item
+{
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
+  width: 100%;
+}
+
+.wall-group-btn
+{
+  padding-top:6px;
+}

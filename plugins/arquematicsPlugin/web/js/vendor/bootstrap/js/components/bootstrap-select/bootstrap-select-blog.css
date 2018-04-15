@@ -1,0 +1,21 @@
+/*!
+ * bootstrap-select v1.5.4
+ * http://silviomoreto.github.io/bootstrap-select/
+ *
+ * Copyright 2013 bootstrap-select
+ * Licensed under the MIT license
+ */
+ .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a{
+     position: relative;
+ }
+ 
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a i.check-mark {
+    position: absolute;
+    display: inline-block;
+    right: 15px;
+    margin-top: 6px;
+}
+
+.bootstrap-select.btn-group .dropdown-menu li a i.check-mark {
+    display: none;
+}

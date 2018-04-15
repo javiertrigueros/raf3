@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd" >
+<xliff version="1.0">
+  <file original="global" source-language="en" target-language="en" datatype="plaintext">
+    <header />
+    <body>
+      <trans-unit>
+        <source>Rename the document</source>
+        <target>Rename the document</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Cancel</source>
+        <target>Cancel</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Accept</source>
+        <target>Accept</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Write a new document name:</source>
+        <target>Write a new document name:</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Untitled Document</source>
+        <target>Untitled Document</target>
+      </trans-unit>
+      <trans-unit>
+        <source>File</source>
+        <target>File</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Print</source>
+        <target>Print</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Download as</source>
+        <target>Download as</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Download document as:</source>
+        <target>Download document as:</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Open...</source>
+        <target>Open...</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Edit</source>
+        <target>Edit</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Cut</source>
+        <target>Cut</target>
+      </trans-unit>
+       <trans-unit>
+        <source>Copy</source>
+        <target>Copy</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Paste</source>
+        <target>Paste</target>
+      </trans-unit>
+      
+       <trans-unit>
+        <source>Help</source>
+        <target>Help</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Sort keys</source>
+        <target>Sort keys</target>
+      </trans-unit>
+      <trans-unit>
+        <source>About</source>
+        <target>About</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Open document:</source>
+        <target>Open document:</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Error Etherpad Lite</source>
+        <target>Error Etherpad Lite</target>
+      </trans-unit>
+      
+    </body>
+  </file>
+</xliff>

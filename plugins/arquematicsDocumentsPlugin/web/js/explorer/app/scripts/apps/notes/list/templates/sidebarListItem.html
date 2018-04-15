@@ -1,0 +1,17 @@
+<% if (currentId === id) { %>
+<a href="#{{ link() }}" class="list-group-item active" id="note-{{ id }}" data-id="{{id}}">
+<% } else { %>
+<a href="#{{ link() }}" class="list-group-item" id="note-{{ id }}" data-id="{{id}}">
+<% } %>
+    <h4 class="list-group-item-heading">
+        {{ getTitle(title) }}
+        <% if (isFavorite === 0) {%>
+             <i class="favorite pull-right fa fa-star-o"></i>
+        <% } else { %>
+             <i class="favorite pull-right fa fa-star"></i>
+        <% } %>
+    </h4>
+    <% if (diagramType === 'note') { %>
+      <p class="list-group-item-text">{{ getContent(content) }}</p>
+    <% } %>
+</a>

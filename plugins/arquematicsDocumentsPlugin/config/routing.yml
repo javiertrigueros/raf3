@@ -1,0 +1,231 @@
+############################
+# arLaverna routes         #
+############################
+
+#informacion usuario y claves publicas
+laverna_doc_userinfo:
+ url: /userinfo
+ param: { module: arLaverna, action: userInfo}
+ class: aRoute
+ requirements:
+    sf_method: [GET]
+ options:
+    segment_separators: [/]
+    
+laverna_doc_auth:
+ url: /auth
+ param: { module: arLaverna, action: notesAuth}
+ class: aRoute
+ requirements:
+    sf_method: [POST]
+ options:
+    segment_separators: [/]
+
+laverna_doc_files_view:
+ url: /note/:guid/file/:fileguid
+ options: { model: arLavernaDoc, type: object }
+ param: { module: arLaverna, action: fileView}
+ class: aDoctrineRoute
+ requirements:
+    guid: '[\w-]+'
+    fileguid: '[\w-]+'
+    sf_method: [GET]
+
+laverna_doc_files_update:
+ url: /note/:guid/file/:fileguid
+ param: { module: arLaverna, action: filesUpdate}
+ options: { model: arLavernaDoc, type: object }
+ class: aDoctrineRoute
+ requirements:
+    guid: '[\w-]+'
+    fileguid: '[\w-]+'
+    sf_method: [PUT]
+
+laverna_doc_files_main:
+ url: /note/:guid/file
+ param: { module: arLaverna, action: filesMain}
+ options: { model: arLavernaDoc, type: object }
+ class: aDoctrineRoute
+ requirements:
+    guid: '[\w-]+'
+    sf_method: [GET, POST]
+
+laverna_doc_notes_delete:
+ url: /note/:guid
+ options: { model: arLavernaDoc, type: object }
+ param: { module: arLaverna, action: notesDelete}
+ class: aDoctrineRoute
+ requirements:
+    guid: '[\w-]+'
+    sf_method: [DELETE]
+    
+laverna_doc_notes_view:
+ url: /note/:guid
+ options: { model: arLavernaDoc, type: object }
+ param: { module: arLaverna, action: notesView}
+ class: aDoctrineRoute
+ requirements:
+    guid: '[\w-]+'
+    sf_method: [GET]
+    
+laverna_doc_notes_update:
+ url: /note/:guid
+ options: { model: arLavernaDoc, type: object }
+ param: { module: arLaverna, action: notesUpdate}
+ class: aDoctrineRoute
+ requirements:
+    guid: '[\w-]+'
+    sf_method: [PUT]
+
+   
+laverna_doc_notes_main:
+ url: /note
+ param: { module: arLaverna, action: notesMain}
+ class: aRoute
+ requirements:
+    sf_method: [GET, POST]
+ options:
+    segment_separators: [/]
+    
+laverna_doc:
+ url: /
+ param: { module: arLaverna, action: index}
+ class: aRoute
+ requirements:
+    sf_method: [GET]
+ options:
+    segment_separators: [/]
+
+
+############################
+# arVectorialEditor routes #
+############################
+
+diagram_update:
+ url: /:name/:guid
+ options: { model: arLavernaDoc, type: object }
+ param: { module: arVectorialEditor, action: update}
+ class: aDoctrineRoute
+ requirements:
+    guid: '[\w-]+'
+    name: '[\w-]+'
+    sf_method: [PUT]
+
+diagram_delete:
+ url: /:name/:guid
+ options: { model: arLavernaDoc, type: object }
+ param: { module: arVectorialEditor, action: delete}
+ class: aDoctrineRoute
+ requirements:
+    guid: '[\w-]+'
+    name: '[\w-]+'
+    sf_method: [DELETE]
+
+diagram_view:
+ url: /:name/:guid
+ options: { model: arLavernaDoc, type: object }
+ param: { module: arVectorialEditor, action: view}
+ class: aDoctrineRoute
+ requirements:
+    guid: '[\w-]+'
+    name: '[\w-]+'
+    sf_method: [GET]
+
+diagram_create:
+ url: /:name
+ param: { module: arVectorialEditor, action: index}
+ class: aRoute
+ requirements:
+    name: '[\w-]+'
+    sf_method: [GET, POST]
+    
+########################
+# arDocEditor routes   #
+########################
+document_delete:
+ url: /:name/:id
+ param: { module: arDocEditor, action: delete}
+ options: 
+    model: arDoc
+    type: object
+    segment_separators: [/]
+ class: aDoctrineRoute
+ requirements:
+    name: '[\w-]+'
+    id: \d+
+    sf_method: [DELETE]
+    
+document_update:
+ url: /:name/:id
+ param: { module: arDocEditor, action: update}
+ options: 
+    model: arDoc
+    type: object
+    segment_separators: [/]
+ class: aDoctrineRoute
+ requirements:
+    name: '[\w-]+'
+    id: \d+
+    sf_method: [POST]
+    
+document_view:
+ url: /:name/:id
+ param: { module: arDocEditor, action: view}
+ options: 
+    model: arDoc
+    type: object
+    segment_separators: [/]
+ class: aDoctrineRoute
+ requirements:
+    name: '[\w-]+'
+    id: \d+
+    sf_method: [GET]
+
+document_create:
+ url: /:name
+ param: { module: arDocEditor, action: index}
+ class: aRoute
+ requirements:
+    name: '[\w-]+'
+    sf_method: [GET]
+ options:
+    segment_separators: [/]
+
+
+document_cancel:
+ url: /cancel
+ param: { module: arDocEditor, action: cancel}
+ class: aRoute
+ requirements:
+    sf_method: [POST]
+    
+
+    
+document_post_create:
+  url: /postcreate/:id
+  param: { module: arDocEditor, action: postCreate}
+  options: { model: arDoc, type: object }
+  class: aDoctrineRoute
+  requirements:
+    id: \d+
+    sf_method: [POST]
+ 
+document_rename:
+  url: /docrename/:id
+  param: { module: arDocEditor, action: rename}
+  options: { model: arDoc, type: object }
+  class: aDoctrineRoute
+  requirements:
+    id: \d+
+    sf_method: [POST]
+
+
+ 
+document_read:
+  url: /:slug
+  param: { module: arDocEditor, action: readWrite}
+  options: { model: arDoc, type: object }
+  class: aDoctrineRoute
+  requirements:
+    slug: '[\w-]+'
+    sf_method: [GET]

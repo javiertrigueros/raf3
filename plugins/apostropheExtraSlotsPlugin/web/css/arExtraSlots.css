@@ -1,0 +1,10 @@
+.carousel-link
+{
+    width: 100% !important;
+    text-align: center !important;
+}
+
+.carousel-link img {
+   display: block ;
+   margin: auto !important;
+} 

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:oryx="http://www.b3mn.org/oryx"
+   version="1.0">
+  <g>
+    <rect x="0" y="0" width="10" height="280"
+      oryx:anchor="top bottom left right"
+      oryx:resize="vertical horizontal"
+      style="fill:blue;stroke:blue;stroke-width:0;opacity:0.01;" />
+
+    <path
+       id="combotri"
+       oryx:anchor="top bottom left right"
+       oryx:resize="vertical"
+       d="M 5 0 L 5 280"
+       stroke="black" fill="white" stroke-width="2" />
+  </g>
+</svg>

@@ -1,0 +1,232 @@
+.title-vectorial {
+    display: block;
+    float: left;
+    width: 35%;
+}
+
+.diagram-title-group
+{
+  display: block;
+}
+
+.buttons-group li i,
+.buttons-group li
+{
+  opacity: 0.7;
+}
+
+.buttons-group li:hover i,
+.buttons-group li:hover
+{
+  color: #000;
+  opacity: 1;
+}
+
+.x-panel-body ul.panel-group 
+{
+  float:left;
+  display:block;
+  clear:both;
+}
+.x-panel-body ul.panel-group li
+{
+  float:left; 
+  margin-left: 14px;
+}
+
+.x-panel-body ul.panel-group li:hover
+{
+  cursor:pointer;
+}
+
+.x-panel-editor-north
+{
+  background-color: #f6f6f6;
+}
+
+.x-panel-header-text,
+.x-toolbar
+{
+   display:none !important; 
+}
+
+.orxy-diagram
+{
+  margin-top: -4px !important;  
+}
+
+.icon-move_front,
+.icon-move_back,
+.icon-move_forwards,
+.icon-move_backwards,
+.icon-aling_bottom,
+.icon-aling_middle,
+.icon-aling_top,
+.icon-aling_left,
+.icon-aling_center,
+.icon-aling_right,
+.icon-aling_size,
+.icon-shape_group,
+.icon-shape_ungroup,
+.editor_save
+{
+  color: #555555 !important;
+  margin-top: 4px;
+  line-height: 32px;
+  display: block;
+  width:   24px;
+  height:  24px;
+  text-indent: -9999px;
+  background: url("/arquematicsDocumentsPlugin/images/icon-sprites.png") no-repeat scroll 0 0 transparent;
+}
+
+.buttons-save-group
+{
+  margin-top: 6px;
+  margin-right: 8px;
+}
+
+.buttons-group
+{
+  margin-top: 8px;
+  margin-right: 6px;
+}
+
+.input-group
+{
+  margin-top: 11px;
+}
+
+.buttons-group li i.icon-cancel
+{
+  font-size: 32px;
+}
+
+.icon-move_front
+{
+  background-position: -144px -24px;  
+}
+.icon-move_front:hover
+{
+  background-position: -144px 0px;    
+}
+
+.icon-move_back
+{
+  background-position: -168px -24px;  
+}
+.icon-move_back:hover
+{
+  background-position: -168px 0px;  
+}
+
+.icon-move_forwards
+{
+  background-position: -192px -24px;  
+}
+.icon-move_forwards:hover
+{
+  background-position: -192px 0px;  
+}
+
+.icon-move_backwards
+{
+  background-position: -216px -24px;  
+}
+.icon-move_backwards:hover
+{
+  background-position: -216px 0px;   
+}
+
+.icon-aling_bottom
+{
+  background-position: -240px -24px;  
+}
+.icon-aling_bottom:hover
+{
+  background-position: -240px 0px;   
+}
+
+.icon-aling_middle
+{
+  background-position: -264px -24px;  
+}
+.icon-aling_middle:hover
+{
+  background-position: -264px 0px;    
+}
+
+.icon-aling_top
+{
+  background-position: -288px -24px;  
+}
+.icon-aling_top:hover
+{
+  background-position: -288px 0px;     
+}
+
+.icon-aling_left
+{
+  background-position: -312px -24px;  
+}
+.icon-aling_left:hover
+{
+  background-position: -312px 0px;  
+}
+
+.icon-aling_center
+{
+  background-position: -336px -24px;  
+}
+.icon-aling_center:hover
+{
+  background-position: -336px 0px;    
+}
+
+.icon-aling_right
+{
+  background-position: -360px -24px;  
+}
+.icon-aling_right:hover
+{
+  background-position: -360px 0px;   
+}
+
+.icon-aling_size
+{
+  background-position: -384px -24px;  
+}
+.icon-aling_size:hover
+{
+  background-position: -384px 0px;  
+}
+
+.icon-shape_group
+{
+  background-position: -408px -24px;  
+}
+.icon-shape_group:hover
+{
+  background-position: -408px 0px;  
+}
+
+.icon-shape_ungroup
+{
+  background-position: -432px -24px;  
+}
+.icon-shape_ungroup:hover
+{
+  background-position: -432px 0px;  
+}
+
+.editor_save_in,
+.editor_save
+{
+  background-position: -456px -24px;  
+}
+
+.editor_save_over,
+.editor_save:hover
+{
+  background-position: -456px 0px;  
+}

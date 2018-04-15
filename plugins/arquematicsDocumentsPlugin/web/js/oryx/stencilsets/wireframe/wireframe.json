@@ -1,0 +1,941 @@
+{
+	"title":"WIREFRAME",
+	"namespace":"http://b3mn.org/stencilset/wireframe#",
+	"description":"Simple stencil set mockups.",
+	"stencils": [
+		{
+			"type":			"node",
+			"id":			"Diagram",
+			"title":		"Diagram",	
+			"groups":		["Diagram"],
+			"description":	"Wireframe",
+			"view":			"node.diagram.svg",
+			"icon":			"diagram.png",
+			"roles":		[]
+		},
+
+		{
+			"type":			"node",
+			"id":			"browser",
+			"title":		"Browser",
+			"title_es":		"Navegador",	
+			"groups":		["Layouts"],
+			"groups_es":	["Layouts"],
+			"description":		"Browser",
+			"description_es":	"Navegador",
+			"view":			"node.browser.svg",
+			"refToView":	"textInput",
+			"icon":			"node.complexinteraction.png",
+			"roles":		["layouts", "annotatable", "class"],
+			"layout" : [
+				{
+					"type" : "layout.wireframe.browser"
+				}
+			],
+			"properties": [
+				{
+					"id":		"textInputItem",
+					"type":		"String",
+					"title":	"URL",
+					"value":	"http://",
+					"description":"URL",
+					"readonly":	false,
+					"optional":	true,
+					"length":	"",
+					"refToView":"textInputItem",
+					"wrapLines":false
+				}
+			]
+		},
+
+		{
+			"type":				"node",
+			"id":				"mobile",
+			"title":			"Mobile",
+			"title_es":			"M&oacute;vil",	
+			"groups":			["Layouts"],
+			"groups_es":		["Layouts"],
+			"description":		"Mobile",
+			"description_es":	"Móvil",
+			"view":				"node.mobile.svg",
+			"icon":				"node.mobile.png",
+			"refToView":		"textInput",
+			"roles":			["layouts", "annotatable", "class"],
+			"layout" : [
+				{
+					"type" : "layout.wireframe.movile"
+				}
+			],
+			"properties": [
+				{
+					"id":		"textInputItem",
+					"type":		"String",
+					"title":	"URL",
+					"value":	"http://",
+					"description":"URL",
+					"readonly":	false,
+					"optional":	true,
+					"length":	"",
+					"refToView":"textInputItem",
+					"wrapLines":false
+				}
+			]
+		},
+
+		{
+			"type":			"node",
+			"id":			"note",
+			"title":		"Stick note",
+			"title_es":		"Nota adhesiva",	
+			"groups":		["Annotation"],
+			"groups":		["Anotación"],
+			"description":		"Stick note",
+			"description_es":	"Nota adhesiva",
+			"view":			"node.note.svg",
+			"icon":			"node.note.png",
+			"roles":		["annotation"],
+			"properties" : [
+				{
+					"id" : "text",
+					"type" : "String",
+					"title" : "Text",
+					"value" : "",
+					"refToView" : "text",
+					"wrapLines":true
+				}
+			]
+		},
+
+		{
+			"type" : "edge",
+			"id" : "Annotation Edge",
+			"title" : 		"Stick note connection",
+			"title_es" : 	"Conexión nota adhesiva",
+			"groups":		["Annotation"],
+			"groups":		["Anotación"],
+			"description" : "",
+			"view" : "edge.annotation.svg",
+			"icon" : "edge.annotation.png",
+			"roles" : ["annotationEdge"]
+		},
+                
+                {
+			"type" : "edge",
+			"id" : "Annotation Test Edge",
+			"title" : 	"Stick test note connection",
+			"title_es" : 	"Conexión test nota adhesiva",
+			"groups":		["Annotation"],
+			"groups":		["Anotación"],
+			"description" : "",
+			"view" : "edge.annotation.test.svg",
+			"icon" : "edge.annotation.png",
+			"roles" : ["annotationEdge"]
+		},
+                
+		{
+			"type":			"node",
+			"id":			"scrollbarh",
+			"title":		"Scrollbar Horizontal",	
+			"groups":		["Scroll"],
+			"description":	"Scrollbar Horizontal",
+			"view":			"node.scrollbarh.svg",
+			"icon":			"node.scrollbarh.png",
+			"roles":		["scroll", "annotatable", "class"]
+		},
+
+		{
+			"type":			"node",
+			"id":			"scrollbarv",
+			"title":		"Scrollbar Vertical",	
+			"groups":		["Scroll"],
+			"description":	"Scrollbar Vertical",
+			"view":			"node.scrollbarv.svg",
+			"icon":			"node.scrollbarv.png",
+			"roles":		["scroll", "annotatable", "class"]
+		},
+
+		{
+			"type":				"node",
+			"id":				"navbar",
+			"title":			"Navbar",
+			"title_es":			"Barra de navegación",	
+			"groups":			["Navbars"],
+			"groups_es":		["Navegación"],
+			"description":		"Barra de navegación",
+			"view":				"node.navbar.svg",
+			"icon":				"node.navbar.png",
+			"roles":			["navbar", "annotatable", "class"],
+			"properties": []
+		},
+
+		{
+			"type":				"node",
+			"id":				"navitem",
+			"title":			"Nav Item",
+			"title_es":			"Enlace barra de navegación",		
+			"groups":			["Navbars"],
+			"groups_es":		["Navegación"],
+			"description":		"Nav Item",
+			"description_es":	"Enlace barra de navegación",
+			"view":				"node.navitem.svg",
+			"icon":				"node.navitem.png",
+			"roles":			["navmenu", "annotatable", "class"],
+			"properties": [
+				{
+					"id":		"textNavItem",
+					"type":		"String",
+					"title":	"Label",
+					"value":	"NavItem",
+					"description":"",
+					"readonly":	false,
+					"optional":	true,
+					"length":	"",
+					"refToView":"textNavItem",
+					"wrapLines":false
+				}
+			]
+		},
+
+		{
+			"type":				"node",
+			"id":				"breadcrumb",
+			"title":			"Breadcrumb",
+			"title_es":			"Breadcrumb",
+			"groups":			["Navbars"],
+			"groups_es":		["Navegación"],
+			"description":		"Breadcrumb",
+			"description_es":	"Breadcrumb",
+			"view":				"node.navbar.svg",
+			"icon":				"node.navbar.png",
+			"roles":			["breadcrumb", "annotatable", "class"],
+			"properties": []
+		},
+
+		{
+			"type":				"node",
+			"id":				"breaditem",
+			"title":			"Breadcrumb Item",
+			"title_es":			"Enlace breadcrumb",
+			"groups":			["Navbars"],
+			"groups_es":		["Navegación"],
+			"description":		"Bread Item",
+			"description_es":	"Bread Item",
+			"view":				"node.breaditem.svg",
+			"icon":				"node.breaditem.png",
+			"roles":			["breadmenu", "annotatable", "class"],
+			"properties": [
+				{
+					"id":		"textBreadItem",
+					"type":		"String",
+					"title":	"Label",
+					"value":	"BreadItem",
+					"description":"",
+					"readonly":	false,
+					"optional":	true,
+					"length":	"",
+					"refToView":"textBreadItem",
+					"wrapLines":false
+				}
+			]
+		},
+
+		{
+			"type":			"node",
+			"id":			"dropdown",
+			"title":		"Dropdown",	
+			"title_es":		"Menu desplegable",
+			"groups":		["Navbars", "Components"],
+			"groups_es":		["Navegación", "Componentes"],
+			"description":		"Button Dropdown",
+			"description_es":	"Menu desplegable",
+			"view":			"node.dropdown.svg",
+			"icon":			"node.dropdown.png",
+			"roles":		["navmenu", "components", "annotatable", "class"],
+			"properties": [
+				{
+					"id" : "textDropdown",
+					"type" : "String",
+					"title" : "Name",
+					"title_es" : "Nombre",
+					"value" : "Dropdown",
+					"refToView" : "textDropdown"
+				},
+				{
+					"id" : "items",
+					"type" 		: "String",
+					"title" 	: "Items",
+					"title_es" 	: "Elementos Menu",
+					"value" 	: "",
+					"refToView" : "items",
+					"wrapLines" : true
+				}
+			]
+		},
+
+		{
+			"type":			"node",
+			"id":			"brandimage",
+			"title":		"Brand image",
+			"title_es":		"Imagen de la marca/logo",	
+			"groups":		["Navbars"],
+			"groups_es":	["Navegación"],
+			"description":		"Brand image",
+			"description_es":	"Imagen marca/logo",
+			"view":			"node.brandimage.svg",
+			"icon":			"node.brandimage.png",
+			"roles":		["navmenu", "annotatable", "class"],
+			"properties": []
+		},
+
+		
+
+		{
+			"type":			"node",
+			"id":			"slider",
+			"title":		"Slider",	
+			"groups":			["Components"],
+			"groups_es":		["Componentes"],
+			"description":		"Slider",
+			"description_es":	"Slider",
+			"view":			"node.slider.svg",
+			"icon":			"node.slider.png",
+			"roles":		["components", "annotatable", "class"],
+			"properties": []
+		},
+
+		{
+			"type":				"node",
+			"id":				"pagination",
+			"title":			"Pagination",
+			"title_es":			"Paginación",	
+			"groups":			["Components"],
+			"groups_es":		["Componentes"],
+			"description":		"Pagination",
+			"description_es":	"Paginación",
+			"view":				"node.pagination.svg",
+			"icon":				"node.pagination.png",
+			"roles":			["components", "annotatable", "class"],
+			"properties": []
+		},
+
+		{
+			"type":				"node",
+			"id":				"progressbar",
+			"title":			"Progressbar",
+			"title_es":			"Barra de progreso",
+			"groups":			["Components"],
+			"groups_es":		["Componentes"],
+			"description":		"Progressbar",
+			"description_es":	"Barra de progreso",
+			"view":				"node.progressbar.svg",
+			"icon":				"node.progressbar.png",
+			"roles":			["components","annotatable", "class"],
+			"properties": []
+		},
+
+		{
+			"type":				"node",
+			"id":				"carousel",
+			"title":			"Carousel",
+			"title_es":			"Carrusel",
+			"groups":			["Components"],
+			"groups_es":		["Componentes"],
+			"description":		"Carousel",
+			"description_es":	"Carrusel",
+			"view":			"node.carousel.svg",
+			"icon":			"node.carousel.png",
+			"roles":		["components","annotatable", "class"],
+			"layout" : [
+				{
+					"type" : "layout.wireframe.carousel"
+				}
+			],
+			"properties": []
+		},
+
+		{
+			"type":				"node",
+			"id":				"video",
+			"title":			"Video",
+			"title_es":			"Vídeo",		
+			"groups":			["Components"],
+			"groups_es":		["Componentes"],
+			"description":		"Video",
+			"description_es":	"Vídeo",
+			"view":				"node.embedvideo.svg",
+			"icon":				"node.embedvideo.png",
+			"roles":			["components", "annotatable", "class"],
+			"properties": []
+		},
+
+		{
+			"type":				"node",
+			"id":				"map",
+			"title":			"Map",
+			"title_es":			"Mapa",		
+			"groups":			["Components"],
+			"groups_es":		["Componentes"],
+			"description":		"Map",
+			"description_es":	"Mapa",
+			"view":				"node.googlemap.svg",
+			"icon":				"node.googlemap.png",
+			"roles":			["components", "annotatable", "class"],
+			"properties": []
+		},
+
+		{
+			"type":					"node",
+			"id":					"box",
+			"title":				"Square",	
+			"title_es":				"Cuadrado",	
+			"groups":				["Drawing"],
+			"groups_es":			["Dibujo"],
+			"description":			"Square",
+			"description_es":		"Cuadrado",
+			"view":					"node.box.svg",
+			"icon":					"node.box.png",
+			"roles":				["container","drawing", "annotatable", "class"],
+			"properties": []
+		},
+
+		{
+			"type":				"node",
+			"id":				"linev",
+			"title":			"Line vertical",
+			"title_es":			"L&iacute;nea vertical",	
+			"groups":			["Drawing"],
+			"groups_es":		["Dibujo"],
+			"description":		"Line vertical",
+			"description_es":	"L&iacute;nea vertical",
+			"view":				"node.linev.svg",
+			"icon":				"node.linev.png",
+			"roles":			["drawing", "annotatable", "class"],
+			"properties": []
+		},
+
+		{
+			"type":				"node",
+			"id":				"lineh",
+			"title":			"Line horizontal",
+			"title_es":			"L&iacute;nea horizontal",	
+			"groups":			["Drawing"],
+			"groups_es":		["Dibujo"],
+			"description":		"Line horizontal",
+			"description_es":	"Línea horizontal",
+			"view":				"node.lineh.svg",
+			"icon":				"node.lineh.png",
+			"roles":			["drawing", "annotatable", "class"],
+			"properties": []
+		},
+
+		{
+			"type":				"node",
+			"id":				"squareImage",
+			"title":			"Square image",
+			"title_es":			"Imagen cuadrada",	
+			"groups":			["Images"],
+			"groups_es":		["Imagenes"],
+			"description":		"Square Image",
+			"description_es":	"Imagen cuadrada",
+			"view":				"node.image.square.svg",
+			"icon":				"node.image.square.png",
+			"roles":			["images","annotatable", "class"],
+			"properties": []
+		},
+
+		{
+			"type":				"node",
+			"id":				"circleImage",
+			"title":			"Circle image",	
+			"title_es":			"Imagen circular",	
+			"groups":			["Images"],
+			"groups_es":		["Imagenes"],
+			"description":		"Circle image",
+			"description_es":	"Imagen circular",
+			"view":			"node.image.circle.svg",
+			"icon":			"node.image.circle.png",
+			"roles":		["images", "annotatable", "class"],
+			"properties": []
+		},
+
+		{
+			"type":			"node",
+			"id":			"h1",
+			"title":		"Header 1",
+			"title_es":		"Header 1",	
+			"groups":		["Typography"],
+			"groups_es":	["Tipografía"],
+			"description":	"Headline",
+			"view":			"node.h1.svg",
+			"icon":			"node.h1.png",
+			"roles":		["typography", "annotatable", "class"],
+			"properties": []
+		},
+
+		{
+			"type":			"node",
+			"id":			"h2",
+			"title":		"Header 2",
+			"title_es":		"Header 2",	
+			"groups":		["Typography"],
+			"groups_es":	["Tipografía"],
+			"description":	"Headline",
+			"view":			"node.h2.svg",
+			"icon":			"node.h2.png",
+			"roles":		["typography", "annotatable", "class"],
+			"properties": []
+		},
+
+		{
+			"type":			"node",
+			"id":			"h3",
+			"title":		"Header 3",
+			"title_es":		"Header 3",	
+			"groups":		["Typography"],
+			"groups_es":	["Tipografía"],
+			"description":	"Headline",
+			"view":			"node.h3.svg",
+			"icon":			"node.h3.png",
+			"roles":		["typography", "annotatable", "class"],
+			"properties": []
+		},
+
+
+
+		{
+			"type":			"node",
+			"id":			"paragraph",
+			"title":		"Paragraph",
+			"title_es":		"P&aacute;rrafo",
+			"groups":		["Typography"],
+			"groups_es":	["Tipografía"],
+			"description":	"Paragraph",
+			"view":			"node.paragraph.svg",
+			"icon":			"node.p1.png",
+			"roles":		["typography", "annotatable", "class"],
+			"properties": []
+		},
+
+		{
+			"type":					"node",
+			"id":					"itemList",
+			"title":				"List",	
+			"title_es":				"Lista",	
+			"groups":				["Typography"],
+			"groups_es":			["Tipografía"],
+			"description":			"List",
+			"description_es":		"Lista",
+			"view":					"node.itemlist.svg",
+			"icon":					"node.itemlist.png",
+			"roles":				["typography", "annotatable", "class"],
+			"properties": []
+		},
+
+		{
+			"type":			"node",
+			"id":			"combobox",
+			"title":		"Combo Box",
+			"title_es":		"Combo Box",	
+			"groups":			["Forms"],
+			"groups_es":		["Formularios"],
+			"description":	"Combo Box",
+			"view":			"node.combobox.svg",
+			"icon":			"node.combobox.png",
+			"roles":		["forms", "annotatable", "class"],
+			"properties": [
+				{
+					"id":		"guardCondition",
+					"type":		"String",
+					"title":	"Guard Condition",
+					"value":	"",
+					"description":"",
+					"readonly":	false,
+					"optional":	true,
+					"length":	"",
+					"refToView":"guardConditionText",
+					"wrapLines":false
+				}
+			]
+		},
+
+		{
+			"type":			"node",
+			"id":			"Text",
+			"title":		"Text label",
+			"title_es":		"Etiqueta de texto",	
+			"groups":		["Forms"],
+			"groups_es":	["Formularios"],
+			"description":		"Text Label",
+			"description_es":	"Etiqueta de texto",
+			"view":			"node.text.svg",
+			"icon":			"node.text.png",
+			"roles":		["forms", "annotatable", "class"],
+			"properties": [
+				{
+					"id":		"guardCondition",
+					"type":		"String",
+					"title":	"Guard Condition",
+					"value":	"Sample label",
+					"description":"",
+					"readonly":	false,
+					"optional":	true,
+					"length":	"",
+					"refToView":"guardConditionText",
+					"wrapLines":false
+				}
+			]
+		},
+
+		{
+			"type":			"node",
+			"id":			"textinput",
+			"title":		"Input box",
+			"title_es":		"Input box",		
+			"groups":		["Forms"],
+			"groups_es":	["Formularios"],
+			"description":	"Input box",
+			"description":	"Input box",
+			"view":			"node.textinput.svg",
+			"icon":			"node.textinput.png",
+			"roles":		["forms", "annotatable", "class"],
+			"properties": [
+				{
+					"id":		"guardCondition",
+					"type":		"String",
+					"title":	"Guard Condition",
+					"value":	"",
+					"description":"",
+					"readonly":	false,
+					"optional":	true,
+					"length":	"",
+					"refToView":"guardConditionText",
+					"wrapLines":false
+				}
+			]
+		},
+
+		{
+			"type":			"node",
+			"id":			"textarea",
+			"title":		"Text area",
+			"title_es":		"Text area",	
+			"groups":		["Forms"],
+			"groups_es":	["Formularios"],
+			"description":		"Text area",
+			"description_es":	"Text area",
+			"view":			"node.textarea.svg",
+			"icon":			"node.textarea.png",
+			"roles":		["forms", "annotatable", "class"],
+			"properties": [
+				{
+					"id":		"guardCondition",
+					"type":		"String",
+					"title":	"Guard Condition",
+					"value":	"",
+					"description":"",
+					"readonly":	false,
+					"optional":	true,
+					"length":	"",
+					"refToView":"guardConditionText",
+					"wrapLines":false
+				}
+			]
+		},
+
+		{
+			"type":				"node",
+			"id":				"radio",
+			"title":			"Radio button",
+			"title_es":			"Radio button",	
+			"groups":			["Forms"],
+			"groups_es":		["Formularios"],
+			"description":		"Radio button",
+			"description_es":	"Boton selección unica",
+			"view":				"node.radio.svg",
+			"icon":				"node.radio.png",
+			"roles":			["forms", "annotatable", "class"],
+			"properties": [
+				{
+					"id":		"guardCondition",
+					"type":		"String",
+					"title":	"Radio text",
+					"value":	"Radio text",
+					"description":"Radio text",
+					"readonly":	false,
+					"optional":	true,
+					"length":	"",
+					"refToView":"guardConditionText",
+					"wrapLines":false
+				}
+			]
+		},
+
+		{
+			"type":			"node",
+			"id":			"checkbox",
+			"title":		"Check box",
+			"title_es":		"Check box",	
+			"groups":		["Forms"],
+			"groups_es":	["Formularios"],
+			"description":		"Check box",
+			"description_es":	"Check box",
+			"view":			"node.checkbox.svg",
+			"icon":			"node.checkbox.png",
+			"roles":		["forms", "annotatable", "class"],
+			"properties": [
+				{
+					"id":		"guardCondition",
+					"type":		"String",
+					"title":	"Guard Condition",
+					"value":	"Checkbox text",
+					"description":"",
+					"readonly":	false,
+					"optional":	true,
+					"length":	"",
+					"refToView":"guardConditionText",
+					"wrapLines":false
+				}
+			]
+		},
+
+		{
+			"type":				"node",
+			"id":				"buttondef",
+			"title":			"Default",
+			"title_es":			"Normal",	
+			"groups":			["Buttons"],
+			"groups_es":		["Botones"],
+			"description":		"Default",
+			"description_es":	"Normal",
+			"view":				"node.button.default.svg",
+			"icon":				"node.button.default.png",
+			"roles":			["buttons", "annotatable", "class"],
+			"properties": [
+				{
+					"id":		"guardCondition",
+					"type":		"String",
+					"title":	"Guard Condition",
+					"value":	"",
+					"description":"",
+					"readonly":	false,
+					"optional":	true,
+					"length":	"",
+					"refToView":"guardConditionText",
+					"wrapLines":false
+				}
+			]
+		},
+
+		{
+			"type":				"node",
+			"id":				"buttonpri",
+			"title":			"Primary",
+			"title_es":			"Principal",	
+			"groups":			["Buttons"],
+			"groups_es":		["Botones"],
+			"description":		"Primary",
+			"description_es":	"Principal",
+			"view":				"node.button.primary.svg",
+			"icon":				"node.button.primary.png",
+			"roles":			["buttons", "annotatable", "class"],
+			"properties": [
+				{
+					"id":		"guardCondition",
+					"type":		"String",
+					"title":	"Guard Condition",
+					"value":	"",
+					"description":"",
+					"readonly":	false,
+					"optional":	true,
+					"length":	"",
+					"refToView":"guardConditionText",
+					"wrapLines":false
+				}
+			]
+		},
+
+		{
+			"type":				"node",
+			"id":				"buttonsuccess",
+			"title":			"Success",
+			"title_es":			"Aceptar",	
+			"groups":			["Buttons"],
+			"groups_es":		["Botones"],
+			"description":		"Success",
+			"description_es":	"Aceptar",
+			"view":				"node.button.success.svg",
+			"icon":				"node.button.success.png",
+			"roles":			["buttons" ,"annotatable", "class"],
+			"properties": [
+				{
+					"id":		"guardCondition",
+					"type":		"String",
+					"title":	"Guard Condition",
+					"value":	"",
+					"description":"",
+					"readonly":	false,
+					"optional":	true,
+					"length":	"",
+					"refToView":"guardConditionText",
+					"wrapLines":false
+				}
+			]
+		},
+
+		{
+			"type":				"node",
+			"id":				"buttoninfo",
+			"title":			"Info",
+			"title_es":			"Información",	
+			"groups":			["Buttons"],
+			"groups_es":		["Botones"],
+			"description":		"Info",
+			"description_es":	"Información",
+			"view":				"node.button.info.svg",
+			"icon":				"node.button.info.png",
+			"roles":			["buttons", "annotatable", "class"],
+			"properties": [
+				{
+					"id":		"guardCondition",
+					"type":		"String",
+					"title":	"Guard Condition",
+					"value":	"",
+					"description":"",
+					"readonly":	false,
+					"optional":	true,
+					"length":	"",
+					"refToView":"guardConditionText",
+					"wrapLines":false
+				}
+			]
+		},
+
+		{
+			"type":				"node",
+			"id":				"buttonwarning",
+			"title":			"Warning",
+			"title_es":			"Advertencia",	
+			"groups":			["Buttons"],
+			"groups_es":		["Botones"],
+			"description":		"Warning",
+			"description_es":	"Advertencia",
+			"view":				"node.button.warning.svg",
+			"icon":				"node.button.warning.png",
+			"roles":			["buttons" ,"annotatable", "class"],
+			"properties": [
+				{
+					"id":		"guardCondition",
+					"type":		"String",
+					"title":	"Guard Condition",
+					"value":	"",
+					"description":"",
+					"readonly":	false,
+					"optional":	true,
+					"length":	"",
+					"refToView":"guardConditionText",
+					"wrapLines":false
+				}
+			]
+		},
+
+		{
+			"type":				"node",
+			"id":				"buttondanger",
+			"title":			"Danger",
+			"title_es":			"Peligro",	
+			"groups":			["Buttons"],
+			"groups_es":		["Botones"],
+			"description":		"Danger",
+			"description_es":	"Peligro",
+			"view":				"node.button.danger.svg",
+			"icon":				"node.button.danger.png",
+			"roles":			["buttons", "annotatable", "class"],
+			"properties": [
+				{
+					"id":		"guardCondition",
+					"type":		"String",
+					"title":	"Guard Condition",
+					"value":	"",
+					"description":"",
+					"readonly":	false,
+					"optional":	true,
+					"length":	"",
+					"refToView":"guardConditionText",
+					"wrapLines":false
+				}
+			]
+		}
+
+
+	],
+	"rules":{
+
+		"connectionRules": [
+
+			{
+				"role" : "annotationEdge",
+				"connects" : [
+					{ "from" : "annotatable",
+					    "to" : "annotation" }
+				]
+			}
+ 		],
+
+		"containmentRules":	[
+			{
+				"role":	 "Diagram",
+				"contains": [
+					"layouts",
+					"annotation"
+				]
+			},
+			{
+				"role":		"layouts",
+				"contains": [
+					"breadcrumb",
+					"components",
+					"drawing",
+					"images",
+					"navbar",
+					"forms",
+					"typography",
+					"submenu",
+					"buttons",
+					"annotation",
+					"scroll"
+				]
+			},
+
+			{
+				"role":		"container",
+				"contains": [
+					"components",
+					"drawing",
+					"images",
+					"forms",
+					"typography",
+					"buttons",
+					"annotation"
+				]
+			},
+
+			{
+				"role":		"navbar",
+				"contains": [
+					"navmenu",
+					"buttons",
+					"forms"
+				]
+			},
+
+			{
+				"role":		"breadcrumb",
+				"contains": [
+					"breadmenu"
+				]
+			}
+
+		]
+		
+	}
+}

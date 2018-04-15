@@ -1,0 +1,3 @@
+[submodule "lib/vendor/yapl4twitter"]
+	path = lib/vendor/yapl4twitter
+	url = git@github.com:mycroft/yapl4twitter.git

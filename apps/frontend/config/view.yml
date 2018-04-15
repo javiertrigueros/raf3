@@ -1,0 +1,13 @@
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        <tu titulo>
+    #description:  symfony project
+    #keywords:     symfony, project
+    #language:     en
+    #robots:       index, follow
+
+  has_layout:     true
+  layout:         layout

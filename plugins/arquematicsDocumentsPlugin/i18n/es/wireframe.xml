@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd" >
+<xliff version="1.0">
+  <file original="global" source-language="en" target-language="es" datatype="plaintext">
+    <header />
+    <body>
+        
+       <trans-unit>
+        <source>Copy</source>
+        <target>Copiar</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Cut</source>
+        <target>Cortar</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Paste</source>
+        <target>Pegar</target>
+      </trans-unit>
+      
+       <trans-unit>
+        <source>Delete</source>
+        <target>Borrar</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Redo</source>
+        <target>Restablecer</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Undo</source>
+        <target>Anular</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>In the Spotlight</source>
+        <target>Al primer plano</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>In the background</source>
+        <target>Al fondo</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>One level up</source>
+        <target>Un nivél arriba</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>One level down</source>
+        <target>Un nivél abajo</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Align Bottom</source>
+        <target>Alinear abajo</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Align centered on the horizontal axis</source>
+        <target>Alinear centrado en el eje horizontal</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Align Top</source>
+        <target>Alinear arriba</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Align Left</source>
+        <target>Alinear a la izquierda</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Align centered on the vertical axis</source>
+        <target>Alinear centrado en el eje vertical</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Align Right</source>
+        <target>Alinear a la derecha</target>
+      </trans-unit>
+     
+      <trans-unit>
+        <source>Align same size</source>
+        <target>Alinear al mismo tamaño</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Group</source>
+        <target>Agrupar</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Ungroup</source>
+        <target>Desagrupar</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Save and exit</source>
+        <target>Guardar y salir</target>
+      </trans-unit>
+      
+    </body>
+  </file>
+</xliff>

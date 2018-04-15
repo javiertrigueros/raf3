@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd" >
+<xliff version="1.0">
+  <file original="global" source-language="en" target-language="en" datatype="plaintext">
+    <header />
+    <body>
+      <trans-unit>
+        <source>Add Content</source>
+        <target>Add Content</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Draft</source>
+        <target>Draft</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Update</source>
+        <target>Update</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Save</source>
+        <target>Save</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Status</source>
+        <target>Status</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Author</source>
+        <target>Author</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Editors</source>
+        <target>Editors</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Template</source>
+        <target>Template</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Allow Comments</source>
+        <target>Allow Comments</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Categories</source>
+        <target>Categories</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Set by admin:</source>
+        <target>Set by admin:</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Tags</source>
+        <target>Tags</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Preview</source>
+        <target>Preview</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Delete Post</source>
+        <target>Delete Post</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Are you sure? You want to delete this post?</source>
+        <target>Are you sure? You want to delete this post?</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Choose Editors</source>
+        <target>Choose Editors</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Choose Categories</source>
+        <target>Choose Categories</target>
+      </trans-unit>
+      <trans-unit>
+        <source>+ New Category</source>
+        <target>+ New Category</target>
+      </trans-unit>
+      <trans-unit>
+        <source>You are changing template. Be sure to save any changes.</source>
+        <target>You are changing template. Be sure to save any changes.</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Allow others to edit this post</source>
+        <target>Allow others to edit this post</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Add Tag</source>
+        <target>Add Tag</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Add</source>
+        <target>Add</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Publication scheduled</source>
+        <target>Publication scheduled</target>
+      </trans-unit>
+       <trans-unit>
+        <source>Published</source>
+        <target>Published</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Posted By:</source>
+        <target>Posted By:</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Tags:</source>
+        <target>Tags:</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Categories:</source>
+        <target>Categories:</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Add new category</source>
+        <target>Add new category</target>
+      </trans-unit>
+       <trans-unit>
+        <source>Add new tag</source>
+        <target>Add new tag</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Select categories</source>
+        <target>Select categories</target>
+      </trans-unit>
+       <trans-unit>
+        <source>Selected</source>
+        <target>Selected</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Publish</source>
+        <target>Publish</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Edit</source>
+        <target>Edit</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Publish now</source>
+        <target>Publish now</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Scheduled on %time%</source>
+        <target>Scheduled on %time%</target>
+      </trans-unit>
+       <trans-unit>
+        <source>Scheduled on</source>
+        <target>Scheduled on</target>
+      </trans-unit>
+       <trans-unit>
+        <source>Published %time%</source>
+        <target>Published %time%</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Published</source>
+        <target>Published</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Accept</source>
+        <target>Accept</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Start date</source>
+        <target>Start date</target>
+      </trans-unit>
+      <trans-unit>
+        <source>End date</source>
+        <target>End date</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Add end date</source>
+        <target>Add end date</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Remove end date</source>
+        <target>Remove end date</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Undefined start date</source>
+        <target>Undefined start date</target>
+      </trans-unit>
+      
+       <trans-unit>
+        <source>Start date %datetime%</source>
+        <target>Start date %datetime%</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>End date %datetime%</source>
+        <target>End date %datetime%</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>The selected items have been published successfully.</source>
+        <target>The selected items have been published successfully.</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>The selected items have been unpublished successfully.</source>
+        <target>The selected items have been unpublished successfully.</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>draft</source>
+        <target>draft</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>published</source>
+        <target>published</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>schedule</source>
+        <target>schedule</target>
+      </trans-unit>
+      
+     
+      <trans-unit>
+        <source>Confirm Delete</source>
+        <target>Confirm Delete</target>
+      </trans-unit>
+      
+      
+      <trans-unit>
+        <source>You want to delete post %item%?</source>
+        <target>You want to delete post %item%?</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>You want to delete event "%item%"?</source>
+        <target>You want to delete event "%item%"?</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Accept</source>
+        <target>Accept</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Cancel</source>
+        <target>Cancel</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Deleting...</source>
+        <target>Deleting...</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Deleting multiple post</source>
+        <target>Deleting multiple post</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Deleting multiple events</source>
+        <target>Deleting multiple events</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Read More</source>
+        <target>Read More</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Edit this entry</source>
+        <target>Edit this entry</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Enabled</source>
+        <target>Enabled</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Disabled</source>
+        <target>Disabled</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Comments</source>
+        <target>Comments</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Leave a Comment</source>
+        <target>Leave a Comment</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Logged in as %user%</source>
+        <target>Logged in as %user%</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Want to go out?</source>
+        <target>Want to go out?</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Submit</source>
+        <target>Submit</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>You can use these HTML tags and attributes:</source>
+        <target>You can use these HTML tags and attributes:</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Comment</source>
+        <target>Comment</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Cancel reply</source>
+        <target>Cancel reply</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Your email address will not be published.</source>
+        <target>Your email address will not be published.</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Required fields are marked *</source>
+        <target>Required fields are marked *</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>E-mail</source>
+        <target>E-mail</target>
+      </trans-unit>
+      
+       <trans-unit>
+        <source>Web</source>
+        <target>Web</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Name</source>
+        <target>Name</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Reply</source>
+        <target>Reply</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Cancel Reply</source>
+        <target>Cancel Reply</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Comments</source>
+        <target>Comments</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Your comment is awaiting moderation.</source>
+        <target>Your comment is awaiting moderation.</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>One comment is awaiting moderation</source>
+        <target>One comment is awaiting moderation</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>%comments% comments are awaiting moderation</source>
+        <target>%comments% comments are awaiting moderation</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Approved</source>
+        <target>Approved</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Pending</source>
+        <target>Pending</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Delete</source>
+        <target>Delete</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Choose an action</source>
+        <target>Choose an action</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Go</source>
+        <target>Go</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>The selected items have been changed status to pending successfully.</source>
+        <target>The selected items have been changed status to pending successfully.</target>
+      </trans-unit>
+      
+       <trans-unit>
+        <source>The selected items have been changed status to pending successfully.</source>
+        <target>The selected items have been changed status to pending successfully.</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>The selected items have been approved successfully.</source>
+        <target>The selected items have been approved successfully.</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>You want to delete comment?</source>
+        <target>You want to delete comment?</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Created at</source>
+        <target>Created at</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Delete ${count} comments. Are you sure?</source>
+        <target>Delete ${count} comments. Are you sure?</target>
+      </trans-unit>
+      
+       <trans-unit>
+        <source>n categories selected</source>
+        <target>{0} categories selected</target>
+      </trans-unit>
+      
+       <trans-unit>
+        <source>Save draft</source>
+        <target>Save draft</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Su</source>
+        <target>Su</target>
+      </trans-unit>
+     
+     <trans-unit>
+        <source>M</source>
+        <target>M</target>
+     </trans-unit>
+      
+     <trans-unit>
+        <source>T</source>
+        <target>T</target>
+     </trans-unit>
+    
+     <trans-unit>
+        <source>W</source>
+        <target>W</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Th</source>
+        <target>Th</target>
+     </trans-unit>
+
+    <trans-unit>
+        <source>F</source>
+        <target>F</target>
+     </trans-unit>
+
+     <trans-unit>
+        <source>S</source>
+        <target>S</target>
+     </trans-unit>
+
+     <trans-unit>
+        <source>Today</source>
+        <target>Today</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>January</source>
+        <target>January</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>February</source>
+        <target>February</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>March</source>
+        <target>March</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>April</source>
+        <target>April</target>
+     </trans-unit>
+      
+     <trans-unit>
+        <source>May</source>
+        <target>May</target>
+     </trans-unit> 
+     
+     <trans-unit>
+        <source>June</source>
+        <target>June</target>
+     </trans-unit> 
+
+     <trans-unit>
+        <source>July</source>
+        <target>July</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>August</source>
+        <target>August</target>
+     </trans-unit>
+
+     <trans-unit>
+        <source>September</source>
+        <target>September</target>
+     </trans-unit>
+
+     <trans-unit>
+        <source>October</source>
+        <target>October</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>November</source>
+        <target>November</target>
+     </trans-unit>
+
+     <trans-unit>
+        <source>December</source>
+        <target>December</target>
+     </trans-unit>
+
+    </body>
+  </file>
+</xliff>

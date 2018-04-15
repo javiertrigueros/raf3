@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:oryx="http://www.b3mn.org/oryx"
+   version="1.0">
+  <g>
+    
+    <rect id="border2"
+      x="0" y="0" width="30" height="40"
+      oryx:resize="horizontal vertical"
+      stroke="black" stroke-width="1" fill="#ffffff"/>
+
+    <text id="textItem1"
+      x="15"
+      y="20"
+      oryx:resize="horizontal vertical" 
+      oryx:align="middle center" 
+      stroke-width="0pt" 
+      letter-spacing="-0.01px" 
+      text-anchor="middle" 
+      transform="rotate(0 18 17)" 
+      visibility="inherit" 
+      oryx:fontSize="12">
+      <tspan x="15" y="20" dy="5"> 
+        &lt;&lt;
+      </tspan>
+    </text>
+
+    <rect id="border2"
+      x="30" y="0" width="30" height="40"
+      oryx:resize="horizontal vertical"
+      stroke="black" stroke-width="1" fill="#ffffff"/>
+
+    <text id="textItem2"
+      x="45"
+      y="20"
+      oryx:resize="horizontal vertical" 
+      oryx:align="middle center" 
+      stroke-width="0pt" 
+      letter-spacing="-0.01px" 
+      text-anchor="middle" 
+      transform="rotate(0 18 17)" 
+      visibility="inherit" 
+      oryx:fontSize="12">
+      <tspan x="45" y="20" dy="5">1</tspan>
+    </text>
+
+    <rect id="border3"
+      x="60" y="0" width="30" height="40"
+      oryx:resize="horizontal vertical"
+      stroke="black" stroke-width="1" fill="#ffffff"/>
+
+    <text id="textItem3"
+      x="75"
+      y="20"
+      oryx:resize="horizontal vertical" 
+      oryx:align="middle center" 
+      stroke-width="0pt" 
+      letter-spacing="-0.01px" 
+      text-anchor="middle" 
+      transform="rotate(0 18 17)" 
+      visibility="inherit" 
+      oryx:fontSize="12">
+      <tspan x="75" y="20" dy="5">2</tspan>
+    </text>
+
+    <rect id="border4"
+      x="90" y="0" width="30" height="40"
+      oryx:resize="horizontal vertical"
+      stroke="black" stroke-width="1" fill="#ffffff"/>
+
+    <text id="textItem4"
+      x="105"
+      y="20"
+      oryx:resize="horizontal vertical" 
+      oryx:align="middle center" 
+      stroke-width="0pt" 
+      letter-spacing="-0.01px" 
+      text-anchor="middle" 
+      transform="rotate(0 18 17)" 
+      visibility="inherit" 
+      oryx:fontSize="12">
+      <tspan x="105" y="20" dy="5">3</tspan>
+    </text>
+
+    <rect id="border5"
+      x="120" y="0" width="30" height="40"
+      oryx:resize="horizontal vertical"
+      stroke="black" stroke-width="1" fill="#ffffff"/>
+
+    <text id="textItem6"
+      x="135"
+      y="20"
+      oryx:resize="horizontal vertical" 
+      oryx:align="middle center" 
+      stroke-width="0pt" 
+      letter-spacing="-0.01px" 
+      text-anchor="middle" 
+      transform="rotate(0 18 17)" 
+      visibility="inherit" 
+      oryx:fontSize="12">
+      <tspan x="135" y="20" dy="5">4</tspan>
+    </text>
+
+    <rect id="border7"
+      x="150" y="0" width="30" height="40"
+      oryx:resize="horizontal vertical"
+      stroke="black" stroke-width="1" fill="#ffffff"/>
+
+    <text id="textItem8"
+      x="165"
+      y="20"
+      oryx:resize="horizontal vertical" 
+      oryx:align="middle center" 
+      stroke-width="0pt" 
+      letter-spacing="-0.01px" 
+      text-anchor="middle" 
+      transform="rotate(0 18 17)" 
+      visibility="inherit" 
+      oryx:fontSize="12">
+      <tspan x="165" y="20" dy="5">&gt;&gt;</tspan>
+    </text>
+
+  </g>
+</svg>

@@ -1,0 +1,264 @@
+sfJabberJaxl plugin
+==============
+
+The `sfJabberJaxlPlugin` is a symfony plugin that allows your application to interact with Jabber based instant messaging services like GoogleTalk. 
+It lets you send and receive instant messages, and monitor the status of contacts (ie. view their online status).
+
+To communicate with Jabber servers, it uses the library Jaxl (http://code.google.com/p/jaxl/) created by Abhinav Singh.
+
+sfJabberJaxlPlugin provides a model to store incoming/outgoing messages, roster and contact statuses. It also provides a set of CLI tasks to send messages and
+to run a daemon that listens for incoming messages and other commands coming from a Jabber server.
+
+Requirements
+------------
+
+* Jabber account on Jabber server, like an account on Google Talk/Gmail.
+* PHP needs to be compiled with openssl extension in order perform the TLS encryption to connect to the Jabber server (required for GoogleTalk).
+
+Installation & Usage
+--------------------
+
+  * Install the plugin
+
+        $ symfony plugin:install sfJabberJaxlPlugin
+        
+  * Enable Plugin (Only for Symfony 1.2 and above)
+
+   Modify config/ProjectConfiguration.class.php
+   
+        [php]
+          public function setup()
+          {
+            // for compatibility / remove and enable only the plugins you want
+            $this->enableAllPluginsExcept('sfDoctrinePlugin');
+        
+            // or
+            
+        	$this->enablePlugins(array('sfPropelPlugin', 'sfJabberJaxlPlugin'));
+        	$this->disablePlugins(array('sfDoctrinePlugin'));
+        
+          }        
+
+  * Configure databases.yml
+  
+    Add jabber connection information:
+
+        dev:
+          jabber:
+            param:
+              classname:  DebugPDO
+        
+        test:
+          jabber:
+            param:
+              classname:  DebugPDO
+        
+        all:
+          jabber:
+            class:        sfPropelDatabase
+            param:
+              classname:  PropelPDO
+              dsn:        mysql:dbname=jabber;host=localhost
+              username:   user
+              password:   pass
+              encoding:   utf8
+              persistent: true
+              pooling:    true
+    
+  * Create the jabber database and import doc/jabber_create.sql and doc/jabber_data.sql
+  
+  * Setup Jabber connection
+  
+    The plugin needs to connect to the Jabber (or gmail) server using its own account. If you don't have an account already, go ahead and create one.
+    Once you have the account you need to configure the plugin to connect using this information. 
+    
+    Add the Jabber user to the system:
+    
+        $ ./symfony jabber:add-user example@gmail.com test123
+        
+    In your app.yml application configuration add the following:
+    
+        all:    
+            jabber:
+                email: example@gmail.com
+                log: 1
+                callback:
+                    loop: myClass::processLoop
+                    message: myClass::processMessage
+                    status: myClass::processStatus
+                    writingStarted: myClass::processWritingStarted
+                    writingPaused: myClass::processWritingPaused
+                    ready:
+    
+
+    * email defines what user the plugin will connect to. You can have multiple users and connect with different ones at different times.
+    * log enables logging of traffic with the Jabber server.
+    * callback set of directives define callbacks that will be executed when different events take place. So for example, 
+    when a message is received from the Jabber server, the myClass::processMessage() static method is called. Read below for a description of the
+    events and callbacks. Leave empty those callbacks that you are not going to hook.
+    
+                
+    * CLI tasks
+    
+    The plugin offers a set of CLI tasks to run the Jabber client daemon, send messages or change status.
+    
+    ## Run daemon
+    
+    To connect to the Jabber server so your user is online, receive/send messages, etc you need to run a daemon. To start the daemon, run
+    
+        $ php symfony jabber:daemon --env=prod --app=myapp
+    
+    myapp is used to get the default email address of the jabber user to connect to the server and to execute the callbacks. Additionally,
+    you can pass the email address to the task as an argument:
+    
+        $ php symfony jabber:daemon --env=prod example@gmail.com
+    
+    ## Send a message
+    
+    To send a message to a contact run
+    
+        $ php symfony jabber:send --env=prod  email recipient message
+    
+    where:
+    - email: is the Jabber user email address
+    - recipient: is the recipient's email address
+    - message: is the message to send
+    
+    example: 
+    
+        $ php symfony jabber:send --env=prod  example@gmail.com mycontact@gmail.com "Hello world"
+    
+    ## Change the status of the Jabber user 
+    
+        $ php symfony jabber:status --env=prod  example@gmail.com online
+    
+        $ php symfony jabber:status --env=prod  example@gmail.com offline
+    
+    
+API
+---
+    
+Additionally, the plugins offers a set of API methods that you can use to interface your application with the Jabber daemon.
+
+- jabberApi::sendMessage( $from, $to, $message )
+
+Sends a message to a contact. $from and $to are email addresses.
+
+- jabberApi::broadcastMessage( $from, $message, $includeAway = false, $includeOffline = false )
+
+Sends a message to all contacts of a jabber user. $from is the email address of the Jabber user.
+
+- jabberApi::setStatus( $email, $status, $show = '' )
+
+Changes the status of the Jabber user. $email is the email address of the Jabber user.
+
+- jabberApi::getIncomingMessages( $email, $markedProcessed = false )
+
+Get an array of incoming messages not processed. $email is the email address of the Jabber user.
+
+- jabberApi::getContactStatusChanges( $email, $markedProcessed = false )
+
+Get an array of contacts status changes. $email is the email address of the Jabber user.
+
+- jabberApi::getUser( $email )
+
+Gets the Jabber user by email address. $email is the email address of the Jabber user.
+
+- jabberApi::getUserContacts( $email )
+
+Get an array of contacts for the Jabber user. $email is the email address of the Jabber user.
+
+- jabberApi::addUser( $email, $password, $host = 'talk.google.com', $port = '5222' )
+
+Adds a Jabber user for the daemon to connect to the Jabber server.
+
+- jabberApi::clearMessagesQueue()
+
+Deletes any messages in the queue. Read messages are kept in the queue unless this is executed.
+        
+Example of myClass    
+-----------------------
+
+    [php]
+    <?php
+    class myClass
+    {
+        public static function processReady( sfJabber $jabber )
+        {
+            // callback executed when connection is ready.
+        }
+    
+        public static function processLoop( sfJabber $jabber )
+        {
+            // callback executed each time a cycle in the daemon loop is completed.
+            
+            // use it to monitor status or send messages at intervals, etc.            
+            
+            // example of sending a message to all online contacts of jabber user.
+            $msg = 'Hello world!';
+            jabberApi::broadcastMessage( $jabber->jabberUser->getEmail(), $msg );
+
+            // change jabber user status
+            $jabber->jabberUser->setStatusAway();   
+        }
+    
+        public static function processMessage( sfJabber $jabber, JabberMessage $message )
+        {
+            // callback executed when a message is received from a jabber contact.
+            
+            // Example of sending a reply message to the originator of the message
+            $reply = 'I received: '.(string) $message;            
+            jabberApi::sendMessage( $jabber->jabberUser, $message->getJabberContact(), $reply );
+        }
+    
+        public static function processStatus(sfJabber $jabber, JabberContact $contact )
+        {
+            // callback executed when jabber contact status changes (goes online, offline)
+            
+            // Ignore own's status changes.
+            if ( $contact->getEmail() == sfConfig::get( 'app_jabber_email' ) ) return;
+            
+            // example of getting contact's email 
+            
+            $email = $contact->getEmail();
+            
+            // example of checking if contact is online
+            
+            $isOnline = $contact->isAvailable();
+                        
+        }
+    
+        public static function processWritingStarted(sfJabber $jabber, JabberContact $contact )
+        {
+            // callback executed when contact starts writing a message (or resumes)
+        }
+    
+        public static function processWritingPaused(sfJabber $jabber, JabberContact $contact )
+        {
+            // callback executed when contact stops writing.
+        }
+    }
+    ?>
+    
+
+
+Callbacks
+-----------------------------------------------
+
+The plugin executes callbacks when specific events take place, like receiving a message or a status change from one of its contacts.
+Here is the list of supported callbacks. The remote method taking care of the call must accept specific arguments, check the example for the needed 
+arguments.
+
+  * `loop` - Executed each time a cycle in the daemon loop is completed.
+  * `message` - Executed when a new message is received from a contact in the roster (contacts list).
+  * `status` - Executed when the status of a contact changes (goes online/offline)
+  * `writingStarted` - Executed when a contact starts/resumes to write a message.
+  * `writingPaused` - Executed when a contact stops/pauses to write a message.
+  * `ready` - Executed when the connection to the Jabber server has been established.
+
+
+TODO
+----
+
+  * implement file transfer
+  * Contact me for any other requirements/ideas

@@ -1,0 +1,9 @@
+# default values
+all:
+  arquematics_gravatar:
+   size:   67
+   size_small: 16
+   # rating posible G | PG | R | X
+   rating: G 
+   image_url:  '/arGravatarPlugin/images/default.jpg'
+   image_small: '/arGravatarPlugin/images/defaultmini.jpg'

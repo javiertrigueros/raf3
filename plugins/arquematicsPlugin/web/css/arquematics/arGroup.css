@@ -1,0 +1,19 @@
+.theme-default #main-navbar 
+{
+  box-shadow: none;
+}
+
+.username span
+{
+  margin-left: 5px;
+  display: block;
+  float: left;
+  margin-top: 10px;
+}
+
+.alert 
+{
+    padding: 5px;
+    font-size: 14px;
+    margin-bottom: 0px;
+}

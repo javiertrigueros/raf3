@@ -1,0 +1,292 @@
+body
+{
+   cursor: default !important; 
+}
+
+.navbar-fixed-top
+{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.a-inset-image-slot p {text-align:justify}
+
+.add-new-item-icon
+{
+  height: 0px !important;  
+  min-height: 0px !important;  
+}
+
+.ui-control-remove-date-end,
+.ui-control-add-date-end
+{
+   cursor: pointer;   
+}
+
+.ui-control-remove-date-end:hover,
+.ui-control-add-date-end:hover
+{
+   color: #000;  
+}
+
+.control-icon
+{
+  margin-top: 3px; 
+}
+
+.control-group
+{
+    margin-bottom: 0 !important;    
+}
+
+.blog-excerpt
+{
+  margin-top: 10px; 
+}
+.editable-icon
+{
+   margin-top:10px; 
+}
+
+.preview-fix-icon
+{
+   margin-top:4px;
+   margin-right: 2px;
+}
+
+.no-margin
+{
+    margin-left: 0 !important;
+}
+
+.alert-title
+{
+ color: #333333;
+}
+
+
+.btn-control-blog
+{
+    text-align: left !important;
+    margin-bottom: 5px !important;
+}
+.cat-item
+{
+  
+}
+.cat-item input[type="checkbox"] {
+   margin-right: 5px;
+}
+.cat-item-control
+{
+ float:left;
+ display:block;
+}
+
+.cat-item-label
+{
+  min-width: 35px;
+  width: 80% !important;;     
+}
+
+#ui-add-category
+{
+    clear:both;
+}
+
+.delete-cat-icon
+{
+    min-width: 30px !important;;
+    width: 20% !important;;
+    line-height: 20px !important;
+}
+
+.delete-cat-icon:hover
+{
+    color: #f99f20 !important;
+}
+
+.blog-cmd-preview
+{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.extra-separation,
+.misc-pub-section
+{
+  margin-bottom: 10px;
+  clear:both;
+}
+
+.blog-update-icon
+{
+  margin-top:3px;
+}
+
+.blog-update-spin
+{
+   margin-top:4px !important;
+   margin-left: 4px !important;
+}
+
+
+.dropdown-menu-custom
+{
+  min-width: 220px !important;
+}
+
+.add-new-item
+{
+  min-height: 24px;
+}
+
+.add-new-item-icon
+{
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.ui-control-text-composed,
+.ui-control-text
+{
+    cursor: pointer;   
+}
+.ui-control-text-composed:hover,
+.ui-control-text:hover
+{
+    background-color: #EBEFFA;  
+}
+
+.ui-control-text-form
+{
+    margin: 5px 0;
+}
+
+.control-item-status
+{
+    line-height: 2em;
+    margin: 0 0 0 2% !important;
+}
+
+.control-item-url-base
+{
+   line-height: 2em; 
+   margin-right: 1% !important;
+   padding-right: 0px !important;
+   width: auto !important;
+}
+
+
+.controls-buttom
+{
+    clear:both;   
+}
+
+
+#header {
+    background-color:#FFF;
+    width: 100%;
+}
+
+.mmbar {
+    background-color: #3096E6;
+    background-image: linear-gradient(#71CCFF, #3096E6);
+    background-size: 100% auto;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    height: 42px;
+    border-bottom: 1px solid #1B74D8;
+}
+
+
+#header ul:first-child {
+    margin-left: 1px;
+}
+#header ul {
+    padding: 5px 0 0;
+    margin:0 ;
+}
+
+.back
+{
+  float:left;  
+}
+
+ul.dropdown-menu li a
+{
+    color: #333333 !important;
+    text-align: left !important;
+}
+
+ol, ul {
+    list-style: none outside none;
+}
+
+#header .navi span {
+    width: 18px;
+}
+#header .navi span, #header .navi a {
+    border-radius: 0 0 0 0;
+    display: inline-block;
+    line-height: 32px;
+}
+
+#header .navi span, #header .navi a {
+    background: url("../images/botones.png") no-repeat scroll 0 0 transparent;
+    border-radius: 0 0 0 0;
+    display: inline-block;
+    line-height: 32px;
+}
+
+#header .navi a {
+    background-position: 100% 0;
+    padding-right: 10px;
+}
+
+#header .navi span, #header .navi a {
+    border-radius: 0 0 0 0;
+    display: inline-block;
+    line-height: 32px;
+}
+
+#header li.link a {
+    color: white;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    opacity: 0.9;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.3);
+}
+
+#header .navi:hover a{color: #000}
+
+.search-content
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 98%;
+}
+
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+form
+{
+    margin:0 !important;
+}
+
+p.item-allow-comments input
+{
+    float: left !important;
+    margin-right: 5px !important;
+}
+
+
+
+[class^="icon-"], [class*=" icon-"] {
+    background-image: none !important;
+}
+
+

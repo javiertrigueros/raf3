@@ -1,0 +1,68 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/05-Factories
+
+all:
+  user:
+    param:
+      timeout: 43200
+
+  mailer:
+    param:
+      delivery_address:  <correo de envio>
+      delivery_strategy: realtime
+      transport:
+        # If you are not on Unix or do not have a sendmail utility that works then
+        # you will need to configure a different transport here
+        #class: Swift_MailTransport
+        class: Swift_SmtpTransport
+        param:
+          host:       smtp.gmail.com
+          port:       465
+          encryption: ssl
+          username: <mail para el envio>
+          password: <passwd>
+
+  routing:
+    class: sfPatternRouting
+    param:
+      generate_shortest_url:            true
+      extra_parameters_as_query_string: true
+      segment_separators: ['/', '.', '-']
+
+  view_cache_manager:
+    class: sfViewCacheManager
+    param:
+      cache_key_use_vary_headers: true
+      cache_key_use_host_name:    true
+
+  storage:
+    class: sfCacheSessionStorage
+    param:
+      session_name: sfproject #[required] name of session to use
+      session_cookie_path: / #[required] cookie path
+      # session_cookie_domain: # cookie domain, should start with . if it is an entire domain and not a single site
+      session_cookie_lifetime: +30 days #[required] lifetime of cookie
+      session_cookie_secure: false #[required] send only if secure connection
+      session_cookie_http_only: true #[required] accessible only via http protocol
+      cache: 
+        class: aMysqlCache
+        param:
+          prefix: session   
+
+prod:
+  logger:
+    class:   sfNoLogger
+    param:
+      level:   err
+      loggers: ~
+
+test:
+  storage:
+    class: sfSessionTestStorage
+    param:
+      session_path: %SF_TEST_CACHE_DIR%/sessions
+
+  response:
+    class: sfWebResponse
+    param:
+      send_http_headers: false

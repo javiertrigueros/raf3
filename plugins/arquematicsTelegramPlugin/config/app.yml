@@ -1,0 +1,5 @@
+all:
+  #minutos que esta activo un token para una session
+  archat_token_active_min: 3
+  
+     

@@ -1,0 +1,301 @@
+.user_link 
+{
+    font-size: 12px;
+}
+
+.list-files
+{
+    height: auto;
+    margin-top: 10px;
+}
+
+.list-files div.document-file-no-image
+{
+    clear: both; 
+    display: block;
+    margin-bottom: 10px;
+    height: auto;
+}
+
+.file-text-more-image
+{
+  border: 2px solid #FFF;
+  font-weight: 800;
+  font-size: 35px;
+  color: #FFF;
+  position: absolute;
+  top: 32%;
+  left: 38%;
+  padding: 3px;
+}
+
+.document-image-container
+{
+  position: relative; 
+  width: 50%; 
+  height: 150px;
+  display:block;
+  float:left;
+  margin-bottom: 8px;
+  overflow: hidden;  
+}
+
+.document-image-container-single
+{
+  position: relative; 
+  width: 100%; 
+  height: 150px;
+  display:block;
+  float:left;
+  margin-bottom: 8px;
+  overflow: hidden;  
+}
+
+
+.loader-container{
+    background-color:#f6f7f8;
+    height: 100%;
+    width: 100%;
+}
+.control-icons li {
+    list-style: outside none none;
+    margin: 6px;
+    float: left;
+}
+
+.tab-container-border
+{
+  border-top: 1px solid #e4e4e4 !important;
+}
+
+.wall-loader-icon
+{
+  width: 54px;
+  height: 64px;
+  background: url("/arquematicsPlugin/images/loaders/ajax-image-loader.gif") no-repeat scroll 0 14px rgba(0, 0, 0, 0) !important
+}
+
+.icon-plus-container
+{
+  float: left;
+  position: relative;
+  width: 38px;
+  height: 38px;
+}
+
+.icon-plus-loader-container
+{
+  float: left;
+  position: relative;
+  height: 38px;
+  width: 48px;
+}
+
+
+.icon-plus-container i:hover
+{
+   color: #8aa5c2;
+}
+
+.icon-plus-container i
+{
+  color: #aba4a4;
+  font-size: 38px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.mutuals-icon-plus
+{
+  cursor: pointer;
+  padding: 10px;
+  display: block;
+  float: left;
+}
+
+.small-image-list a
+{
+  padding: 10px;
+  display: block;
+  float: left;
+}
+
+.small-image-list a img.small-wall-image-profile
+{
+    display: block;
+    float: left;
+    position: relative;
+    width: 38px;
+    height: 38px;
+}
+
+.page-profile .left-col > .panel .panel-body {
+    padding-bottom: 14px !important;
+}
+
+h4.modal-title
+{
+    font-size: 14px;
+}
+
+.theme-default .label.active
+{
+    background: none repeat scroll 0 0 #42a142 !important;
+}
+
+.tag-item
+{
+   cursor: pointer;
+}
+
+.profile-row
+{
+  overflow: hidden;
+  width: 100%;  
+}
+
+#wall_send_content select
+{
+  display: none;  
+}
+.blog-item-content
+{
+  overflow: hidden;
+  width: 100%; 
+}
+
+.blog-item-content a.a-blog-item-media
+{
+    display:block;
+    overflow: hidden;
+    max-height: 150px;
+}
+
+
+.message-header
+{
+ overflow: hidden;
+ width: 100%;
+ margin-top: 2px;
+ margin-bottom: 8px;
+}
+
+.messages-text:hover div.message-header span.message-icon-remove
+{
+   display:block; 
+}
+
+.comment:hover div.comment-text span.comment-icon-remove
+{
+  display:block;
+  margin-top: 4px;
+  margin-right: 6px; 
+}
+
+.message-form-comments
+{
+  margin-top: 6px;   
+}
+.form-message-comment button
+{
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+.comment-wall-text span.mytime {
+  color: #aaa;
+  display: inline-block;
+  font-size: 11px;
+  margin-left: 5px;
+}
+
+.comment-wall-icon
+{
+  display: block;
+  float: left;
+  margin-right: 1%;
+  margin-top: 5px;
+  width: 6%;
+}
+.comment-wall-text
+{
+  display:block;  
+  float:left;
+  margin-left: 1.5%;
+  width: 91.5%;
+}
+
+.message-open div.controls-message-controls
+{
+  background-color: #f6f7f8; 
+  border-left: 1px solid #e4e4e4;
+  border-right: 1px solid #e4e4e4;
+}
+
+.message-open div.controls-message-controls a
+{
+   color: #4083a9; 
+}
+
+.message-comments
+{
+  border: 1px solid #e4e4e4;
+  float: none;
+  margin-left: 46px;
+  position: relative;
+  background-color: #f6f7f8;
+  color: #141823;
+  overflow: visible;
+  padding: 4px 12px;
+  width: auto;
+}
+
+
+.comment-avatar {
+  border-radius: 999999px;
+  display: block;
+  float: left;
+  height: 32px;
+  position: relative;
+  width: 32px;
+}
+
+.message-header div.message-user-link-info
+{
+  display:block;
+  float:left;
+}
+
+.message-header span.message-icon-remove
+{
+  font-size: 15px;
+  display:none;  
+  float:right;
+}
+
+.message-user-content
+{
+  clear:both;  
+}
+
+.comment-icon-remove,
+.message-icon-remove
+{
+  font-size: 15px;
+  color: #999999;
+  display:none;
+  float:right;
+  cursor: pointer;
+}
+
+.comment-icon-remove:hover,
+.message-icon-remove:hover
+{
+  color: #000000 !important;  
+}
+
+.control-list-select .dropdown-menu > li > a 
+{
+    margin: 0;
+    padding: 8px 20px;
+    border: none;
+}

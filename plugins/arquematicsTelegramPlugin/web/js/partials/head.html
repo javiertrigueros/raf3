@@ -1,0 +1,63 @@
+<div class="tg_page_head" ng-controller="AppToMenuController">
+  <div class="navbar navbar-static-top  navbar-inverse" role="navigation">
+    <div class="container container-nav" ng-init="navbarCollapsed = true">
+
+         <a ng-show="(!hasMovileWidth())" href="/wall" class="navbar-brand" id="takeBack"><span class="tg_head_logo">&nbsp;</span><span class="tg_head_logo_text">{{ 'Go to Wall' | translate}}</span></a>
+       
+         <a ng-show="(!curDialog.peer && hasMovileWidth())" href="/wall" class="navbar-brand" id="takeBack"><span class="tg_head_logo">&nbsp;</span><span class="tg_head_logo_text">{{ 'Go to Wall' | translate}}</span></a>
+         <a ng-show="(curDialog.peer && hasMovileWidth())" href="#/im" class="navbar-brand" id="takeBack"><span class="tg_head_logo">&nbsp;</span><span class="tg_head_logo_text">{{ 'Back' | translate }} </span></a> 
+           
+         <ul class="nav navbar-nav navbar-right">    
+          <li class="dropdown">
+              <button ng-show="hasMovileWidth()" type="button" class="navbar-toggle dropdown-toggle" ng-click="navbarCollapsed = !navbarCollapsed">
+                <span class="sr-only">{{ 'Toggle navigation' | translate }}</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a ng-show="(!hasMovileWidth())" data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="glyphicon glyphicon-cog"></span><span class="hide">{{ 'Configuration' | translate}}</span> <b class="caret"></b></a>
+              <ul ng-cloak ng-show="userConfig != false" class="dropdown-menu">
+                <li>
+                     <a class="account-summary account-summary-small" ng-href="{{userConfig.url}}" role="menuitem">
+                                <div class="content">
+                                    <div class="account-group js-mini-current-user">
+                                        <img ng-src="{{userConfig.icon}}" class="avatar size32">
+                                        <b class="fullname" ng-bind-html="userConfig.long_name"></b>
+                                        <small class="metadata">
+                                            {{'Editar perfil' | translate}}
+                                        </small>
+                                    </div>
+                                </div>
+                     </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a ng-href="{{userConfig.url_user_list}}">{{'Lists' | translate}}</a>
+                </li>
+                <li>
+                    <a ng-href="{{userConfig.url_user_friend}}">{{'Subscribers'| translate }}</a>
+                </li>
+                <li class="divider"></li>
+                <li ng-if="isLoggedIn"><a href="" ng-click="openSettings()">{{ 'Settings' | translate }}</a></li>
+                <li ng-if="userConfig && userConfig.cms_admin">
+                    <a  arquematics-sidr 
+                       sidr-options="{closeExtra: '.cms-close',
+                                    side: 'right',
+                                    name: 'sidr-menu-admin-cms',
+                                    body: 'body',
+                                    renaming: false,
+                                    source: '#admin-cms-content'}"
+                        href="#" id="admin-cms" ng-show="userConfig.cms_admin" >{{'Admin CMS' | translate}}
+                    </a>
+                </li>
+                <li><a ng-href="{{userConfig.log_out}}">{{'Log out' | translate}}</a></li>
+                <li ng-show="hasMovileWidth()" class="divider"></li>
+              </ul>
+          </li>
+        
+      </ul>
+      
+        
+    </div>
+  </div>
+</div>

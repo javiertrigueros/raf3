@@ -1,0 +1,66 @@
+.user-avatar-link
+{
+  color: #555 !important;
+}
+.user-autocomplete
+{
+  border-color: #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.tt-menu,
+.tt-dropdown-menu {
+  min-width: 320px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  font-size: 14px;
+  text-align: left;
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  box-shadow: none;
+} 
+.tt-suggestion {
+  display: block;
+  padding: 10px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #333333;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.tt-suggestion.tt-cursor,
+.tt-suggestion:hover,
+.tt-suggestion:focus {
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
+  outline: 0;
+  background-color: #f1f1f1;
+}
+
+.user-avatar-link
+{
+   line-height:none !important; 
+}
+
+.user-autocomplete .user-avatar-image {
+    border-radius: 999999px;
+    height: 32px;
+    width: 32px;
+    margin-right: 5px;
+}
+
+.user-autocomplete .user-name
+{
+   height: 32px;
+}

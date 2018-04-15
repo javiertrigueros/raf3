@@ -1,0 +1,14 @@
+# default values
+all:
+  arquematics_comments:
+      #máximo en los niveles de respuestas
+      max_level: 3
+      # tags permitidos en las respuestas
+      allowed_tags: [a, p, ul, li, acronym, b, blockquote, cite, code, strong ]
+      # atributos permitidos para los tags
+      allowed_attributes:
+        a: [ href, title]
+        p: [ style ]
+      # estilos permitidos para los tags
+      allowed_styles:
+        p: [ 'margin', 'margin-left', 'margin-right' ]

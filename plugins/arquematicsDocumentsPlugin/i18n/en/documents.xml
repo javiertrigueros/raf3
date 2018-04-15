@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd" >
+<xliff version="1.0">
+  <file original="global" source-language="en" target-language="en" datatype="plaintext">
+    <header />
+    <body>
+        
+      <trans-unit>
+        <source>Copy</source>
+        <target>Copy</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Cut</source>
+        <target>Cut</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Paste</source>
+        <target>Paste</target>
+      </trans-unit>
+      
+       <trans-unit>
+        <source>Delete</source>
+        <target>Delete</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Redo</source>
+        <target>Redo</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Undo</source>
+        <target>Undo</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>In the Spotlight</source>
+        <target>In the Spotlight</target>
+      </trans-unit>
+     
+      <trans-unit>
+        <source>In the background</source>
+        <target>In the background</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>One level up</source>
+        <target>One level up</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>One level down</source>
+        <target>One level down</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Align Bottom</source>
+        <target>Align Bottom</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Align centered on the horizontal axis</source>
+        <target>Align centered on the horizontal axis</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Align Top</source>
+        <target>Align Top</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Align Left</source>
+        <target>Align Left</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Align centered on the vertical axis</source>
+        <target>Align centered on the vertical axis</target>
+      </trans-unit>
+     
+      
+      <trans-unit>
+        <source>Align Right</source>
+        <target>Align Right</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Align same size</source>
+        <target>Align same size</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Group</source>
+        <target>Group</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Ungroup</source>
+        <target>Ungroup</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Save and exit</source>
+        <target>Save and exit</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Document types</source>
+        <target>Document types</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>New Document:</source>
+        <target>New Document:</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>types available</source>
+        <target>types available</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>doc</source>
+        <target>Text document</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>svg</source>
+        <target>Vector Image</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>wireframe</source>
+        <target>Wireframe / Mockup</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>bpmn</source>
+        <target>BPMN 1.2</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>mindmaps</source>
+        <target>Mind maps</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>epc</source>
+        <target>Flowchart</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>uml</source>
+        <target>UML</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>umlsequence</source>
+        <target>UML sequence</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>umlusecase</source>
+        <target>UML use case</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>paint</source>
+        <target>paint</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Laverna Doc</source>
+        <target>Text document</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Laverna Docs</source>
+        <target>Text documents</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>svgs</source>
+        <target>Vectorial Images</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>note</source>
+        <target>Text Documents</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>mindmapss</source>
+        <target>Mind Maps</target>
+      </trans-unit>
+    
+      <trans-unit>
+        <source>bpmns</source>
+        <target>BPMN 1.2</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>rawchart</source>
+        <target>Data analisis</target>
+      </trans-unit>
+    
+      <trans-unit>
+        <source>epcs</source>
+        <target>Flowcharts</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>umls</source>
+        <target>UMLs</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>umlsequences</source>
+        <target>UML sequence</target>
+      </trans-unit>
+    
+      <trans-unit>
+        <source>umlusecases</source>
+        <target>UML use cases</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Previous</source>
+        <target>Previous</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Next</source>
+        <target>Next</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Edit</source>
+        <target>Edit</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Download</source>
+        <target>Download</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Toggle fullscreen</source>
+        <target>Toggle fullscreen</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Zoom in/out</source>
+        <target>Zoom in/out</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Close (Esc)</source>
+        <target>Close (Esc)</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Previous (arrow left)</source>
+        <target>Previous (arrow left)</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Next (arrow right)</source>
+        <target>Next (arrow right)</target>
+      </trans-unit>
+      
+      
+    </body>
+  </file>
+</xliff>

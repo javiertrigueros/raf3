@@ -1,0 +1,16 @@
+{
+  "name": "arquematics",
+  "main": "arquematics.js",
+  "version": "0.0.0",
+  "authors": [
+    "Javier <javiertrigueros@arquematics.com>"
+  ],
+  "description": "library created for raf6 project",
+  "keywords": [
+    "cryptography",
+    "elgamal",
+    "encryption"
+  ],
+  "license": "MIT",
+  "homepage": "arquematics.com"
+}

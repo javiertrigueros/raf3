@@ -1,0 +1,109 @@
+
+sfGuardUserProfile:
+  sgu_admin:
+    username: admin
+    first_last: Normal admin
+    address: Las mercedes 8, Getxo
+    sfGuardUser: sgu_admin
+    password: admin
+    email_address: admin@arquematics.com
+    description: Desarrollador
+
+  ano_anonymous:
+    username: anonymous
+    first_last: Anonymous none
+    address: Las mercedes 8, Getxo
+    sfGuardUser: ano_anonymous
+    password: anonymous
+    email_address: anonymous@arquematics.com
+    description: Anonymous user
+  
+  test_user:
+    username: test
+    first_last: Test user
+    address: Las mercedes 8, Getxo
+    sfGuardUser: test_user
+    password: test
+    email_address: test@arquematics.com
+    description: Test user
+  
+  test_user1:
+    username: test1
+    first_last: Test1 User
+    address: Las mercedes 8, Getxo
+    sfGuardUser: test_user1
+    password: test
+    email_address: test1@arquematics.com
+    description: Test1 user
+
+  test_user2:
+    username: test2
+    first_last: Test2 User
+    address: Las mercedes 8, Getxo
+    sfGuardUser: test_user2
+    password: test
+    email_address: test2@arquematics.com
+    description: Test2 user
+    
+  test_user3:
+    username: test3
+    first_last: Test3 User
+    address: Las mercedes 8, Getxo
+    sfGuardUser: test_user3
+    password: test
+    email_address: test3@arquematics.com
+    description: Test3 user
+    
+  test_user4:
+    username: test4
+    first_last: Test4 User
+    address: Las mercedes 8, Getxo
+    sfGuardUser: test_user4
+    password: test
+    email_address: test4@arquematics.com
+    description: Test4 user
+  
+  test_user5:
+    username: test5
+    first_last: Test5 User
+    address: Las mercedes 8, Getxo
+    sfGuardUser: test_user5
+    password: test
+    email_address: test5@arquematics.com
+    description: Test5 user
+ 
+  test_user6:
+    username: test6
+    first_last: Test6 User
+    address: Las mercedes 8, Getxo
+    sfGuardUser: test_user6
+    password: test
+    email_address: test6@arquematics.com
+    description: Test6 user
+    
+  test_user7:
+    username: test7
+    first_last: Test7 User
+    address: Las mercedes 8, Getxo
+    sfGuardUser: test_user7
+    password: test
+    email_address: test7@arquematics.com
+    description: Test7 user
+    
+<?php for ($i = 8; $i <= 200; $i++): ?>
+  test_user<?php echo $i ?>:
+    
+    username: test<?php echo $i ?>
+    
+    first_last: Test<?php echo $i ?> User
+    
+    address: Las mercedes 8, Getxo
+    
+    sfGuardUser: test_user<?php echo $i ?>
+    
+    password: test
+    
+    email_address: test<?php echo $i ?>@arquematics.com
+    
+    description: Test<?php echo $i ?> user
+<?php endfor ?>

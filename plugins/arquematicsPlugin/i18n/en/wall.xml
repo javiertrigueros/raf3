@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd" >
+<xliff version="1.0">
+  <file original="global" source-language="en" target-language="en" datatype="plaintext">
+    <header />
+    <body>
+      <trans-unit>
+        <source>Tags</source>
+        <target>Tags</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Share</source>
+        <target>Share</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Server error. Upload directory isn't writable.</source>
+        <target>Server error. Upload directory isn't writable.</target>
+      </trans-unit>
+      <trans-unit>
+        <source>No files were uploaded.</source>
+        <target>No files were uploaded.</target>
+      </trans-unit>
+      <trans-unit>
+        <source>File is empty</source>
+        <target>File is empty</target>
+      </trans-unit>
+      <trans-unit>
+        <source>File is too large</source>
+        <target>File is too large</target>
+      </trans-unit>
+      <trans-unit>
+        <source>File has an invalid extension, it should be one of %%these%%.</source>
+        <target>File has an invalid extension, it should be one of %%these%%.</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>File has no extension.</source>
+        <target>File has no extension.</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Could not save uploaded file. The upload was cancelled.</source>
+        <target>Could not save uploaded file. The upload was cancelled.</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Drop files here to upload</source>
+        <target>Drop files here to upload</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Upload file</source>
+        <target>Upload file</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Cancel</source>
+        <target>Cancel</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Failed</source>
+        <target>Failed</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Explore</source>
+        <target>Explore</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>%seconds% seconds ago</source>
+        <target>%seconds% seconds ago</target>
+      </trans-unit>
+      <trans-unit>
+        <source>one minute ago</source>
+        <target>one minute ago</target>
+      </trans-unit>
+      <trans-unit>
+        <source>%minutes% minutes ago</source>
+        <target>%minutes% minutes ago</target>
+      </trans-unit>
+      <trans-unit>
+        <source>one hour ago</source>
+        <target>one hour ago</target>
+      </trans-unit>
+      <trans-unit>
+        <source>%hours% hours ago</source>
+        <target>%hours% hours ago</target>
+      </trans-unit>
+      <trans-unit>
+        <source>one day ago</source>
+        <target>one day ago</target>
+      </trans-unit>
+      <trans-unit>
+        <source>%days% days ago</source>
+        <target>%days% days ago</target>
+      </trans-unit>
+      <trans-unit>
+        <source>one week ago</source>
+        <target>one week ago</target>
+      </trans-unit>
+      <trans-unit>
+        <source>%weeks% weeks ago</source>
+        <target>%weeks% weeks ago</target>
+      </trans-unit>
+      <trans-unit>
+        <source>one month ago</source>
+        <target>one month ago</target>
+      </trans-unit>
+      <trans-unit>
+        <source>%months% months ago</source>
+        <target>%months% months ago</target>
+      </trans-unit>
+      <trans-unit>
+        <source>one year ago</source>
+        <target>one year ago</target>
+      </trans-unit>
+      <trans-unit>
+        <source>%years% years ago</source>
+        <target>%years% years agoo</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>send...</source>
+        <target>send...</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Add</source>
+        <target>Add</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Capture</source>
+        <target>Capture</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Unable to check the captcha from the server (%error%).</source>
+        <target>Unable to check the captcha from the server (%error%).</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>What's up?</source>
+        <target>What's up?</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Comment</source>
+        <target>Comment</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>View all %count% comments</source>
+        <target>View all %count% comments</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>View %count% comments more</source>
+        <target>View %count% comments more</target>
+      </trans-unit>
+      
+      
+      
+      <trans-unit>
+        <source>arWall</source>
+        <target>Status</target>
+      </trans-unit>
+      <trans-unit>
+        <source>aBlog</source>
+        <target>Blog</target>
+      </trans-unit>
+      <trans-unit>
+        <source>aEvent</source>
+        <target>Events</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>image {current} of {total}</source>
+        <target>image {current} of {total}</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Maximum number of files exceeded</source>
+        <target>Maximum number of files exceeded</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Filetype not allowed</source>
+        <target>Filetype not allowed</target>
+      </trans-unit>
+      <trans-unit>
+        <source>File is too big</source>
+        <target>File is too big</target>
+      </trans-unit>
+      <trans-unit>
+        <source>File is too small</source>
+        <target>File is too small</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Error 500: Internal Server Error</source>
+        <target>Error 500: Fallo del sistema</target>
+      </trans-unit>
+      
+      
+      
+      <trans-unit>
+        <source>Add files...</source>
+        <target>Add files...</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Start upload</source>
+        <target>Start upload</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Cancel upload</source>
+        <target>Cancel upload</target>
+      </trans-unit>
+     
+      <trans-unit>
+        <source>Start</source>
+        <target>Start</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Cancel</source>
+        <target>Cancel</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Error</source>
+        <target>Error</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Delete</source>
+        <target>Delete</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Groups</source>
+        <target>Groups</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Groups selected</source>
+        <target>Groups selected</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Comments</source>
+        <target>Comments</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Edit</source>
+        <target>Edit</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Public</source>
+        <target>Public</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Home</source>
+        <target>Home</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Requests</source>
+        <target>Requests</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Accept request:</source>
+        <target>Accept request:</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Suscripcion request:</source>
+        <target>Suscripcion request:</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Add to groups</source>
+        <target>Add to groups</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Add to group</source>
+        <target>Add to group</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Configure lists</source>
+        <target>Configure lists</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Configure subscribers</source>
+        <target>Configure subscribers</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Abstract</source>
+        <target>Abstract</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Post title</source>
+        <target>Post title</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Event title</source>
+        <target>Event title</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Share what is new...</source>
+        <target>Share what is new...</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Url resource</source>
+        <target>Url resource</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Address or location</source>
+        <target>Address or location</target>
+      </trans-unit>
+      
+     <trans-unit>
+        <source>Admin CMS</source>
+        <target>Administrar CMS</target>
+     </trans-unit>
+      
+     <trans-unit>
+        <source>Select lists</source>
+        <target>Select lists</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>No list</source>
+        <target>No list</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>n lists selected</source>
+        <target>{0} lists selected</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Write a comment...</source>
+        <target>Write a comment...</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Click here or drop files to upload</source>
+        <target>Click here or drop files to upload</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>The user %user% is not a subscriber!</source>
+        <target>The user %user% is not a subscriber!</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>The user %user% has not posted content!</source>
+        <target>The user %user% has not posted content!</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Sorry, you don't have permission to read %user% messages.</source>
+        <target>Sorry, you don't have permission to read %user% messages.</target>
+     </trans-unit>
+    
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,61 @@
+arMenuCMSSlot:
+  options:
+    symfony:
+      form:   false
+      filter: false
+  inheritance:
+    extends: aSlot
+    type: column_aggregation
+    keyField: type
+    keyValue: 'arMenuCMS'
+    
+arMenuSecundarySlot:
+  options:
+    symfony:
+      form:   false
+      filter: false
+  inheritance:
+    extends: aSlot
+    type: column_aggregation
+    keyField: type
+    keyValue: 'arMenuSecundary'
+
+arMenu:
+  actAs:
+    NestedSet:
+      hasManyRoots: true
+      rootColumnName: root_id
+    Timestampable:
+  columns:
+    id:
+      type: integer
+      primary: true
+      autoincrement: true
+    url: string(255)
+    name: string(255)
+    # cat and tag is not implemented
+    menu_type:
+      type: enum
+      notnull: true
+      values: [page, link, cat, tag]  
+    #slot_id
+    root_id: string(255)
+    category_id:
+      type: integer
+      notnull: false
+      default: null
+    page_id:
+      type: integer
+      notnull: false
+      default: null
+  relations:
+    Category:
+      class: aCategory
+      local: category_id
+      foreign: id
+      onDelete: CASCADE
+    Page:
+      class: aPage
+      local: page_id
+      foreign: id
+      onDelete: CASCADE

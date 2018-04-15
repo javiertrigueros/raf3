@@ -1,0 +1,7 @@
+{
+    "name": "Arquematics Application",
+    "description": "Arquematics libs Composer",
+    "require": {
+        "cloudconvert/cloudconvert-php": "dev-master"
+    }
+}

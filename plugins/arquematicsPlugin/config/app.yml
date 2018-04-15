@@ -1,0 +1,194 @@
+all:
+  sf_guard_plugin:
+    allow_login_with_email: true
+    signin_form: arFormSignin
+    
+  arquematics:
+    #caracteres de la contraseña por lo menos
+    pass_chars: 8
+    
+    domain: raf6.com
+    #encriptacion activa si o no
+    encrypt: true
+    #send hello mail with private key
+    send_private_key: true
+          
+    image_height_max: 400
+    image_width_sizes:
+     - 700
+     - 300
+     - 200
+    normalDateFormat:
+     es: d/m/Y
+     en: Y-m-d
+    normalDateTimeFormat:
+     es: d/m/Y H:i
+     en: Y-m-d H:i
+    momentLongDateFormat:
+     es: D [de] MMMM [de] YYYY
+     en: MMMM D YYYY
+    momentNormalDateFormat:
+     es: DD/MM/YYYY
+     en: YYYY-MM-DD
+    momentNormalDateTimeFormat:
+     es: DD/MM/YYYY HH:mm
+     en: YYYY-MM-DD HH:mm
+  #arquematics config
+  arquematics_plugin:
+    embedlyAPI: 
+    googleAPI: 
+    cloudconvertAPI: 
+    register_form: arRegisterForm
+    forgot_password_form: arForgotPasswordForm
+    #  256 * 1024, 0.25MB en cada chunk
+    #bytes_per_chunk: 262144
+    #  521 * 1024, 0.50MB en cada chunk
+    bytes_per_chunk: 524288
+    #  1024 * 1024, 1MB en cada chunk
+    #bytes_per_chunk: 1048576
+    #  1545 * 1024, 1.5MB en cada chunk
+    #bytes_per_chunk: 1582080
+    #  2 * 1024 * 1024, 2MB en cada chunk
+    #bytes_per_chunk: 2097152
+    #  3 * 1024 * 1024, 3MB en cada chunk
+    #bytes_per_chunk: 3145728
+    #  6 * 1024 * 1024, 6MB en cada chunk
+    #bytes_per_chunk: 6291456
+    #  100 * 1024 * 1024, 100MB en cada chunk
+    #bytes_per_chunk: 104857600
+    # maximo para un fichero
+    max_file_size: 20971520
+    #0.25MB 1x256x1024 = 262144
+    #si el fichero es mayor se cargara con ajax
+    max_file_later_size: 262144
+                   
+    default_user_group: basic
+    #mensajes por pagina del muro
+    wall_messages_perpage: 9
+    #comentarios para un more
+    wall_comments_view: 4
+    #mutual friends para un more en el muro
+    wall_mutual_friends_view: 7
+    #mutual friends paginacion para la pagina de suscriptores 
+    mutual_friends_view: 100
+    #usuarios en una pagina de listado
+    profiles_perpage: 100
+    #usuarios en los listados de un autocompletar
+    profiles_autocomplete_limit: 8
+    # maximo número de listas que puede tener un usuario
+    max_list_items: 3
+    
+    image_maps_filters:
+     - small: 500, 87, cropOriginal
+     - big: 570, 100, cropOriginal
+    
+    extensions_allowed:
+     - pdf
+     - epub
+     - stl
+     - doc
+     - docx
+     - xls
+     - xlsx
+     - ppt
+     - pptx
+     - pps
+     - odc
+     - odp
+     - ods
+     - odt
+     #- torrent -
+     #- latex
+     #- tex
+     # latex font
+     #- tfm
+     - gif
+     - png
+     - jpeg
+     - jpg
+     - jpe
+     - jfif
+     - jp2
+     - jpx
+     - xcf
+     - pic
+     #- pct -
+     #- djvu -
+     #- djv -
+     - bmp
+     - svg
+     #- svgz
+     - tiff
+     - tif
+     - psd
+     - dwg
+     - dxf
+     #- fh
+     #- fhc
+     #- fh4
+     #- fh5
+     #- fh7
+     #- csv -
+     #- txt
+     #- text -
+     #- conf -
+     #- def -
+     #- list -
+     #- log -
+     #- in -
+     #- c -
+     #- cc -
+     #- cxx -
+     #- cpp -
+     #- h -
+     #- hh -
+     #- dic -
+     #- java -
+     #- php -
+     #- js -
+     - rar
+     - zip
+     #- gz -
+     #- tgz -
+     #- tar -
+    
+    
+    # descarga de ficheros en el muro
+    image_wall_filters:
+     - mini: 200, 150, scaleToFit
+     - small: 470, 250, scaleToFit
+     - normal: 800, 500, scaleToFit
+     #- big: 960, 720, scaleToFit
+      
+    image_link_filters:
+     - external_small: 160, 100, scaleToFit
+     - external_big: 720, 660, scaleToFit
+      
+    image_profile_filters:
+     - mini: 16, 16, cropOriginal
+     - small: 40, 40, cropOriginal
+     - normal: 50, 50, cropOriginal
+     - avatarwall: 54, 54, cropOriginal 
+     - avatar: 67, 67, cropOriginal
+     - wall:  230, 230, cropOriginal
+     - wallProfile:  160, 160, cropOriginal
+     - big: 196, 216, cropOriginal
+      
+  
+  drupal_config:
+    apache_user: www-data
+    apache_group: www-data
+    #nombre del dominio principal de drupal
+    domain: telvy.net
+    system_subdomains:
+      - demo 
+    tables_to_clone:
+      - access
+      - users
+    # path absoluto de la carpeta donde estan las sites
+    # activas de Drupal. Puede no estar en la jerarquia de carpetas
+    # de drupal-document-root  
+    sites_folder: /var/www/vhosts/arquematics.net/httpdocs/web/sites 
+      
+    #path absoluto al document root de drupal
+    document_root: /var/www/vhost/arquematics.net/httpdocs/web

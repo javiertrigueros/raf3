@@ -1,0 +1,885 @@
+
+######################
+# arAuth routes      #
+######################
+# The new sfDoctrineGuardPlugin changed the default URLs for these,
+# we and our clients like the old ones. Change at will
+ar_auth_user_back:
+  url: /userBack
+  param: { module: arAuth, action: userBack }
+  requirements:
+    sf_method: [POST]
+    username: '[\w-]+'
+
+ar_auth_signin_oauth:
+  url: /logAfterOAuth
+  param: { module: arAuth, action: signinAfterOAuth }
+  requirements:
+    sf_method: [GET]
+
+ar_change:
+  url:   /change/:unique_key
+  param: { module: arRegister, action: change }
+  options: { model: sfGuardForgotPassword, type: object }
+  class: sfDoctrineRoute
+  requirements:
+    sf_method: [GET, POST]
+
+ar_forgot:
+  url:   /forgot
+  param: { module: arRegister, action: forgotPassword }
+
+ar_register:
+  url:   /register
+  param: { module: arRegister, action: index }
+
+sf_guard_signin:
+  url: /login
+  param: { module: arAuth, action: signin }
+  requirements:
+    sf_method: [GET, POST]
+
+sf_guard_signout:
+  url: /logout
+  param: { module: arAuth, action: signout }
+
+#################
+# arDrop routes #
+#################
+
+drop_file_create_process:
+  url: /createProcess
+  param: { module: arDrop, action: createProcess }
+  class: aRoute
+  requirements:
+    sf_method: [POST]
+    inputformat: '[\w-]+'
+    outputformat: '[\w-]+'
+
+drop_file_upload_chunk_preview:
+  url: /preview/chunk/:id
+  param: { module: arDrop, action: sendChunkPreview }
+  options: { model: arDropFilePreview, type: object }
+  class: aDoctrineRoute
+  requirements:
+    sf_method: [POST]
+    pos:  \d+
+    chunkData: '[\w-]+'
+    
+drop_file_preview:
+  url: /preview/:id
+  param: { module: arDrop, action: sendPreview }
+  options: { model: arDropFile, type: object }
+  class: aDoctrineRoute
+  requirements:
+    sf_method: [POST]
+    id:  \d+
+       
+drop_file_upload_chunk:
+  url: /:id
+  param: { module: arDrop, action: sendChunk }
+  options: { model: arDropFile, type: object }
+  class: aDoctrineRoute
+  requirements:
+    sf_method: [POST]
+    pos:  \d+
+    chunkData: '[\w-]+' 
+
+drop_file_view_chunk:
+  url: /:slug/:pos
+  param: { module: arDrop, action: viewFileChunk }
+  options: { model: arDropFile, type: object }
+  class: aDoctrineRoute
+  requirements:
+    sf_method: [GET]
+    slug: '[\w-]+'
+    pos:  \d+
+    
+drop_file_view_chunk_preview:
+  url: /:slug/:style/:pos
+  param: { module: arDrop, action: viewFileChunkPreview }
+  options: { model: arDropFile, type: object }
+  class: aDoctrineRoute
+  requirements:
+    sf_method: [GET]
+    slug: '[\w-]+'
+    pos:  \d+
+    style: '[\w-]+'
+    
+drop_file_view_preview:
+  url: /:slug/:style
+  param: { module: arDrop, action: viewFilePreview }
+  options: { model: arDropFile, type: object }
+  class: aDoctrineRoute
+  requirements:
+    sf_method: [GET]
+    slug: '[\w-]+'
+    style: '[\w-]+'
+
+drop_file_delete:
+  url: /:slug
+  param: { module: arDrop, action: deleteFile }
+  options: { model: arDropFile, type: object }
+  class: aDoctrineRoute
+  requirements:
+    sf_method: [DELETE]
+    slug: '[\w-]+'
+
+drop_file_update:
+  url: /:slug
+  param: { module: arDrop, action: updateFile }
+  options: { model: arDropFile, type: object }
+  class: aDoctrineRoute
+  requirements:
+    sf_method: [PUT]
+    slug: '[\w-]+'
+
+drop_file_view:
+  url: /:slug
+  param: { module: arDrop, action: viewFile }
+  options: { model: arDropFile, type: object }
+  class: aDoctrineRoute
+  requirements:
+    sf_method: [GET]
+    slug: '[\w-]+'
+    
+drop_file:
+  url: /
+  param: { module: arDrop, action: sendFile }
+  class: aRoute
+  requirements:
+    sf_method: [POST]
+    
+#####################
+# aWall routes      #
+#####################
+
+wall_message_send:
+  url: /message
+  param: { module: arWall, action: sendMessage }
+  class: aRoute
+  requirements:
+    sf_method: [POST]
+
+
+wall_comment_send:
+  url: /comment/:id
+  param: { module: arWall, action: sendComment }
+  options: { model: arWallMessage, type: object }
+  class: aDoctrineRoute
+  requirements:
+    sf_method: [POST]
+    id: \d+
+    
+wall_comment_delete:
+  url: /comment-delete/:id
+  param: { module: arWall, action: deleteComment }
+  options: { model: arWallComment, type: object }
+  class: aDoctrineRoute
+  requirements:
+    sf_method: [POST]
+    id: \d+
+    
+wall_message_delete:
+  url: /message-delete/:id
+  param: { module: arWall, action: deleteMessage }
+  options: { model: arWallMessage, type: object }
+  class: aDoctrineRoute
+  requirements:
+    sf_method: [POST]
+    id: \d+
+    
+wall_user:
+  url: /:username
+  param: { module: arWall, action: showUserWall }
+  options: { model: sfGuardUser, type: object }
+  class: aDoctrineRoute 
+  requirements:
+    username: \w+
+    sf_method: [GET, POST]
+
+wall:
+  url: /
+  param: { module: arWall, action: index }
+  class: aRoute
+  requirements:
+    tag: \w
+    geotag: \w
+    pag: \d
+    userid: \d
+    sf_method: [GET, POST]
+
+#####################
+# aMap routes   #
+#####################
+user_profile_send_map:
+  url: /:username/profilemap
+  param: { module: arMap, action: sendProfileMap }
+  options: { model: sfGuardUserProfile, type: object }
+  class: aDoctrineRoute
+  requirements:
+    username: \w+
+    sf_method: [POST]
+    
+wall_map_cancel:
+ url: /cancel/:id
+ param: { module: arMap, action: cancel}
+ options: { model: arGmapsLocate, type: object }
+ class: aDoctrineRoute
+ requirements:
+    id: \d+
+    sf_method: [POST]
+    
+wall_send_map:
+  url: /wallmap
+  param: { module: arMap, action: wallSendMap }
+  class: aRoute
+  requirements:
+    sf_method: [POST]
+    
+#######################
+# arTag routes       #
+#######################
+
+wall_tag_send:
+  url: /send
+  param: { module: arTag, action: send }
+  class: aRoute
+  requirements:
+    sf_method: [POST]
+    
+wall_tag_cancel:
+ url: /cancel/:id
+ param: { module: arTag, action: cancel}
+ options: { model: arWallLink, type: object }
+ class: aDoctrineRoute
+ requirements:
+    id: \d+
+    sf_method: [POST]
+    
+#######################
+# arLink routes       #
+#######################
+
+wall_link_send:
+  url: /send
+  param: { module: arLink, action: sendLink }
+  class: aRoute
+  requirements:
+    sf_method: [POST]
+    
+wall_link_cancel:
+ url: /cancel/:id
+ param: { module: arLink, action: cancelLink}
+ options: { model: arWallLink, type: object }
+ class: aDoctrineRoute
+ requirements:
+    id: \d+
+    sf_method: [POST]
+    
+#######################
+# arFileUpload routes #
+#######################
+
+wall_file_send_status:
+  url: /status
+  param: { module: arFileUpload, action: sendFileStatus }
+  class: aRoute
+
+wall_file_delete:
+  url: /delete/:id
+  param: { module: arFileUpload, action: deleteFile }
+  options: { model: arWallUpload, type: object }
+  class: aDoctrineRoute
+  requirements:
+    id: \d+
+    sf_method: [POST]
+
+wall_file_session_delete:
+  url: /sdelete/:user_id/:gui_id
+  param: { module: arFileUpload, action: deleteSessionFile }
+  options: { model: arWallUpload, type: object }
+  class: aDoctrineRoute
+  requirements:
+    user_id: \d+
+    gui_id: \d+
+    sf_method: [GET, POST]
+
+wall_file_session:
+  url: /session
+  param: { module: arFileUpload, action: getSessionFiles }
+  class: aRoute
+  requirements:
+    sf_method: [POST]
+
+wall_file_send:
+  url: /file
+  param: { module: arFileUpload, action: sendFile }
+  class: aRoute
+  requirements:
+    sf_method: [POST]
+
+#################
+# arGroup routes #
+#################
+
+save_user_list:
+  url: /save/:username
+  param: { module: arGroup, action: createList }
+  options: { model: sfGuardUserProfile, type: object }
+  class: aDoctrineRoute
+  requirements:
+    name: '[\w-]+'
+    users_list: '[\w-]+'
+    sf_method: [POST]
+
+add_friend_to_list:
+  url: /addfriendtolist
+  param: { module: arGroup, action: addFriendToList }
+  options: { model: sfGuardUserProfile, type: object }
+  class: aDoctrineRoute
+  requirements:
+    profile_id: \d+
+    sf_method: [POST]
+
+add_friend:
+  url: /addfriend
+  param: { module: arGroup, action: addFriendConfirmation }
+  class: aRoute
+  requirements:
+    list_id: \d+
+    add_profile_id: \d+
+    sf_method: [POST]
+    
+add_friend_request_no_list:
+  url: /addrequest
+  param: { module: arGroup, action: addFriendRequestNoList }
+  options: { model: sfGuardUserProfile, type: object }
+  class: aDoctrineRoute
+  requirements:
+    friend_id: \d+
+    sf_method: [POST]
+    
+add_friend_request:
+  url: /add/:username
+  param: { module: arGroup, action: addFriendRequest }
+  options: { model: sfGuardUserProfile, type: object }
+  class: aDoctrineRoute
+  requirements:
+    list_id: \d+
+    list_owner_id: \d+
+    users_list: '[\w-]+'
+    sf_method: [POST]
+    
+edit_user_list:
+  url: /edit/:username
+  param: { module: arGroup, action: editListName }
+  options: { model: sfGuardUserProfile, type: object }
+  class: aDoctrineRoute
+  requirements:
+    list_id: \d+
+    list_owner_id: \d+
+    sf_method: [POST]
+
+get_user_list:
+  url: /get/:username
+  param: { module: arGroup, action: getUserList }
+  options: { model: sfGuardUserProfile, type: object }
+  class: aDoctrineRoute
+  requirements:
+    list_id: \d+
+    list_owner_id: \d+
+    page: \d+
+    sf_method: [POST]
+
+delete_user_list:
+  url: /delete/:username
+  param: { module: arGroup, action: deleteFriend }
+  options: { model: sfGuardUserProfile, type: object }
+  class: aDoctrineRoute
+  requirements:
+    id: \d+
+    list_owner_id: \d+
+    profile_id: \d+
+    sf_method: [POST]
+
+delete_user_list_all:
+  url: /delall/:username
+  param: { module: arGroup, action: deleteList }
+  options: { model: sfGuardUserProfile, type: object }
+  class: aDoctrineRoute
+  requirements:
+    id: \d+
+    list_owner_id: \d+
+    sf_method: [POST]
+    
+
+search_users_byname_auto:
+  url: /autocomplete/:username
+  param: { module: arGroup, action: listUsersByNameAutoComplete }
+  options: { model: sfGuardUserProfile, type: object }
+  class: aDoctrineRoute
+  requirements:
+    search: '[\w-]+'
+    sf_method: [POST]
+    
+search_users_byname:
+  url: /search/:username
+  param: { module: arGroup, action: listUsersByName }
+  options: { model: sfGuardUserProfile, type: object }
+  class: aDoctrineRoute
+  requirements:
+    search: '[\w-]+'
+    page: \d+
+    sf_method: [POST]
+    
+search_friends_byname_auto:
+  url: /autofriends
+  param: { module: arGroup, action: friendsByNameAutoComplete }
+  class: aRoute
+  requirements:
+    search: '[\w-]+'
+    sf_method: [POST]
+    
+search_friends_byname:
+  url: /friendsbyname
+  param: { module: arGroup, action: friendsByName }
+  class: aRoute
+  requirements:
+    search: '[\w-]+'
+    is_subscriber: \d+
+    page: \d+
+    sf_method: [POST]
+
+user_list_friends:
+  url: /friends
+  param: { module: arGroup, action: showFriends }
+  class: aRoute
+  requirements:
+    sf_method: [GET]
+
+user_list:
+  url: /
+  param: { module: arGroup, action: index }
+  class: aRoute
+  requirements:
+    sf_method: [GET]
+    
+#####################
+# aProfile routes   #
+#####################
+
+linkedin_connect:
+  url: /linkedinConnect
+  class: aRoute
+  param: { module: arProfile, action: linkedinConnect }
+  requirements:
+    sf_method: [GET]
+    
+twitter_connect:
+  url: /twitterConnect
+  class: aRoute
+  param: { module: arProfile, action: twitterConnect }
+  requirements:
+    sf_method: [GET]
+
+facebook_connect:
+  url: /facebookConnect
+  class: aRoute
+  param: { module: arProfile, action: facebookConnect }
+  requirements:
+    sf_method: [GET]
+    
+google_connect:
+  url: /googleConnect
+  class: aRoute
+  param: { module: arProfile, action: googleConnect }
+  requirements:
+    sf_method: [GET]
+    
+facebook_user:
+  url: /facebookUser
+  class: aRoute
+  param: { module: arProfile, action: facebookUser }
+  requirements:
+    sf_method: [GET]
+  
+user_profile_configure:
+  url: /configure
+  param: { module: arProfile, action: configure }
+  class: aRoute
+  requirements:
+    sf_method: [GET]
+    
+user_profile_mutual_view:
+  url: /:username/mutual
+  param: { module: arProfile, action: showMutualFriends }
+  options: { model: sfGuardUserProfile, type: object }
+  class: aDoctrineRoute
+  requirements:
+    sf_method: [GET]
+    
+user_profile_mutual:
+  url: /:username/mutual
+  param: { module: arProfile, action: listMutualFriends }
+  options: { model: sfGuardUserProfile, type: object }
+  class: aDoctrineRoute
+  requirements:
+    pag: \d+
+    sf_method: [POST]
+    
+user_profile_send_image:
+  url: /:username/image
+  param: { module: arProfile, action: sendImage }
+  options: { model: sfGuardUser, type: object }
+  class: aDoctrineRoute
+  requirements:
+    username: \w+
+    sf_method: [POST]
+
+user_profile_update_name:
+  url: /:username/update_name
+  param: { module: arProfile, action: updateName }
+  options: { model: sfGuardUserProfile, type: object }
+  class: aDoctrineRoute
+  requirements:
+    username: '[\w-]+'
+    sf_method: [POST]
+
+user_profile_update_pass:
+  url: /:username/update_pass
+  param: { module: arProfile, action: updatePass }
+  options: { model: sfGuardUserProfile, type: object }
+  class: aDoctrineRoute
+  requirements:
+    username: '[\w-]+'
+    sf_method: [POST]
+
+user_profile_update_description:
+  url: /:username/update_description
+  param: { module: arProfile, action: updateDescription }
+  options: { model: sfGuardUserProfile, type: object }
+  class: aDoctrineRoute
+  requirements:
+    username: '[\w-]+'
+    sf_method: [POST]
+    
+user_profile_update:
+  url: /:username/update
+  param: { module: arProfile, action: updateField }
+  options: { model: sfGuardUserProfile, type: object }
+  class: aDoctrineRoute
+  requirements:
+    username: '[\w-]+'
+    field_name: '[\w-]+'
+    sf_method: [POST]
+
+user_profile_info:
+  url: /:username/info
+  param: { module: arProfile, action: profileInfo }
+  options: { model: sfGuardUserProfile, type: object }
+  class: aDoctrineRoute
+  requirements:
+    username: '[\w-]+'
+    sf_method: [GET]
+   
+user_profile:
+  url: /:username
+  param: { module: arProfile, action: index }
+  options: { model: sfGuardUserProfile, type: object }
+  class: aDoctrineRoute
+  requirements:
+    username: '[\w-]+'
+    sf_method: [GET]
+    
+#users:
+#  url: /
+#  param: { module: arProfile, action: list }
+#  class: aRoute
+  
+#################
+# arMedia routes#
+#################
+user_profile_image:
+  url: /profile/:size/:slug
+  param: { module: arMedia, action: showProfile }
+  options: { model: arProfileUpload, type: object }
+  class: sfDoctrineRoute
+  requirements:
+    slug: '[\w-]+'
+    size: '[\w-]+'
+    sf_method: [GET]
+ 
+user_wall_link:
+  url: /link/:size/:slug
+  param: { module: arMedia, action: showLink }
+  options: { model: arWallImageLink, type: object }
+  class: sfDoctrineRoute
+  requirements:
+    slug: '[\w-]+'
+    size: '[\w-]+'
+    sf_method: [GET]
+
+user_wall_diagram:
+  url: /diagram/:size/:slug
+  param: { module: arMedia, action: showDiagram }
+  options: { model: arDiagram, type: object }
+  class: sfDoctrineRoute
+  requirements:
+    slug: '[\w-]+'
+    size: '[\w-]+'
+    sf_method: [GET]
+
+user_wall_image:
+  url: /wall/:size/:slug
+  param: { module: arMedia, action: showWallImage }
+  options: { model: arWallImageUpload, type: object }
+  class: sfDoctrineRoute
+  requirements:
+    slug: '[\w-]+'
+    size: '[\w-]+'
+    sf_method: [GET]
+    
+3d_obj_view:
+  url: /3dview/:name.:format
+  param: { module: arMedia, action: show3dObj}
+  class: aRoute
+  requirements:
+    format: '[\w-]+'
+    name: '[\w-]+'
+    sf_method: [GET]
+    
+user_resource:
+  url: /:type/:size/:name.:format
+  param: { module: arMedia, action: showMediaFile }
+  class: aRoute
+  requirements:
+    format: '[\w-]+'
+    name: '[\w-]+'
+    type: '[\w-]+'
+    size: '[\w-]+'
+    sf_method: [GET]
+    
+#######################
+# arBlog routes       #
+#######################
+ar_blog_post_create:
+  url: /createPost
+  param: { module: arBlog, action: createPost }
+  class: aRoute
+  requirements:
+    message: '[\w-]+'
+    title: '[\w-]+'
+    sf_method: [POST]
+
+ar_blog_post_edit:
+  url:  /editPost/:id
+  options: { model: aBlogPost, type: object }
+  param: { module: arBlog, action: editPost }
+  class: aRoute
+  requirements:
+    sf_method: GET
+    id: \d+
+    page_back: \d+
+    page_id: \d+
+    
+ar_blog_post_delete:
+  url:  /deletePost/:id
+  options: { model: aBlogPost, type: object }
+  param: { module: arBlog, action: deletePost }
+  class: aDoctrineRoute
+  requirements:
+    sf_method: [POST]
+    id: \d+
+    
+ar_blog_event_delete:
+  url:  /deleteEvent/:id
+  options: { model: aEvent, type: object }
+  param: { module: arBlog, action: deleteEvent }
+  class: aDoctrineRoute
+  requirements:
+    sf_method: [POST]
+    id: \d+
+
+ar_blog_event_edit:
+  url:  /editEvent/:id
+  options: { model: aEvent, type: object }
+  param: { module: arBlog, action: editEvent }
+  class: aRoute
+  requirements:
+    sf_method: [GET]
+    id: \d+
+    page_back: \d+
+    page_id: \d+
+
+ar_blog_post_preview:
+  url: /preview/:slug
+  param: { module: arBlog, action: previewPost }
+  options: { model: aBlogPost, type: object, method: findOne }
+  class: aDoctrineRoute
+  requirements:
+    slug: '[\w-]+'
+    sf_method: [GET]
+
+ar_blog_event_create:
+  url: /createEvent
+  param: { module: arBlog, action: createEvent }
+  class: aRoute
+  requirements:
+    message: '[\w-]+'
+    title: '[\w-]+'
+    sf_method: [POST]
+
+ar_blog_update_title:
+  url: /updateTitle/:id
+  options: { model: aBlogPost, type: object, method: findOne }
+  param: { module: arBlog, action: updateTitle }
+  class: aDoctrineRoute
+  requirements:
+    sf_method: [POST]
+    id: \d+
+
+ar_blog_update_slug:
+  url: /updateSlug/:id
+  options: { model: aBlogPost, type: object, method: findOne }
+  param: { module: arBlog, action: updateSlug }
+  class: aDoctrineRoute
+  requirements:
+    sf_method: [POST]
+    id: \d+
+    
+ar_blog_update_excerpt:
+  url: /updateExcerpt/:id
+  options: { model: aBlogPost, type: object, method: findOne }
+  param: { module: arBlog, action: UpdateExcerpt }
+  class: aDoctrineRoute
+  requirements:
+    sf_method: [POST]
+    id: \d+
+    
+ar_blog_update_blog:
+  url: /updateBlog/:id
+  options: { model: aBlogPost, type: object, method: findOne }
+  param: { module: arBlog, action: updateBlog }
+  class: aDoctrineRoute
+  requirements:
+    sf_method: [POST]
+    id: \d+
+
+ar_blog_update_event:
+  url: /updateEvent/:id
+  options: { model: aEvent, type: object, method: findOne }
+  param: { module: arBlog, action: updateEvent }
+  class: aDoctrineRoute
+  requirements:
+    sf_method: [POST]
+    id: \d+
+    
+ar_blog_cat_to_blog_item:
+  url: /addCatToBlog/:id
+  options: { model: aBlogPost, type: object, method: findOne }
+  param: { module: arBlog, action: catAddToBlogItem }
+  class: aDoctrineRoute
+  requirements:
+    sf_method: [POST]
+    id: \d+
+   
+ar_blog_create_cat:
+  url: /createCat
+  param: { module: arBlog, action: catCreate }
+  class: aRoute
+  requirements:
+    sf_method: [POST]
+    name: '[\w-]+'
+    
+ar_blog_tag_delete:
+  url: /deleteTag/:id
+  options: { model: Tag, type: object }
+  param: { module: arBlog, action: tagDelete }
+  class: aDoctrineRoute
+  requirements:
+    sf_method: [POST]
+    
+ar_blog_cat_delete:
+  url: /deleteCat/:id
+  options: { model: aCategory, type: object }
+  param: { module: arBlog, action: catDelete }
+  class: aDoctrineRoute
+  requirements:
+    sf_method: [POST]
+    
+ar_blog_create_tag:
+  url: /createTag
+  param: { module: arBlog, action: createTagOrFind }
+  class: aRoute
+  requirements:
+    sf_method: [POST]
+    name: '[\w-]+'
+    
+ar_blog_tag_to_blog_item:
+  url: /addTagToBlog/:id
+  options: { model:  aBlogItem, type: object }
+  param: { module: arBlog, action: tagAddToBlogItem }
+  class: aDoctrineRoute
+  requirements:
+    sf_method: [POST]
+    id: \d+
+    
+ar_blog_tag_byname_auto:
+  url: /tagAutocomplete
+  param: { module: arBlog, action: tagsByNameAutoComplete }
+  class: aRoute
+  requirements:
+    name: '[\w-]+'
+    sf_method: [POST]
+    
+#################
+# API routes   #
+#################
+
+log_user_info:
+  url: /API/userInfo
+  param: { module: API, action: logUserInfo }
+  class: sfRoute
+  requirements:
+  #  sf_format: (?:xml|json) // esto lo implemento luego igual
+  #  sf_format: (json)
+    sf_method: [GET]
+    
+comment_send:
+  url: /API/comments/:model/:id
+  param: { module: API, action: sendComment }
+  class: sfRoute
+  requirements:
+  #  sf_format: (?:xml|json) // esto lo implemento luego igual
+  #  sf_format: (json)
+    model: \w+
+    id: \d+
+    sf_method: [GET, POST]
+    
+comment_delete:
+  url: /API/comments-delete/:id
+  param: { module: API, action: deleteComment }
+  options: { model: Comment, type: object }
+  class: sfDoctrineRoute 
+  requirements:
+  #  sf_format: (?:xml|json) // esto lo implemento luego igual
+  #  sf_format: (json)
+    id: \d+
+    record_model: \w+
+    record_id: \d+
+    sf_method: [GET, POST]
+    
+    
+api_mail:
+  url: /sendmail
+  param: { module: API, action: sendMailTo }
+  class: sfRoute
+    
+
+  
+
+
+
+                  
+            

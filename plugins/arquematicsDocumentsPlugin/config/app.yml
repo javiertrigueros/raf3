@@ -1,0 +1,35 @@
+all:
+ arquematics_document:
+    # documentos por página
+    docs_perpage: 10
+
+ docs_config:
+    etherpad_api_url: 
+    etherpad_key: 
+    etherpad_host: 
+    etherpad_site: 
+    
+ #arquematics config
+ arquematics_oryx_editor:
+    small_image_width: 130
+    small_image_height: 87
+    big_image_width: 720
+    big_image_height: 660
+    
+ arquematics_editor:
+    enabled:
+     #el orden de los iconos es el de la lista
+     - note
+     - svg
+     - rawchart
+     - wireframe
+     #- mindmaps
+     - bpmn
+     - epc
+     - uml
+     - umlsequence
+     - umlusecase
+     #- paint
+     
+ arquematics_waint_icon: '/arquematicsDocumentsPlugin/images/spritestime.png'
+    

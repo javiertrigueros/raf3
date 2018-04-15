@@ -1,0 +1,17 @@
+
+##########################
+# arTelegram routes      #
+##########################
+ar_telegram:
+  url: /telegram
+  param: { module: arTelegram, action: index }
+  requirements:
+    sf_method: [GET]
+
+
+  
+
+
+
+                  
+            

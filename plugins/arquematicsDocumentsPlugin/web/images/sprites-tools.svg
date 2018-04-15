@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Icons from directory ""-->
+
+<svg
+   xmlns:oryx="http://www.b3mn.org/oryx"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="48"
+   height="432"
+   viewBox="0 0 48 432"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="sprites-tools.svg">
+  <metadata
+     id="metadata143">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs141" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1024"
+     inkscape:window-height="648"
+     id="namedview139"
+     showgrid="false"
+     inkscape:zoom="1.5451593"
+     inkscape:cx="62.903849"
+     inkscape:cy="337.11121"
+     inkscape:window-x="0"
+     inkscape:window-y="58"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="browser" />
+  <svg
+     id="bpmn"
+     height="48"
+     width="48"
+     version="1.1"
+     viewBox="0 0 38.4 38.4"
+     y="0">
+    <g
+       id="bpmn-g3088"
+       pointer-events="fill"
+       stroke="#000"
+       transform="matrix(.40333 0 0 0.431 12.309 .31755)">
+      <path
+         id="bpmn-frame"
+         d="m1 16 15-15 15 15-15 15-15-15"
+         fill="#fff" />
+      <g
+         id="bpmn-cross">
+        <path
+           id="bpmn-path3093"
+           d="m11.5 9.5h3l6 13h-3l-6-13" />
+        <path
+           id="bpmn-path3095"
+           d="m11.5 22.5 6-13h3l-6 13h-3" />
+      </g>
+    </g>
+    <g
+       id="bpmn-g3230"
+       pointer-events="fill"
+       transform="matrix(.23150 0 0 .23124 .49983 3.5137)">
+      <defs
+         id="bpmn-defs3232">
+        <radialGradient
+           id="bpmn-background"
+           gradientUnits="userSpaceOnUse"
+           cx="3.6"
+           cy="3.6"
+           r="31">
+          <stop
+             id="bpmn-stop3235"
+             stop-color="#fff"
+             offset="0" />
+          <stop
+             id="bpmn-fill_el"
+             stop-color="#fff"
+             offset="1" />
+        </radialGradient>
+      </defs>
+      <circle
+         id="bpmn-bg_frame"
+         stroke-width="3"
+         d="M 30,16 C 30,23.731986 23.731986,30 16,30 8.2680135,30 2,23.731986 2,16 2,8.2680135 8.2680135,2 16,2 23.731986,2 30,8.2680135 30,16 z"
+         cy="16"
+         stroke="#000"
+         cx="16"
+         r="14"
+         fill="url(#bpmn-background)" />
+      <text
+         id="bpmn-text_name"
+         font-size="11px"
+         oryx:align="top center"
+         stroke="#000000"
+         y="32"
+         x="16" />
+    </g>
+    <rect
+       id="bpmn-text_frame"
+       rx="1.4787"
+       oryx:anchors="bottom top right left"
+       ry="1.8645"
+       height="14.73"
+       width="13.9"
+       y="15.67"
+       x="22.448"
+       fill="none" />
+    <text
+       id="bpmn-text_name-5"
+       oryx:align="middle center"
+       font-size="1.4798px"
+       transform="scale(1.1991 .83398)"
+       stroke="#000000"
+       oryx:fittoelem="text_frame"
+       y="28.308422"
+       x="11.810134"
+       stroke-width=".12332" />
+    <g
+       id="bpmn-g3742"
+       pointer-events="fill"
+       transform="matrix(.22163 0 0 .25204 15.246 29.896)">
+      <defs
+         id="bpmn-defs3744" />
+      <circle
+         id="bpmn-bg_frame-5"
+         stroke-width="3"
+         d="M 30,16 C 30,23.731986 23.731986,30 16,30 8.2680135,30 2,23.731986 2,16 2,8.2680135 8.2680135,2 16,2 23.731986,2 30,8.2680135 30,16 z"
+         stroke="#000"
+         cy="16"
+         cx="16"
+         r="14"
+         fill="url(#bpmn-background)" />
+      <circle
+         id="bpmn-circle3751"
+         d="m 25,16 c 0,4.970563 -4.029437,9 -9,9 -4.970563,0 -9,-4.029437 -9,-9 0,-4.970563 4.029437,-9 9,-9 4.970563,0 9,4.029437 9,9 z"
+         cy="16"
+         stroke="#000"
+         cx="16"
+         r="9" />
+      <text
+         id="bpmn-text_name-2"
+         font-size="11px"
+         oryx:align="top center"
+         stroke="#000000"
+         y="32"
+         x="16" />
+    </g>
+    <rect
+       id="bpmn-text_frame-7"
+       rx="1.4787"
+       oryx:anchors="bottom top right left"
+       ry="1.8645"
+       height="14.73"
+       width="13.9"
+       y="15.67"
+       x="2.5677"
+       fill="none" />
+    <rect
+       id="bpmn-callActivity-1"
+       rx="1.4449"
+       oryx:resize="vertical horizontal"
+       oryx:anchors="bottom top right left"
+       ry="1.6502"
+       height="13.201"
+       width="14.449"
+       stroke="#000"
+       y="17.049"
+       x=".58093"
+       stroke-width=".61765"
+       fill="#090" />
+    <g
+       stroke="#000"
+       fill="none"
+       id="g26">
+      <path
+         id="bpmn-path4233-8"
+         style="color:#000000"
+         d="m30.373 30.25v4.6022h-8.286"
+         stroke-width=".87834px" />
+      <path
+         id="bpmn-path4233-8-0"
+         style="color:#000000"
+         d="m7.4786 17.299v-3.483h11.314"
+         stroke-width=".89286px" />
+      <path
+         id="bpmn-path4233-8-0-4"
+         style="color:#000000"
+         d="m24.794 7.2136h5.2908v10.052"
+         stroke-width="1.0373px" />
+      <path
+         id="bpmn-path4233-8-0-4-3"
+         style="color:#000000"
+         d="m7.4781 7.2136h5.0767 0.49519-0.49519"
+         stroke-width=".94921px" />
+      <path
+         id="bpmn-path4233-8-8"
+         style="color:#000000"
+         d="m7.0748 30.25v4.6022h8.7448"
+         stroke-width=".90233px" />
+    </g>
+    <rect
+       id="bpmn-callActivity-1-9"
+       rx="1.4449"
+       oryx:resize="vertical horizontal"
+       oryx:anchors="bottom top right left"
+       ry="1.6502"
+       height="13.201"
+       width="14.449"
+       stroke="#000"
+       y="17.049"
+       x="23.169"
+       stroke-width=".61765"
+       fill="#0083d7" />
+  </svg>
+  <svg
+     id="browser"
+     xml:space="preserve"
+     height="48"
+     viewBox="0 0 48 48"
+     fill="#000000"
+     width="48"
+     version="1.1"
+     y="48"
+     x="0px"
+     enable-background="new 0 0 16 16"><path
+       id="browser-path3"
+       d="m39 48h-30c-4.971 0-9-4.032-9-9v-30c0-4.971 4.029-9 9-9h30c4.971 0 9 4.029 9 9v30c0 4.968-4.029 9-9 9zm-30-6h30c1.659 0 3-1.341 3-3v-21h-36v21c0 1.659 1.341 3 3 3zm30-36h-30c-1.659 0-3 1.344-3 3v6h36v-6c0-1.656-1.341-3-3-3zm-18 3h18v3h-18v-3zm-6 0h3v3h-3v-3zm-6 0h3v3h-3v-3z" /><g
+       stroke="#000"
+       id="g37"><path
+         id="browser-path3061"
+         d="m8.7729 20.675h30.058v6.4718h-30.058z"
+         stroke-width="1px"
+         fill="#ff8080" /><path
+         id="browser-path3071"
+         d="m8.7729 30.023h20.71v10.067h-20.71z"
+         stroke-width=".96609px"
+         fill="#0083d7" /><path
+         id="browser-path3073"
+         d="m31.64 30.023v10.067h7.1909v-10.067z"
+         stroke-width=".96609px"
+         fill="#090" /></g></svg>  <svg
+     id="document"
+     fill="#000000"
+     xml:space="preserve"
+     height="48"
+     viewBox="0 0 48 48"
+     width="48"
+     version="1.1"
+     y="96"
+     x="0px"
+     enable-background="new 0 0 16 16"><path
+       d="m39 48h-30c-1.659 0-3-1.341-3-3v-42c0-1.659 1.341-3 3-3h21l12 12v33c0 1.659-1.341 3-3 3zm-12-33v-9h-15v36h24v-27h-9z"
+       id="path43" /></svg>  <svg
+     id="epc"
+     height="48"
+     width="48"
+     version="1.1"
+     viewBox="0 0 38.4 38.4"
+     y="144">
+    <g
+       id="epc-g3235"
+       pointer-events="fill"
+       transform="matrix(.22274 0 0 .17956 7.9056 1.1119)">
+      <path
+         id="epc-celem"
+         d="m0 30 15-30h70l15 30-15 30h-70z"
+         oryx:resize="vertical horizontal"
+         stroke="#000"
+         stroke-width="4.8003"
+         fill="#900" />
+      <text
+         id="epc-text"
+         font-size="11px"
+         oryx:align="middle center"
+         stroke="#000000"
+         oryx:fittoelem="textrect"
+         y="30"
+         x="50"
+         fill="#990000" />
+      <text
+         id="epc-commonnesstext"
+         font-size="11px"
+         oryx:align="right top"
+         stroke="#000000"
+         y="-5"
+         x="-2"
+         fill="#990000" />
+    </g>
+    <g
+       id="epc-g3306"
+       pointer-events="fill"
+       fill="#3e9ade"
+       transform="matrix(.15936 0 0 .17995 1.301 25.79)">
+      <rect
+         id="epc-celem-0"
+         oryx:resize="vertical horizontal"
+         rx="10"
+         ry="10"
+         height="60"
+         width="100"
+         stroke="#000"
+         y="0"
+         x="0"
+         stroke-width="7.0862" />
+      <text
+         id="epc-text-9"
+         font-size="11px"
+         oryx:align="middle center"
+         stroke="#000000"
+         oryx:fittoelem="celem"
+         y="30"
+         x="50" />
+      <text
+         id="epc-timetext"
+         font-size="11px"
+         oryx:align="left top"
+         stroke="#000000"
+         y="-10"
+         x="103" />
+    </g>
+    <g
+       id="epc-g3494"
+       transform="matrix(.28832 0 0 .22987 14.641 14.135)">
+      <ellipse
+         id="epc-celem-8"
+         d="M 31,16 C 31,24.284271 24.284271,31 16,31 7.7157288,31 1,24.284271 1,16 1,7.7157288 7.7157288,1 16,1 24.284271,1 31,7.7157288 31,16 z"
+         oryx:resize="vertical horizontal"
+         rx="15"
+         ry="15"
+         stroke="#000"
+         cy="16"
+         cx="16"
+         fill="#fff" />
+      <path
+         id="epc-path3497"
+         d="m11 22 5-12 5 12"
+         oryx:resize="vertical horizontal"
+         stroke="#000"
+         fill="none" />
+      <text
+         id="epc-text-1"
+         oryx:defaultPosition="middleRight"
+         font-size="11px"
+         y="16"
+         x="16" />
+    </g>
+    <g
+       id="epc-g3306-3"
+       pointer-events="fill"
+       transform="matrix(.15936 0 0 .17995 21.32 25.79)">
+      <rect
+         id="epc-celem-0-5"
+         oryx:resize="vertical horizontal"
+         rx="10"
+         ry="10"
+         height="60"
+         width="100"
+         stroke="#000"
+         y="0"
+         x="0"
+         stroke-width="5.669"
+         fill="#090" />
+      <text
+         id="epc-text-9-0"
+         font-size="11px"
+         oryx:align="middle center"
+         stroke="#000000"
+         oryx:fittoelem="celem"
+         y="30"
+         x="50"
+         fill="#009900" />
+      <text
+         id="epc-timetext-2"
+         font-size="11px"
+         oryx:align="left top"
+         stroke="#000000"
+         y="-10"
+         x="103"
+         fill="#009900" />
+    </g>
+    <g
+       stroke="#000"
+       fill="none"
+       id="g62">
+      <path
+         id="epc-path3557"
+         d="m15.359 19.146h-6.1384v6.6441"
+         stroke-width=".76895px" />
+      <path
+         id="epc-path3557-4"
+         d="m23.163 19.146h5.922v6.6441"
+         stroke-width=".75528px" />
+      <path
+         id="epc-path3577"
+         d="m19.254 14.671v-2.9831"
+         stroke-width=".63426px" />
+    </g>
+  </svg>
+  <svg
+     id="image"
+     enable-background="new 0 0 16 16"
+     xml:space="preserve"
+     height="48"
+     viewBox="0 0 48 48"
+     width="48"
+     version="1.1"
+     y="192"
+     x="0px"><path
+       id="image-path3"
+       fill="#69c"
+       d="m19.407 33.093c-2.229 0-5.718-8.814-7.407-5.25-0.702 1.482-1.872 4.641-3 7.17v0.987c0 1.659 1.344 3 3 3h24c1.659 0 3-1.341 3-3v-1.398c-1.695-3.816-3.891-10.14-6-12.57-4.314-4.968-9.468 11.061-13.593 11.061zm19.593-33.093h-30c-4.971 0-9 4.029-9 9v30c0 4.968 4.029 9 9 9h30c4.968 0 9-4.032 9-9v-30c0-4.971-4.032-9-9-9zm3 39c0 1.659-1.341 3-3 3h-30c-1.656 0-3-1.341-3-3v-30c0-1.656 1.344-3 3-3h30c1.659 0 3 1.344 3 3v30zm-28.5-21c2.487 0 4.5-2.013 4.5-4.5s-2.013-4.5-4.5-4.5-4.5 2.013-4.5 4.5 2.013 4.5 4.5 4.5z" /><path
+       id="image-path3-0"
+       d="m39 4.2797e-7h-30c-4.971 0-9 4.029-9 9v30c0 4.968 4.029 9 9 9h30c4.968 0 9-4.032 9-9v-30c0-4.971-4.032-9-9-9zm3 39c0 1.659-1.341 3-3 3h-30c-1.656 0-3-1.341-3-3v-30c0-1.656 1.344-3 3-3h30c1.659 0 3 1.344 3 3zm-28.5-21c2.487 0 4.5-2.013 4.5-4.5s-2.013-4.5-4.5-4.5-4.5 2.013-4.5 4.5 2.013 4.5 4.5 4.5z"
+       fill="#f0a513" /><path
+       id="image-path3-0-3"
+       d="m39.203-3.1102e-7h-30c-4.9706 0-8.9996 4.029-8.9996 9v30c0 4.968 4.029 9 9 9h30c4.968 0 9-4.032 9-9v-30c0-4.971-4.032-9-9-9zm3 39c0 1.659-1.341 3-3 3h-30c-1.656 0-3-1.341-3-3v-30c0-1.656 1.344-3 3-3h30c1.659 0 3 1.344 3 3z" /></svg>  <svg
+     id="minmaps"
+     height="48"
+     width="48"
+     version="1.1"
+     viewBox="0 0 38.4 38.4"
+     y="240">
+    <path
+       id="minmaps-path4"
+       d="m0.34376 0.27459h9.7449v7.7746h-4.3884c0.12907 2.8354 1.2584 5.5337 2.9041 7.1343 1.4843 1.5092 3.2913 2.3324 5.0983 2.6525v-2.4238c3.7108-0.04573 7.4539-0.04573 11.165 0v2.4238c2.0329-0.36586 4.0657-1.372 5.6469-3.247 1.323-1.6464 2.2265-4.0245 2.3556-6.5398h-4.3884v-7.7746h9.7449c0.03227 2.6068 0.03227 5.1678 0 7.7746h-3.9044c-0.16134 3.4757-1.3552 6.9514-3.4527 8.8722-1.1939 0.96039-2.4524 1.6921-3.7753 2.2409 1.6457 1.1891 3.5495 1.7378 4.8402 3.6586 1.4843 1.9665 2.2265 4.8019 2.3878 7.6374h3.9044c0.03227 2.6068 0.03227 5.1678 0 7.7746h-9.7449v-7.7746c1.4843 0 3.0009 0.04574 4.4852-0.04573-0.38721-2.8812-1.4198-5.7166-3.1945-7.2715-1.4521-1.372-3.1945-2.1494-4.9047-2.4696v2.5153c-3.7108 0.04573-7.4539 0.32013-11.132 0-0.03227-0.82319-0.03227-1.6007-0.03227-2.4238-2.1619 0.4116-4.3239 1.5092-5.905 3.6586-1.0971 1.4635-1.7425 3.4757-2.0006 5.5794h4.2916v8.2319h-9.7449c-0.032268-2.744-0.064536-5.4879 0.032268-8.2319h3.8721c0.22587-2.6982 0.96803-5.3507 2.3556-7.2258 1.0971-1.6921 2.7105-2.3324 4.098-3.3842-0.03227-0.1372-0.06453-0.4116-0.09681-0.59453-1.3573-0.868-2.9062-1.462-3.971-3.108-1.4843-1.967-2.2265-4.802-2.3878-7.6378h-3.9044c-0.032268-2.6068-0.032268-5.1678 0-7.7746z"
+       stroke="#6a6a6a"
+       stroke-width=".036014" />
+    <g
+       stroke="#000"
+       id="g73">
+      <path
+         id="minmaps-path2994"
+         d="m0.33898 0.20339h12.203v9.661h-12.203z"
+         transform="scale(.8)"
+         stroke-width="1px"
+         fill="#09f" />
+      <g
+         stroke-width="0.8px"
+         id="g76">
+        <path
+           id="minmaps-path2994-8"
+           d="m0.27119 30.4h9.7627v7.7288h-9.7627z"
+           fill="#f93" />
+        <path
+           id="minmaps-path2994-81"
+           d="m28.068 0.56949h9.7627v7.7288h-9.7627z"
+           fill="#090" />
+        <path
+           id="minmaps-path2994-1"
+           d="m28.068 30.4h9.7627v7.7288h-9.7627z"
+           fill="#900" />
+      </g>
+      <path
+         id="minmaps-path2994-0"
+         d="m13.716 15.167h10.533v7.9569h-10.533z"
+         stroke-width=".84314px"
+         fill="#f30" />
+    </g>
+  </svg>
+  <svg
+     id="sequence"
+     height="48"
+     width="48"
+     version="1.1"
+     viewBox="0 0 38.4 38.4"
+     y="288">
+    <text
+       id="sequence-text3094"
+       style="word-spacing:0px;letter-spacing:0px"
+       xml:space="preserve"
+       transform="scale(.8)"
+       font-size="40px"
+       y="6.3050847"
+       x="31.779661"
+       font-family="Sans"
+       line-height="125%"
+       fill="#000000"><tspan
+         id="sequence-tspan3096" /></text>
+    <text
+       id="sequence-text"
+       oryx:align="middle center"
+       font-size="8.0623px"
+       transform="scale(.71985 1.3892)"
+       stroke="#000000"
+       y="-13.911608"
+       x="-31.082216"
+       stroke-width=".57588" />
+    <text
+       id="sequence-text-0"
+       oryx:align="middle center"
+       font-size="11.2px"
+       stroke="#000000"
+       y="-13.902103"
+       x="-29.501247"
+       stroke-width="0.8" />
+    <g
+       stroke="#000"
+       id="g87">
+      <path
+         id="sequence-path3752"
+         d="m0.66156 0.70508h14.728v12.828h-14.728z"
+         stroke-width="1.0191"
+         fill="#99c" />
+      <path
+         id="sequence-path3752-8"
+         d="m23.009 0.70508h14.728v12.828h-14.728z"
+         stroke-width="1.0191"
+         fill="#090" />
+      <path
+         id="sequence-path4570"
+         d="m8 13.79v8.7458"
+         stroke-width="2.4479"
+         fill="none" />
+      <path
+         id="sequence-path4570-2"
+         d="m30.373 13.79v8.7458"
+         stroke-width="2.4479"
+         fill="none" />
+    </g>
+    <g
+       id="sequence-g4600"
+       transform="matrix(.98737 0 0 1 .10101 -.067797)"
+       stroke="#000"
+       fill="none">
+      <path
+         id="sequence-path4590"
+         d="m10 27.746h26.356"
+         transform="scale(.8)"
+         stroke-width="1px" />
+      <path
+         id="sequence-path4598"
+         d="m27.314 20.639 1.5729 1.5575-1.8222 1.4832"
+         stroke-width="0.8px" />
+    </g>
+    <path
+       id="sequence-path4570-1"
+       d="m8 23.959v4.678"
+       stroke="#000"
+       stroke-width="2.1772"
+       fill="none" />
+    <path
+       id="sequence-path4570-1-7"
+       d="m30.373 23.959v4.678"
+       stroke="#000"
+       stroke-width="2.1772"
+       fill="none" />
+    <g
+       id="sequence-g4600-1"
+       transform="matrix(-.98737 0 0 1 38.272 8.5424)"
+       stroke="#000"
+       fill="none">
+      <path
+         id="sequence-path4590-7"
+         d="m10 27.746h26.356"
+         transform="scale(.8)"
+         stroke-width="1px" />
+      <path
+         id="sequence-path4598-1"
+         d="m27.314 20.639 1.5729 1.5575-1.8222 1.4832"
+         stroke-width="0.8px" />
+    </g>
+    <g
+       stroke="#000"
+       fill="none"
+       id="g101">
+      <path
+         id="sequence-path4570-1-7-5"
+         d="m30.373 30.332v3.1864"
+         stroke-width="2.0589" />
+      <g
+         stroke-width="2.2481"
+         id="g104">
+        <path
+           id="sequence-path4570-1-7-5-3"
+           d="m7.9322 30.739v2.7797" />
+        <path
+           id="sequence-path4570-1-7-5-3-7"
+           d="m8 35.146v2.7797" />
+        <path
+           id="sequence-path4570-1-7-5-3-0"
+           d="m30.373 35.146v2.7797" />
+      </g>
+    </g>
+  </svg>
+  <svg
+     id="uml"
+     height="48"
+     width="48"
+     version="1.1"
+     viewBox="0 0 38.4 38.4"
+     y="336">
+    <text
+       id="uml-text3094"
+       style="word-spacing:0px;letter-spacing:0px"
+       xml:space="preserve"
+       transform="scale(.8)"
+       font-size="40px"
+       y="6.3050847"
+       x="31.779661"
+       font-family="Sans"
+       line-height="125%"
+       fill="#000000"><tspan
+         id="uml-tspan3096" /></text>
+    <g
+       id="uml-g3077"
+       stroke-width="3.0459"
+       transform="matrix(.29059 0 0 .34184 3.2025 20.681)"
+       oryx:maximumSize=""
+       oryx:minimumSize="50 40">
+      <rect
+         id="uml-classBorder"
+         oryx:resize="vertical horizontal"
+         height="50"
+         width="100"
+         stroke="#000"
+         y="0"
+         x="0"
+         fill="#090" />
+      <text
+         id="uml-className"
+         font-size="12px"
+         oryx:align="middle center"
+         stroke="#000000"
+         y="25"
+         x="50"
+         fill="#009900" />
+    </g>
+    <path
+       id="uml-path3092"
+       d="m3.1124 30.938h29.269-0.13615"
+       stroke="#000"
+       stroke-width="1.6098px"
+       fill="none" />
+    <g
+       id="uml-g3077-0"
+       transform="matrix(.25554 0 0 .27365 4.7711 .90356)"
+       oryx:maximumSize=""
+       oryx:minimumSize="50 40">
+      <rect
+         id="uml-classBorder-7"
+         oryx:resize="vertical horizontal"
+         height="50"
+         width="100"
+         stroke="#000"
+         y="0"
+         x="0"
+         stroke-width="3.6303"
+         fill="#66c" />
+      <text
+         id="uml-className-2"
+         font-size="12px"
+         oryx:align="middle center"
+         stroke="#000000"
+         y="25"
+         x="50"
+         fill="#6666cc" />
+    </g>
+    <path
+       id="uml-path3092-5"
+       d="m4.6919 6.6807h25.739-0.11971"
+       stroke="#000"
+       stroke-width="1.133px"
+       fill="none" />
+    <g
+       id="uml-g3436"
+       transform="matrix(.80472 0 0 .93052 23.774 2.9703)"
+       stroke="#000"
+       fill="none">
+      <path
+         id="uml-path3414"
+         d="m-7.8644 12.502v5.5593l-3.5368-2.1695 0.20503 0.06779"
+         stroke-width=".69561px" />
+      <path
+         id="uml-path3414-5"
+         d="m-7.4237 12.502v5.5593l3.0079-2.1695-0.17437 0.06779"
+         stroke-width=".64149px" />
+    </g>
+  </svg>
+  <svg
+     id="usecase"
+     height="48"
+     width="48"
+     version="1.1"
+     viewBox="0 0 38.4 38.4"
+     y="384">
+    <text
+       id="usecase-text3094"
+       style="word-spacing:0px;letter-spacing:0px"
+       xml:space="preserve"
+       transform="scale(.8)"
+       font-size="40px"
+       y="6.3050847"
+       x="31.779661"
+       font-family="Sans"
+       line-height="125%"
+       fill="#000000"><tspan
+         id="usecase-tspan3096" /></text>
+    <g
+       id="usecase-g3857"
+       stroke="#000"
+       transform="matrix(.99382 0 0 .90759 -2.3492 2.4149)">
+      <ellipse
+         id="usecase-head"
+         d="M 42,14 C 42,19.522847 37.522847,24 32,24 26.477153,24 22,19.522847 22,14 22,8.4771525 26.477153,4 32,4 37.522847,4 42,8.4771525 42,14 z"
+         rx="10"
+         transform="matrix(.26176 0 0 .24133 .94237 5.6098)"
+         ry="10"
+         cy="14"
+         cx="32"
+         stroke-width="2"
+         fill="#fff" />
+      <path
+         id="usecase-path3839"
+         d="m9.3186 11.402v7.2399m-5.2352-4.8266h10.47m-5.2352 4.8266 5.2352 7.2399m-10.47 0 5.2352-7.2399"
+         stroke-linecap="round"
+         stroke-width=".50267" />
+    </g>
+    <ellipse
+       id="usecase-celem"
+       d="M 120,25 C 120,38.807119 93.137085,50 60,50 26.862915,50 0,38.807119 0,25 0,11.192881 26.862915,0 60,0 c 33.137085,0 60,11.192881 60,25 z"
+       cx="60"
+       oryx:resize="vertical horizontal"
+       rx="60"
+       cy="25"
+       transform="matrix(.16271 0 0 .21340 18.78 3.2938)"
+       ry="25"
+       stroke="#000"
+       fill="#669" />
+    <rect
+       id="usecase-textrect"
+       oryx:resize="vertical horizontal"
+       height="5.7653"
+       width="16.143"
+       y="2.9263"
+       x="19.059"
+       fill="none" />
+    <text
+       id="usecase-text"
+       oryx:align="middle center"
+       font-size="2.0469px"
+       transform="scale(.90371 1.1066)"
+       stroke="#000000"
+       oryx:fittoelem="textrect"
+       y="5.2496076"
+       x="30.021544"
+       stroke-width=".18608" />
+    <ellipse
+       id="usecase-celem-4"
+       d="M 120,25 C 120,38.807119 93.137085,50 60,50 26.862915,50 0,38.807119 0,25 0,11.192881 26.862915,0 60,0 c 33.137085,0 60,11.192881 60,25 z"
+       cx="60"
+       oryx:resize="vertical horizontal"
+       rx="60"
+       cy="25"
+       transform="matrix(.16271 0 0 .21340 18.441 23.167)"
+       ry="25"
+       stroke="#000"
+       fill="#06c" />
+    <g
+       id="usecase-g4064"
+       transform="matrix(.94820 -.036421 .033360 .86851 .076249 2.9402)"
+       stroke="#000"
+       fill="none">
+      <path
+         id="usecase-path4590"
+         d="m11.445 18.562 8.4224-5.888"
+         stroke-width=".41205px" />
+      <path
+         id="usecase-path4044"
+         d="m19.286 12.833 0.21089 0.28168 0.35353-0.51085z"
+         stroke-width=".44812px" />
+    </g>
+    <g
+       id="usecase-g4068"
+       transform="matrix(.91160 0 0 .92334 1.0245 1.4159)"
+       stroke="#000"
+       fill="none">
+      <path
+         id="usecase-path4590-7"
+         d="m11.59 18.47 7.3474 6.0029"
+         stroke-width=".38775px" />
+      <path
+         id="usecase-path4044-6"
+         d="m18.529 23.888-0.24181 0.25563 0.56343 0.26172z"
+         stroke-width=".44812px" />
+    </g>
+  </svg>
+</svg>

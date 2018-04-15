@@ -1,0 +1,49 @@
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:oryx="http://www.b3mn.org/oryx"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.0">
+  <defs></defs>
+
+ <oryx:magnets>
+
+    <oryx:magnet oryx:cx="20" oryx:cy="1" oryx:anchors="top" />
+    <oryx:magnet oryx:cx="60" oryx:cy="1" oryx:anchors="top" />
+    <oryx:magnet oryx:cx="100" oryx:cy="1" oryx:anchors="top" />
+
+  </oryx:magnets>
+
+  <g>
+    <rect x="0" y="0" width="92" height="20"
+      oryx:anchor="top bottom left right"
+      oryx:resize="vertical horizontal"
+      style="fill:blue;stroke:blue;stroke-width:0;opacity:0.01;" />
+
+    <text 
+      id="textDropdown" 
+      x="0" 
+      y="14"
+      oryx:resize="horizontal" 
+      oryx:anchors="top" 
+      oryx:align="left"></text> 
+
+    <path
+       id="todown"
+       oryx:anchor="top bottom left right"
+       d="M 80 7 L 85 12 L 90 7 z"
+       stroke="black" fill="white" stroke-width="2" />
+
+    <rect x="0" y="20" width="92" height="120"
+      style="fill:blue;stroke:blue;stroke-width:0;opacity:0.01;" />
+    <text 
+      font-size="12" 
+      id="items" 
+      x="3" 
+      y="32" 
+      oryx:align="top left" 
+      oryx:anchors="top" 
+      stroke="black"></text>
+
+  </g>
+</svg>

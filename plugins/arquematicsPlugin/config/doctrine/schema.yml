@@ -1,0 +1,898 @@
+options:
+  collate: utf8_unicode_ci
+  charset: utf8
+
+arTagHasArWallMessage:
+  actAs: [Timestampable]
+  columns:
+    user_id:
+      type: integer
+    tag_id:
+      type: integer
+    wall_message_id:
+      type: integer
+  indexes:
+    tag_index:
+      fields: [tag_id]
+    user_index:
+      fields: [user_id]
+    wall_index:
+      fields: [wall_message_id]
+    search_index:
+      fields: [tag_id, user_id]
+  relations:
+    Message:
+      class: arWallMessage
+      local: wall_message_id
+      foreign: id
+      onDelete: CASCADE
+    Tag:
+      class: arTag
+      local: tag_id
+      foreign: id
+      onDelete: CASCADE
+    User:
+      class: sfGuardUserProfile
+      local: user_id
+      foreign: id
+      onDelete: CASCADE
+      
+arTag:
+  actAs:
+    Timestampable: ~
+  columns:
+    id:
+      type: integer
+      primary: true
+      autoincrement: true
+    name:
+      type:           string(100)
+    hash: 
+      type: string(255)
+      unique: true
+  indexes:
+    name:
+      fields:         [name]
+  relations:
+    Messages:
+      class: arWallMessage
+      refClass: arTagHasArWallMessage
+      local: tag_id
+      foreign: wall_message_id
+      foreignAlias: Tags 
+    EncContent:
+      class: arTagEnc
+      local: id
+      foreign: tag_id
+
+arTagEnc:
+  actAs:
+    Timestampable: ~
+  columns:
+    id:
+      type: integer
+      primary: true
+      autoincrement: true
+    user_id: integer
+    tag_id: integer
+    content: clob
+  indexes:
+    tag_index:
+      fields: [tag_id]
+  relations:
+    Tag:
+      class: arTag
+      local: tag_id
+      foreign: id
+      onDelete: CASCADE
+    User:
+      class: sfGuardUserProfile
+      local: user_id
+      foreign: id
+      
+arProfileUpload:
+  actAs:
+    Timestampable: ~
+    Sluggable:
+      unique: true
+      fields:  [file_name]
+      canUpdate: true
+  columns:
+    id:
+      type: integer
+      primary: true
+      autoincrement: true
+    file_name: string(255)
+    name: string(255)
+    mime_content_type: string(255)
+    user_id: integer
+    is_profile: boolean
+  relations:
+    User:
+      class: sfGuardUser
+      local: user_id
+      foreign: id
+      foreignAlias: UserProfileUploads
+
+arWallLink:
+  actAs:
+    Timestampable: ~
+  columns:
+    id:
+      type: integer
+      primary: true
+      autoincrement: true
+    has_thumb: boolean
+    user_id: integer
+    wall_message_id: integer
+    oembedtype:  string(255)
+    oembed: clob
+    title: clob
+    thumb: clob
+    description: clob
+    provider: clob
+    url: clob
+  relations:
+    EncContent:
+      class: arWallLinkEnc
+      local: id
+      foreign: wall_link_id
+    User:
+      class: sfGuardUser
+      local: user_id
+      foreign: id
+      foreignAlias: UserLinks
+    Message:
+      class: arWallMessage
+      local: wall_message_id
+      foreign: id
+      foreignAlias: MessageLink
+      onDelete: CASCADE
+
+arWallLinkEnc:
+  actAs:
+    Timestampable: ~
+  columns:
+    id:
+      type: integer
+      primary: true
+      autoincrement: true
+    user_id: integer
+    wall_link_id: integer
+    content: clob
+  indexes:
+    laverna_index:
+      fields: [wall_link_id, user_id]
+  relations:
+    Link:
+      class: arWallLink
+      local: wall_link_id
+      foreign: id
+      onDelete: CASCADE
+    User:
+      class: sfGuardUserProfile
+      local: user_id
+      foreign: id
+
+      
+arWallUpload:
+  actAs:
+    Timestampable: ~
+    Sluggable:
+      unique: true
+      fields:  [file_name]
+      canUpdate: true
+  columns:
+    id:
+      type: integer
+      primary: true
+      autoincrement: true
+    file_name: string(255)
+    name: string(255)
+    mime_content_type: string(255)
+    gui_id: BigInt
+    user_id: integer
+    size: integer
+    is_image: boolean
+    wall_message_id: integer
+  relations:
+    User:
+      class: sfGuardUser
+      local: user_id
+      foreign: id
+      foreignAlias: UserWallUploads
+    Message:
+      class: arWallMessage
+      local: wall_message_id
+      foreign: id
+      foreignAlias: MessageUploads
+      onDelete: CASCADE
+
+arWallImageUpload:
+  actAs:
+    Timestampable: ~
+    Sluggable:
+      unique: true
+      fields:  [file_name]
+      canUpdate: true
+  columns:
+    id:
+      type: integer
+      primary: true
+      autoincrement: true
+    file_name: string(255)
+    name: string(255)
+    mime_content_type: string(255)
+    user_id: integer
+    wall_message_id: integer
+  relations:
+    User:
+      class: sfGuardUser
+      local: user_id
+      foreign: id
+      foreignAlias: UserWallUploads
+    Message:
+      class: arWallMessage
+      local: wall_message_id
+      foreign: id
+      foreignAlias: MessageImageUploads
+      onDelete: CASCADE
+
+
+arWallComment:
+  actAs:
+    Timestampable: ~
+  columns:
+    id:
+      type: integer
+      primary: true
+      autoincrement: true
+    user_id: integer
+    wall_message_id: integer
+    comment: clob
+  indexes:
+    message_index:
+      fields: [id, wall_message_id]
+  relations:
+    EncContent:
+      class: arWallCommentEnc
+      local: id
+      foreign: wall_comment_id
+    Messages:
+      class: arWallMessage
+      local: wall_message_id
+      foreign: id
+      onDelete: CASCADE
+    User:
+      class: sfGuardUserProfile
+      local: user_id
+      foreign: id
+
+arWallCommentEnc:
+  actAs:
+    Timestampable: ~
+  columns:
+    id:
+      type: integer
+      primary: true
+      autoincrement: true
+    user_id: integer
+    wall_comment_id: integer
+    content: clob
+  relations:
+    Comment:
+      class: arWallComment
+      local: wall_comment_id
+      foreign: id
+      onDelete: CASCADE
+    User:
+      class: sfGuardUserProfile
+      local: user_id
+      foreign: id
+
+arDropFileChunkPreview:
+  columns:
+    id:
+      type: integer
+      primary: true
+      autoincrement: true
+    chunkData: clob
+    pos: integer
+    drop_file_preview_id: integer
+  indexes:
+    all_chunk_idx:
+      fields: [drop_file_preview_id, pos]
+    drop_file_idx:
+      fields: [drop_file_preview_id]
+  relations:
+    DropFilePreview:
+      class: arDropFilePreview
+      local: drop_file_preview_id
+      foreign: id
+      onDelete: CASCADE
+
+arDropFilePreview:
+  actAs:
+    Timestampable: ~
+    Sluggable:
+      unique: true
+      fields:  [guid]
+      canUpdate: true
+  columns:
+    id:
+      type: integer
+      primary: true
+      autoincrement: true
+    drop_file_id: integer
+    src: clob
+    type: string(255)
+    guid:
+      type: string(255)
+      unique: true
+      primary: false
+    #vista del fichero que representa
+    size_style: string(255)
+    #como esta almacenado el fichero
+    persistence:
+      type: enum
+      values: [small, med, big]
+      default: small
+    size: integer
+  indexes:
+    drop_file_all:
+      fields: [drop_file_id, type]
+    drop_file_idx:
+      fields: [drop_file_id, size_style]
+    type_idx:
+      fields: [type]
+  relations:
+    DropFile:
+      class: arDropFile
+      local: drop_file_id
+      foreign: id
+    DropFileChunks:
+      class: arDropFileChunkPreview
+      local: id
+      foreign: drop_file_preview_id
+      type: many
+      
+arDropFileChunk:
+  columns:
+    id:
+      type: integer
+      primary: true
+      autoincrement: true
+    chunkData: clob
+    pos: integer
+    drop_file_id: integer
+  indexes:
+    all_chunk_idx:
+      fields: [drop_file_id, pos]
+    drop_file_idx:
+      fields: [drop_file_id]
+  relations:
+    DropFile:
+      class: arDropFile
+      local: drop_file_id
+      foreign: id
+      onDelete: CASCADE
+      
+arDropFile:
+  actAs:
+    Timestampable: ~
+    Sluggable:
+      unique: true
+      fields:  [guid]
+      canUpdate: true
+  columns:
+    id:
+      type: integer
+      primary: true
+      autoincrement: true
+    src: clob
+    name: clob
+    type: string(255)
+    guid:
+      type: string(255)
+      unique: true
+      primary: false
+    user_id: integer
+    wall_message_id: integer
+    ready: integer
+    #como esta almacenado el fichero
+    persistence:
+      type: enum
+      values: [small, med, big]
+      default: small
+    size: integer
+  indexes:
+    message_all:
+      fields: [wall_message_id, type, ready]
+    message_ready_idx:
+      fields: [wall_message_id, ready]
+    type_idx:
+      fields: [type]
+    message_idx:
+      fields: [wall_message_id]
+  relations:
+    EncContent:
+      class: arDropFileEnc
+      local: id
+      foreign: drop_file_id
+    DropFilePreview:
+      class: arDropFilePreview
+      local: id
+      foreign: drop_file_id
+      type: many
+    DropFileChunks:
+      class: arDropFileChunk
+      local: id
+      foreign: drop_file_id
+      type: many
+    User:
+      class: sfGuardUserProfile
+      local: user_id
+      foreign: id
+    Message:
+      class: arWallMessage
+      local: wall_message_id
+      foreign: id
+      onDelete: CASCADE
+
+arDropFileEnc:
+  actAs:
+    Timestampable: ~
+  columns:
+    id:
+      type: integer
+      primary: true
+      autoincrement: true
+    user_id: integer
+    drop_file_id: integer
+    content: clob
+  indexes:
+    all_idx:
+      fields: [drop_file_id, user_id]
+    drop_file_idx:
+      fields: [drop_file_id]
+    user_idx:
+      fields: [user_id]
+  relations:
+    DropFile:
+      class: arDropFile
+      local: drop_file_id
+      foreign: id
+      onDelete: CASCADE
+    User:
+      class: sfGuardUserProfile
+      local: user_id
+      foreign: id
+      foreignAlias: UserWallMessages
+      
+arWallMessage:
+  actAs:
+    Timestampable: ~
+  columns:
+    id:
+      type: integer
+      primary: true
+      autoincrement: true
+    user_id: integer
+    is_publish: boolean
+    message: clob
+    published_at: timestamp
+  indexes:
+    wall_message_id_idx:
+      fields: [id, user_id]
+  relations:
+    DropFiles:
+      class: arDropFile
+      local: id
+      foreign: wall_message_id
+      type: many
+    LavernaDocs:
+      class: arLavernaDoc
+      refClass: arLavernaDocHasArWallMessage
+      local: wall_message_id
+      foreign: laverna_id
+      foreignAlias: Messages
+    Documents:
+      class: arDoc
+      refClass: arDocHasArWallMessage
+      local: wall_message_id
+      foreign: doc_id
+      foreignAlias: Messages
+    Diagrams:
+      class: arDiagram
+      refClass: arDiagramHasArWallMessage
+      local: wall_message_id 
+      foreign: diagram_id
+      foreignAlias: Messages
+    Links:
+      class: arWallLink
+      local: id
+      foreign: wall_message_id
+      type: many
+    Comments:
+      class: arWallComment
+      local: id
+      foreign: wall_message_id
+      type: many
+    Gmaps:
+      class: arGmapsLocate
+      refClass: arGmapsLocateHasArWallMessage
+      local: wall_message_id
+      foreign: locate_id 
+      foreignAlias: Messages 
+    Tags:
+      class: arTag
+      refClass: arTagHasArWallMessage
+      local: wall_message_id
+      foreign: tag_id
+      foreignAlias: Messages
+    User:
+      class: sfGuardUserProfile
+      local: user_id
+      foreign: id
+      foreignAlias: Messages
+    Lists:
+      class: arProfileList
+      local: wall_message_id
+      foreign: profile_list_id
+      refClass: arWallMessageHasProfileList
+      foreignAlias: Messages
+    EncContent:
+      class: arWallMessageEnc
+      local: id
+      foreign: wall_message_id
+    Blog:
+      class: aBlogItem
+      local: wall_message_id
+      foreign: a_blog_item_id
+      refClass: arWallMessageHasBlogItem
+      foreignAlias: Blogpost
+
+arWallMessageEnc:
+  actAs:
+    Timestampable: ~
+  columns:
+    id:
+      type: integer
+      primary: true
+      autoincrement: true
+    user_id: integer
+    wall_message_id: integer
+    pass: clob
+    content: clob
+  indexes:
+    message_idx:
+      fields: [wall_message_id, user_id]
+    wall_message_idx:
+      fields: [wall_message_id]
+    user_idx:
+      fields: [user_id]
+  relations:
+    Message:
+      class: arWallMessage
+      local: wall_message_id
+      foreign: id
+      onDelete: CASCADE
+    User:
+      class: sfGuardUserProfile
+      local: user_id
+      foreign: id
+      foreignAlias: UserWallMessages
+
+arWallMessageHasProfileList:
+  actAs: [Timestampable]
+  columns:
+    wall_message_id:
+      type: integer
+      primary: true
+    profile_list_id:
+      type: integer
+      primary: true
+  indexes:
+    message:
+      fields: [wall_message_id]
+    profile:
+      fields: [profile_list_id]
+  relations:
+    Message:
+      class: arWallMessage
+      local: wall_message_id
+      foreign: id
+      onDelete: CASCADE
+    List:
+      class: arProfileList
+      local: profile_list_id
+      foreign: id
+      onDelete: CASCADE
+
+arWallMessageHasBlogItem:
+  actAs: [Timestampable]
+  columns:
+    a_blog_item_id: integer
+    wall_message_id: integer
+  relations:
+    Blog:
+      class: aBlogItem
+      foreign: id
+      local: a_blog_item_id
+      onDelete: CASCADE
+    Message:
+      class: arWallMessage
+      foreign: id
+      local: wall_message_id
+      onDelete: CASCADE
+
+arProfileList:
+  actAs: [Timestampable]
+  columns:
+    id:
+      type: integer
+      primary: true
+      autoincrement: true
+    profile_id: integer
+    name: string(255)
+   # is_all: boolean
+  indexes:
+    owner_index:
+      fields: [profile_id]
+    name_index:
+      fields: [name]
+  relations:
+    Messages:
+      class: arWallMessage
+      local: profile_list_id
+      foreign: wall_message_id
+      refClass: arWallMessageHasProfileList
+      foreignAlias: Lists 
+    Owner:
+      class: sfGuardUserProfile
+      local: profile_id
+      foreign: id
+      onDelete: CASCADE
+
+arProfileListHasProfile:
+  actAs: [Timestampable]
+  columns:
+    profile_id:
+      type: integer
+      primary: true
+    profile_list_id:
+      type: integer
+      primary: true
+  indexes:
+    profile:
+      fields: [profile_id]
+    profile_list:
+      fields: [profile_list_id]
+  relations:
+    User:
+      class: sfGuardUserProfile
+      local: profile_id
+      foreign: id
+      onDelete: CASCADE
+    List:
+      class: arProfileList
+      local: profile_list_id
+      foreign: id
+      onDelete: CASCADE
+      
+arFriend:
+  actAs:
+    Timestampable: ~
+  columns:
+    id:
+      type: integer
+      primary: true
+      autoincrement: true
+    profile_id: integer
+    friend_id: integer
+    #usuario que hace la petición
+    request_id: integer
+    is_accept: boolean
+    is_ignore: boolean
+  indexes:
+    friend_index_all:
+      fields: [id, profile_id, friend_id]
+    friend_index:
+      fields: [profile_id, friend_id]
+    profile_idx:
+      fields: [profile_id]
+    friend_idx:
+      fields: [friend_id]
+  relations:
+    UserP:
+      class: sfGuardUserProfile
+      local: profile_id
+      foreign: id
+      onDelete: CASCADE
+    UserF:
+      class: sfGuardUserProfile
+      local: friend_id
+      foreign: id
+      onDelete: CASCADE
+    UserR:
+      class: sfGuardUserProfile
+      local: friend_id
+      foreign: id
+      onDelete: CASCADE
+      
+sfGuardUserProfile:
+  actAs:
+    Timestampable: ~
+  columns:
+    id:
+      type: integer
+      primary: true
+      autoincrement: true
+    email_address:
+      type: string(255)
+      notnull: true
+      unique: true
+    username:
+      type: string(128)
+      notnull: true
+      unique: true
+    user_id: integer
+    first_last: string(255)
+    password: string(128)
+    description: clob
+    address: clob
+    key_saved:
+      type: boolean
+      default: false
+    public_key: string(255)
+    store_key: string(255)
+    phone:
+      type: string(128)
+      notnull: false
+    # clave privada y publica usada para enviar mails
+    public_mail_key: clob
+    private_mail_key: clob
+    facebook_uid: integer
+    # datos del profile personalizable, serializados
+    profile_data: clob
+  relations:
+    UserImages:
+      class: arProfileUpload
+      local: id
+      foreign: user_id
+    Messages:
+      class: arWallMessage
+      local: id
+      foreign: user_id
+      foreignAlias: User
+    Friends:
+      class: arFriend
+      local: id
+      foreign: profile_id
+    sfGuardUser:
+      type: one
+      foreignType: one
+      class: sfGuardUser
+      local: user_id
+      foreign: id
+      onDelete: cascade
+      foreignAlias: Profile
+    GmapsLocate:
+      class: arGmapsLocate
+      local: profile_id
+      foreign: locate_id
+      refClass: arUsersGmapsLocate
+      foreignAlias: UserLocations
+    ProfileList:
+      class: arProfileList
+      local: id
+      foreign: profile_id
+
+arGmapsLocate:
+  actAs:
+    Timestampable: ~
+  columns:
+    hash: 
+      type: string(255)
+      unique: true
+    formated_address: { type: string(255), notnull: true }
+  indexes:
+    formated_address:
+      fields: [formated_address]
+    hash:
+      fields: [hash]
+  relations:
+    UserLocations:
+      class: arGmapsLocate
+      local: locate_id
+      foreign: profile_id
+      refClass: arUsersGmapsLocate
+      foreignAlias: GmapsLocate 
+    Messages:
+      class: arWallMessage
+      refClass: arGmapsLocateHasArWallMessage
+      local: locate_id
+      foreign: wall_message_id
+      foreignAlias: Gmaps 
+    EncContent:
+      class: arGmapsLocateEnc
+      local: id
+      foreign: locate_id
+
+arGmapsLocateEnc:
+  actAs:
+    Timestampable: ~
+  columns:
+    id:
+      type: integer
+      primary: true
+      autoincrement: true
+    user_id: integer
+    locate_id: integer
+    content: clob
+  indexes:
+    locate_index:
+      fields:         [locate_id]
+  relations:
+    Gmap:
+      class: arGmapsLocate
+      local: locate_id
+      foreign: id
+      onDelete: CASCADE
+    User:
+      class: sfGuardUserProfile
+      local: user_id
+      foreign: id
+      onDelete: CASCADE
+
+arGmapsLocateHasArWallMessage:
+  actAs: [Timestampable]
+  columns:
+    user_id: integer
+    locate_id: integer
+    wall_message_id: integer
+  indexes:
+    gmaps_index:
+      fields: [locate_id]
+    user_index:
+      fields: [user_id]
+    wall_index:
+      fields: [wall_message_id]
+    search_index:
+      fields: [locate_id, user_id]
+  relations:
+    User:
+      class: sfGuardUserProfile
+      local: user_id
+      foreign: id
+      onDelete: CASCADE
+    Locate:
+      class: arGmapsLocate
+      foreign: id
+      local: locate_id
+      onDelete: CASCADE
+    Message:
+      class: arWallMessage
+      foreign: id
+      local: wall_message_id
+      onDelete: CASCADE
+      
+arUsersGmapsLocate:
+  actAs: [Timestampable]
+  columns:
+    profile_id: integer
+    locate_id: integer
+  indexes:
+    search_index:
+      fields: [profile_id, locate_id]
+  relations:
+    UserProfile:
+      class: sfGuardUserProfile
+      local: profile_id
+      onDelete: CASCADE
+    Locate:
+      class: arGmapsLocate
+      local: locate_id
+      onDelete: CASCADE
+    
+

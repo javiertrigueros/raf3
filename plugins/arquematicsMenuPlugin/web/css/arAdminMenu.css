@@ -1,0 +1,528 @@
+.menu-item-settings .a-page-slug
+{
+  display:none;   
+}
+
+.menu-item-settings .a-edit-page-template
+{
+  display:none;    
+}
+
+.menu-item-settings .a-more-options-btn
+{
+  display:none;    
+}
+
+
+.flash-message-head span
+{
+  height: 43px; 
+}
+
+
+
+#main-wrapper
+{
+  padding-left: 56px !important;
+}
+
+#main-navbar li a
+{
+    padding-right: 14px;
+}
+
+#main-navbar li a.a-btn:hover
+{
+    background-color: #ffb133 !important;
+    background-image: -moz-linear-gradient(center bottom , #ff9d00 0%, #ffb133 100%) !important;
+    border-color: #e68d00 #cc7d00 #b36e00 !important;
+}
+
+.dropdown-menu li.menu-profile
+{
+  height: 50px;
+}
+
+.admin-text
+{
+  line-height: 44px;
+  font-size: 14px !important;
+  font-weight: 600;
+  float: left; 
+  margin-right: 14px;
+}
+
+.dropdown-menu li.menu-profile:hover
+{
+  background-color: #0084b4;  
+}
+
+/**
+ * Main menu styles that can be used on all admin pages.
+ */
+.a-media-selection
+{
+  width: 100% !important;    
+}
+
+div.ar-footer-a-media,
+div.a-media-item-show
+{
+  width: 100% !important;  
+}
+
+div.a-media-item-show div.a-media-item-thumbnail
+{
+    display: block !important;
+}
+
+div.a-media-item-show div.a-media-item-information
+{
+    width: 720px !important;
+    float: none !important;
+    display: block !important;
+    margin-left: -40px;
+}
+
+div.modal-body p
+{
+  font-size: 14px;  
+}
+
+ul.a-admin-actions {
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+ul.a-admin-actions li
+{
+    font-size: 14px;
+}
+
+.glyphicon {
+   font-family: 'Glyphicons Halflings' !important; 
+}
+
+.ar-form-save-controls
+{
+   margin-top: 15px; 
+}
+.ar-form-save-controls button
+{
+  margin-top: -2px;
+}
+.ar-form-save-controls a
+{
+  color: #878787;
+}
+
+.a-multiple-select-list
+{
+   padding: 0; 
+}
+.a-multiple-select-list li
+{
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+
+.a-multiple-select-list li a span
+{
+    font-size: 14px;
+}
+
+.a-multiple-select-input
+{
+   font-size: 14px; 
+}
+
+.a-link span 
+{
+  color: #FF9D00;  
+}
+
+.form-group label
+{
+   color: #878787;
+   font-size: 16px !important;
+}
+
+.form-group input
+{
+    margin-bottom: 10px !important;
+}
+
+.ar-control
+{
+   margin-top: -8px;
+   padding-left: 4% !important;
+   height: auto;
+   width: 70% !important;
+   float: left !important;
+}
+.a-admin-content
+{
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.a-admin #a-admin-filters-container #a-admin-filters-form {
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.form-filters
+{
+  margin-top: -20px;  
+}
+
+.ar-head-filter span:hover{
+    color: #FFF;
+    cursor: pointer;
+}
+
+.a-admin #a-admin-filters-container {
+    border:  none !important;
+}
+.ar-head-filter
+{
+    padding: 14px 12px;
+    position: relative;
+}
+.ar-head-filter span
+{
+    font-size: 20px;
+}
+
+.ar-head-save,
+.ar-head-search {
+    padding: 7px 6px;
+    position: relative;
+}
+
+.ar-button-new
+{
+  margin-right: 1% !important;
+}
+
+.ar-button-new li a
+{
+   font-size: 14px !important;
+}
+
+.a-admin a:hover
+{
+    color: #3a6d99;
+}
+
+.sidr a:hover
+{
+    color: #FFF;
+}
+
+.head-menu-control
+{
+   font-size: 15px !important;
+}
+
+.a-ui.a-admin-header {
+    padding-bottom: 0;
+}
+
+.a-form-field
+{
+   clear: both;
+   display: block;
+   width: 100%;
+}
+
+.a-form-field input
+{
+   width: 100% !important;
+}
+
+.add-tags-link
+{
+   clear: both;
+   display: block; 
+}
+
+.a-ui .a-btn, .a-ui.a-btn, .a-ui .a-link, .a-ui.a-link, .a-ui .a-after-button, .a-ui.a-after-button 
+{
+    margin-right: 1px;
+    margin-top: 1px;
+}
+
+.view-options-widget-container ul li
+{
+   clear: both;
+   display: block;  
+}
+
+.update-page
+{
+  margin-right: 10px;  
+}
+
+.navbar-inner {
+    background-color: #F1F1F1;
+    background-image: -moz-linear-gradient(center top , #FFFFFF, #F1F1F1);
+}
+
+.navbar-inner-overwrite {
+    background-color: #3096E6 !important;
+    background-image: linear-gradient(to bottom, #71CCFF, #3096E6) !important;
+}
+
+#header ul {
+    margin: 0;
+    padding: 5px 0 0;
+}
+
+#header .navi span,
+#header .navi a {
+    background: url("../images/botones.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-radius: 0;
+    display: inline-block;
+    line-height: 32px;
+}
+
+#header .navi span {
+    width: 18px;
+}
+.back {
+    float: left;
+}
+
+#header li.link a {
+    color: #FFFFFF;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    opacity: 0.9;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.3);
+}
+
+#header .navi a {
+    background-position: 100% 0;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+#header .navi:hover a {
+    color: #000;
+    text-decoration: none;
+}
+
+.mmbar {
+    background-color: #3096E6;
+    background-image: linear-gradient(#71CCFF, #3096E6);
+    background-size: 100% auto;
+    border-bottom: 1px solid #1B74D8;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+    height: 42px;
+    text-align: center;
+}
+
+.container-fluid
+{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+ul.dropdown-menu li a {
+    color: #333333 !important;
+    text-align: left !important;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    background-image: none;
+}
+
+/**
+* comentarios
+*/
+.adminPage
+{
+    margin-top: 44px !important;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.container-global-head-extra-inner
+{
+  padding-right:20px !important;
+}
+
+.global-head-extra
+{
+    background-color: #FFF !important;
+}
+
+.a-admin-actions
+{
+   padding-top: 15px !important; 
+}
+
+.batch-action-select
+{
+   margin-right: 10px; 
+}
+
+.pager-control
+{
+    display:block;
+    float:right;
+    padding: 3px;
+}
+
+h3.a-admin-title
+{
+    font-size: 16px;
+    margin:0;
+    padding: 0;
+    line-height: 40px;
+    color: #878787;
+}
+   
+
+.icon32
+{
+    background-color: rgba(0, 0, 0, 0);
+    background-repeat: no-repeat;
+    float: left;
+    height: 28px;
+    width: 28px;
+    margin-top: 6px;
+    margin-right: 4px;
+    margin-left: 4px;
+    background-image: url("/arquematicsMenuPlugin/images/icons32.png");  
+}
+.page-long-icon
+{
+  background-position: -6px 0px;  
+}
+
+.home-long-icon
+{
+  background-position: -50px 0px;
+}
+
+.links-long-icon
+{
+  background-position: -131px 0px;
+}
+
+.media-long-icon
+{
+  background-position: -175px 0px;  
+}
+
+.pages-long-icon
+{
+ background-position: -218px 0px;   
+}
+
+.setting-long-icon
+{
+  background-position: -260px 0px;
+}
+
+.configuration-long-icon
+{
+  background-position: -302px 0px;
+}
+
+.configuration-extra-long-icon
+{
+   background-position: -345px 0px;  
+}
+
+.users-long-icon
+{
+  background-position: -418px 0;
+}
+
+.comments-long-icon
+{
+  background-position: -48px 0px;
+}
+
+.blog-long-icon
+{
+  background-position: -215px 0px;
+}
+
+.events-long-icon
+{
+  background-position: -535px 0px;
+}
+
+.tag-long-icon
+{
+  background-position: -575px 0;
+}
+
+.category-long-icon
+{
+  background-position: -618px 0px;  
+}
+
+.groups-long-icon
+{
+  background-position: -657px 0px;
+}
+
+
+.flash-message-head
+{
+   float:left;
+   width: 50%;
+   padding: 3px !important;
+   margin-bottom: 8px;
+}
+
+.alert
+{
+   padding: 10px !important;
+   margin-bottom: 0px;
+}
+
+.a-form-row .radio_list
+{
+    clear: both;
+}
+
+.a-removing .a-who, .a-removing .a-extra, .a-removing .a-actions
+{
+  text-decoration: line-through;
+}
+#a-page-permissions-view-extended, #a-page-permissions-edit-extended
+{
+  display: none;
+}
+
+ul.a-permissions-entries,
+ul.a-permissions-entries li,
+ul.a-permissions-entries li ul
+{
+    margin:0;
+    padding: 0;
+}
+
+ul.a-permissions-entries li ul li
+{
+    display: block;
+    float: left;
+}
+
+li.a-cascade-option 
+{
+  display: none !important;  
+}

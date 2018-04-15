@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <g id="layers_ext">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="1 1 16 16">
+ <defs>
+  <linearGradient id="linearGradient2485-94">
+   <stop id="stop2486-7" offset="0" stop-color="#ffffff"/>
+   <stop id="stop2487-83" offset="1" stop-color="#aaaaaa"/>
+  </linearGradient>
+  <linearGradient id="linearGradient5704-5">
+   <stop id="stop5706-120" offset="0" stop-color="#5a5a5a"/>
+   <stop id="stop5708-16" offset="1" stop-color="#000000"/>
+  </linearGradient>
+  <linearGradient x1="0.57995" y1="0.99345" x2="0.95375" y2="1.46024" id="linearGradient4351" xlink:href="#linearGradient2485-94"/>
+  <linearGradient x1="0.22599" y1="0.16343" x2="0.82902" y2="0.84168" id="linearGradient4353" xlink:href="#linearGradient5704-5"/>
+  <linearGradient x1="0.57995" y1="0.99345" x2="0.95375" y2="1.46024" id="linearGradient4356" xlink:href="#linearGradient2485-94"/>
+  <linearGradient x1="0.22599" y1="0.16343" x2="0.82902" y2="0.84168" id="linearGradient4358" xlink:href="#linearGradient5704-5"/>
+  <linearGradient x1="0.57995" y1="0.99344" x2="0.95375" y2="1.46024" id="linearGradient4362" xlink:href="#linearGradient2485-94"/>
+  <linearGradient x1="0.22599" y1="0.16343" x2="0.82902" y2="0.84167" id="linearGradient4364" xlink:href="#linearGradient5704-5"/>
+ </defs>
+ <g>
+  <use id="use13602" x="-961.86731" y="-168.04527" width="1250" height="1250" xlink:href="#rect12856"/>
+  <g id="g2998">
+   <path id="use8977" d="m5.52128,14.54545l11,0l-4,-5l-11,0l4,5z" stroke-dashoffset="0" stroke-miterlimit="0" stroke-linejoin="round" stroke-linecap="square" stroke-width="0.99995" stroke="url(#linearGradient4364)" fill-rule="evenodd" fill="url(#linearGradient4362)"/>
+   <path id="use8059" d="m5.52128,11.54548l11,0l-4,-5l-11,0l4,5z" stroke-dashoffset="0" stroke-miterlimit="0" stroke-linejoin="round" stroke-linecap="square" stroke-width="0.99995" stroke="url(#linearGradient4358)" fill-rule="evenodd" fill="url(#linearGradient4356)"/>
+   <path id="use8061" d="m5.52128,8.54548l11,0l-4,-5l-11,0l4,5z" stroke-dashoffset="0" stroke-miterlimit="0" stroke-linejoin="round" stroke-linecap="square" stroke-width="0.99995" stroke="url(#linearGradient4353)" fill-rule="evenodd" fill="url(#linearGradient4351)"/>
+  </g>
+ </g>
+</svg>
+  </g>
+</svg>

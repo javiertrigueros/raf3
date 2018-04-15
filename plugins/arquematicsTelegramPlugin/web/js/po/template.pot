@@ -1,0 +1,328 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: partials/im.html
+msgid ""
+msgstr ""
+
+#: partials/message.html
+msgid "% Complete (success)"
+msgstr ""
+
+#: partials/settings_modal.html
+msgid "- new line"
+msgstr ""
+
+#: partials/settings_modal.html
+msgid "- send message"
+msgstr ""
+
+#: partials/head.html
+msgid "About"
+msgstr ""
+
+#: partials/dialog.html
+msgid "Audio"
+msgstr ""
+
+#: partials/head.html
+msgid "Back"
+msgstr ""
+
+#: partials/im.html
+msgid "Cancel"
+msgstr ""
+
+#: partials/user_modal.html
+msgid "Clear Chat History"
+msgstr ""
+
+#: partials/chat_modal.html
+msgid "Clear History"
+msgstr ""
+
+#: partials/chat_modal.html
+#: partials/contacts_modal.html
+#: partials/error_modal.html
+#: partials/settings_modal.html
+#: partials/user_modal.html
+msgid "Close"
+msgstr ""
+
+#: partials/dialog.html
+msgid "Contact"
+msgstr ""
+
+#: partials/contacts_modal.html
+#: partials/head.html
+msgid "Contacts"
+msgstr ""
+
+#: partials/settings_modal.html
+msgid "Ctrl + Enter"
+msgstr ""
+
+#: partials/settings_modal.html
+msgid "Desktop Notifications"
+msgstr ""
+
+#: partials/dialog.html
+msgid "Document"
+msgstr ""
+
+#: partials/im.html
+msgid "Documents"
+msgstr ""
+
+#: partials/message.html
+msgid "Download"
+msgstr ""
+
+#: partials/im.html
+msgid "Drop photos here to send"
+msgstr ""
+
+#: partials/im.html
+#: partials/login.html
+msgid "Edit"
+msgstr ""
+
+#: partials/settings_modal.html
+msgid "Enter"
+msgstr ""
+
+#: partials/login.html
+msgid "Enter your code"
+msgstr ""
+
+#: partials/login.html
+msgid "Enter your phone"
+msgstr ""
+
+#: partials/settings_modal.html
+msgid "First Name"
+msgstr ""
+
+#: partials/message.html
+msgid "Forwarded message from"
+msgstr ""
+
+#: partials/video_modal.html
+msgid "From"
+msgstr ""
+
+#: partials/photo_modal.html
+msgid "From:"
+msgstr ""
+
+#: partials/chat_modal.html
+msgid "Group Info"
+msgstr ""
+
+#: partials/chat_modal.html
+msgid "Group members list is unavailable."
+msgstr ""
+
+#: partials/login.html
+msgid "Incorrect SMS code"
+msgstr ""
+
+#: partials/login.html
+msgid "Incorrect phone number"
+msgstr ""
+
+#: partials/im.html
+#: partials/user_modal.html
+msgid "Info"
+msgstr ""
+
+#: partials/settings_modal.html
+msgid "Invalid First Name"
+msgstr ""
+
+#: partials/settings_modal.html
+msgid "Invalid Last Name"
+msgstr ""
+
+#: partials/settings_modal.html
+msgid "Last Name"
+msgstr ""
+
+#: partials/chat_modal.html
+msgid "Leave group"
+msgstr ""
+
+#: partials/dialog.html
+msgid "Location"
+msgstr ""
+
+#: partials/settings_modal.html
+msgid "Log out"
+msgstr ""
+
+#: partials/chat_modal.html
+msgid "Members"
+msgstr ""
+
+#: partials/im.html
+msgid "No history to display"
+msgstr ""
+
+#: partials/chat_modal.html
+#: partials/user_modal.html
+msgid "Notifications"
+msgstr ""
+
+#: partials/dialog.html
+msgid "Photo"
+msgstr ""
+
+#: partials/im.html
+msgid "Photos"
+msgstr ""
+
+#: partials/login.html
+msgid "Please enter it below."
+msgstr ""
+
+#: partials/login.html
+msgid "Please enter your full phone number with country code."
+msgstr ""
+
+#: partials/im.html
+msgid "Resources"
+msgstr ""
+
+#: partials/chat_modal.html
+msgid "Return to group"
+msgstr ""
+
+#: partials/settings_modal.html
+msgid "Save"
+msgstr ""
+
+#: partials/im.html
+msgid "Send"
+msgstr ""
+
+#: partials/user_modal.html
+msgid "Send message"
+msgstr ""
+
+#: partials/head.html
+#: partials/settings_modal.html
+msgid "Settings"
+msgstr ""
+
+#: partials/settings_modal.html
+msgid "Shift + Enter"
+msgstr ""
+
+#: partials/im.html
+msgid "Show all messages"
+msgstr ""
+
+#: partials/login.html
+msgid "Sign in"
+msgstr ""
+
+#: partials/settings_modal.html
+msgid "Sound"
+msgstr ""
+
+#: partials/welcome.html
+msgid "Start Messaging"
+msgstr ""
+
+#: partials/login.html
+msgid "Telegram dialed your number"
+msgstr ""
+
+#: partials/login.html
+msgid "Telegram is calling you"
+msgstr ""
+
+#: partials/login.html
+msgid "Telegram will call you in"
+msgstr ""
+
+#: partials/head.html
+msgid "Toggle navigation"
+msgstr ""
+
+#: partials/settings_modal.html
+msgid "User"
+msgstr ""
+
+#: partials/dialog.html
+msgid "Video"
+msgstr ""
+
+#: partials/im.html
+msgid "Videos"
+msgstr ""
+
+#: partials/message.html
+msgid "Voice message"
+msgstr ""
+
+#: partials/login.html
+msgid "We have sent you a code via SMS."
+msgstr ""
+
+#: partials/dialog.html
+msgid "You"
+msgstr ""
+
+#: partials/dialog.html
+msgid "changed group name"
+msgstr ""
+
+#: partials/message.html
+msgid "changed group name to"
+msgstr ""
+
+#: partials/dialog.html
+#: partials/message.html
+msgid "changed group photo"
+msgstr ""
+
+#: partials/dialog.html
+#: partials/message.html
+msgid "group created"
+msgstr ""
+
+#: partials/dialog.html
+#: partials/message.html
+msgid "invited"
+msgstr ""
+
+#: partials/im.html
+msgid "is typing"
+msgstr ""
+
+#: partials/dialog.html
+#: partials/message.html
+msgid "kicked"
+msgstr ""
+
+#: partials/dialog.html
+#: partials/message.html
+msgid "left group"
+msgstr ""
+
+#: partials/dialog.html
+#: partials/message.html
+msgid "removed group photo"
+msgstr ""
+
+#: partials/dialog.html
+#: partials/message.html
+msgid "returned to group"
+msgstr ""
+
+#: partials/message.html
+msgid "unsupported action"
+msgstr ""

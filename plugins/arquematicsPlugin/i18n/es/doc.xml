@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd" >
+<xliff version="1.0">
+  <file original="global" source-language="en" target-language="es" datatype="plaintext">
+    <header />
+    <body>
+      <trans-unit>
+        <source>Rename the document</source>
+        <target>Cambiar el nombre del documento</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Cancel</source>
+        <target>Cancelar</target>
+      </trans-unit>
+       <trans-unit>
+        <source>Accept</source>
+        <target>Aceptar</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Write a new document name:</source>
+        <target>Escribe un nombre de documento nuevo:</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Untitled Document</source>
+        <target>Documento sin título</target>
+      </trans-unit>
+      <trans-unit>
+        <source>File</source>
+        <target>Archivo</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Print</source>
+        <target>Imprimir</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Download as</source>
+        <target>Descargar como</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Download document as:</source>
+        <target>Descargar documento como:</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Open...</source>
+        <target>Abrir..</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Edit</source>
+        <target>Editar</target>
+      </trans-unit>
+      
+       <trans-unit>
+        <source>Edit</source>
+        <target>Edit</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Cut</source>
+        <target>Cortar</target>
+      </trans-unit>
+       <trans-unit>
+        <source>Copy</source>
+        <target>Copiar</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Paste</source>
+        <target>Pegar</target>
+      </trans-unit>
+      
+       <trans-unit>
+        <source>Help</source>
+        <target>Ayuda</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Sort keys</source>
+        <target>Métodos abreviados de teclado</target>
+      </trans-unit>
+      <trans-unit>
+        <source>About</source>
+        <target>Acerca de</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Open document:</source>
+        <target>Abrir documento:</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Error Etherpad Lite</source>
+        <target>Error Etherpad Lite</target>
+      </trans-unit>
+     
+      
+    </body>
+  </file>
+</xliff>

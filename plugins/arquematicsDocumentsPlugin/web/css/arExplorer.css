@@ -1,0 +1,103 @@
+.error-file-message
+{
+    color: #e3522b;
+}
+
+p {
+   position:relative; 
+   overflow:hidden;
+}
+
+.img-cmd
+{
+    background-image:  url("/arquematicsDocumentsPlugin/images/spritesPlusBig.png");
+    background-color: transparent;
+    position:absolute !important;
+    z-index: 99999;
+    display: block;
+    width: 30px;
+    height: 30px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.cmd-minus
+{
+    left: 10px;
+    background-position: -35px 0;
+}
+
+.cmd-plus
+{
+    left: 50px;
+}
+
+.box,
+.handle
+{
+    margin: 0px !important;
+}
+
+.box-selected
+{
+    border:solid 1px red; 
+    box-shadow:0px 12px 22px 1px #333;
+    border:#CCCCCC thin solid;
+    position:relative;
+}
+
+.needsclick
+{
+	cursor: pointer;
+}
+
+.app-logo a
+{
+ height: 46px;
+ line-height: 46px;
+ padding: 10px 10px;
+}
+
+.list-group
+{
+    margin-bottom: 0px;
+}
+
+a:focus h4.list-group-item-heading,
+a.active h4.list-group-item-heading
+{
+    color: #FFFFFF !important;
+}
+
+a.list-group-item:hover
+{
+    background-color: #f6f6f6;
+}
+
+a.list-group-item.active, 
+a.list-group-item.active:hover, 
+a.list-group-item.active:focus,
+a.list-group-item.activeExtra, 
+a.list-group-item.activeExtra:hover, 
+a.list-group-item.activeExtra:focus
+{
+    background-color: #428bca;
+    border-color: #428bca;
+    color: #ffffff;
+    z-index: 2;
+}
+
+
+.page-header a.favorite
+{
+	margin-bottom: 15px;
+}
+
+.page-header a.favorite:focus,
+.page-header a.favorite:hover
+{
+	text-decoration: none;
+}
+
+
+

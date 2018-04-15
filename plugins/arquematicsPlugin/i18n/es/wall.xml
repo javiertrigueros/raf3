@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd" >
+<xliff version="1.0">
+  <file original="global" source-language="en" target-language="es" datatype="plaintext">
+    <header />
+    <body>
+      <trans-unit>
+        <source>Tags</source>
+        <target>Etiquetas</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Share</source>
+        <target>Compartir</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Server error. Upload directory isn't writable.</source>
+        <target>Error en el servidor. No se pudo gruardar el archivo en el directorio.</target>
+      </trans-unit>
+      <trans-unit>
+        <source>No files were uploaded.</source>
+        <target>No se han entrado archivos para subir.</target>
+      </trans-unit>
+      <trans-unit>
+        <source>File is empty</source>
+        <target>Archivo vacio</target>
+      </trans-unit>
+      <trans-unit>
+        <source>File is too large</source>
+        <target>Archivo demasiado grande</target>
+      </trans-unit>
+      <trans-unit>
+        <source>File has an invalid extension, it should be one of %%these%%.</source>
+        <target>Formato de archivo no válido, la extensión debe ser %%these%%.</target>
+      </trans-unit>
+      <trans-unit>
+        <source>File has no extension.</source>
+        <target>El archivo no tiene extensión.</target>
+      </trans-unit>
+       <trans-unit>
+        <source>Could not save uploaded file. The upload was cancelled.</source>
+        <target>El envío del archivo se ha cancelado.</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Drop files here to upload</source>
+        <target>Arrastrar los ficheros aquí para subir</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Upload file</source>
+        <target>Subir archivo</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Cancel</source>
+        <target>Cancelar</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Failed</source>
+        <target>Error</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Explore</source>
+        <target>Examinar</target>
+      </trans-unit>
+      
+       <trans-unit>
+        <source>%seconds% seconds ago</source>
+        <target>hace %seconds% segundos</target>
+      </trans-unit>
+      <trans-unit>
+        <source>one minute ago</source>
+        <target>hace un minuto</target>
+      </trans-unit>
+      <trans-unit>
+        <source>%minutes% minutes ago</source>
+        <target>hace %minutes% minutos</target>
+      </trans-unit>
+      <trans-unit>
+        <source>one hour ago</source>
+        <target>hace una hora</target>
+      </trans-unit>
+      <trans-unit>
+        <source>%hours% hours ago</source>
+        <target>hace %hours% horas</target>
+      </trans-unit>
+      <trans-unit>
+        <source>one day ago</source>
+        <target>hace un día</target>
+      </trans-unit>
+      <trans-unit>
+        <source>%days% days ago</source>
+        <target>hace %days% días</target>
+      </trans-unit>
+      <trans-unit>
+        <source>one week ago</source>
+        <target>hace una semana</target>
+      </trans-unit>
+      <trans-unit>
+        <source>%weeks% weeks ago</source>
+        <target>hace %weeks% semanas</target>
+      </trans-unit>
+
+      <trans-unit>
+        <source>one month ago</source>
+        <target>hace un mes</target>
+      </trans-unit>
+      <trans-unit>
+        <source>%months% months ago</source>
+        <target>hace %months% meses</target>
+      </trans-unit>
+      <trans-unit>
+        <source>one year ago</source>
+        <target>hace un año</target>
+      </trans-unit>
+      <trans-unit>
+        <source>%years% years ago</source>
+        <target>hace %years% años</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>send...</source>
+        <target>envio...</target>
+      </trans-unit>
+       <trans-unit>
+        <source>Add</source>
+        <target>Agregar</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Capture</source>
+        <target>Capturar</target>
+      </trans-unit>
+      <trans-unit>
+        <source>What's up?</source>
+        <target>Comparte lo que quieras</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Comment</source>
+        <target>Comentar</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>View all %count% comments</source>
+        <target>Ver los %count% comentarios</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>View %count% comments more</source>
+        <target>Ver %count% comentarios más</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>arWall</source>
+        <target>Estado</target>
+      </trans-unit>
+      <trans-unit>
+        <source>aBlog</source>
+        <target>Blog</target>
+      </trans-unit>
+      <trans-unit>
+        <source>aEvent</source>
+        <target>Eventos</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>image {current} of {total}</source>
+        <target>imagen {current} de {total}</target>
+      </trans-unit>
+      
+      
+       <trans-unit>
+        <source>Maximum number of files exceeded</source>
+        <target>Ha llegado al máximo de archivos</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Filetype not allowed</source>
+        <target>Tipo de fichero enviado no permitido</target>
+      </trans-unit>
+      <trans-unit>
+        <source>File is too big</source>
+        <target>Tamaño de fichero excesivo</target>
+      </trans-unit>
+      <trans-unit>
+        <source>File is too small</source>
+        <target>Tamaño de fichero demasiado pequeño</target>
+      </trans-unit>
+      
+      
+      <trans-unit>
+        <source>Error 500: Internal Server Error</source>
+        <target>Error 500: Internal Server Error</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Add files...</source>
+        <target>Agregar archivos...</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Start upload</source>
+        <target>Empezar descarga</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Cancel upload</source>
+        <target>Cancelar descarga</target>
+      </trans-unit>
+     
+      <trans-unit>
+        <source>Start</source>
+        <target>Empezar</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Cancel</source>
+        <target>Cancelar</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Error</source>
+        <target>Error</target>
+      </trans-unit>
+       <trans-unit>
+        <source>Delete</source>
+        <target>Eliminar</target>
+      </trans-unit>
+      
+       <trans-unit>
+        <source>Groups</source>
+        <target>Grupos</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Groups selected</source>
+        <target>Grupos seleccionados</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Comments</source>
+        <target>Comentarios</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Edit</source>
+        <target>Edición</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Public</source>
+        <target>Público</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Home</source>
+        <target>Inicio</target>
+      </trans-unit>
+      
+      
+      <trans-unit>
+        <source>Requests</source>
+        <target>Solicitudes</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Accept request:</source>
+        <target>Aceptar solicitud de:</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Suscripcion request:</source>
+        <target>Solicitudes de suscripción:</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Add to groups</source>
+        <target>Agregar a los grupos</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Add to group</source>
+        <target>Agregar al grupo</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Configure lists</source>
+        <target>Configurar listas</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Configure subscribers</source>
+        <target>Configurar suscriptores</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Abstract</source>
+        <target>Resumen</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Post title</source>
+        <target>Título post</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Event title</source>
+        <target>Título evento</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Share what is new...</source>
+        <target>Compartir lo nuevo ...</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Url resource</source>
+        <target>Url de recurso</target>
+      </trans-unit>
+      
+       <trans-unit>
+        <source>Address or location</source>
+        <target>Dirección o ubicación</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Admin CMS</source>
+        <target>Administrar CMS</target>
+      </trans-unit>
+      
+      <trans-unit>
+        <source>Select lists</source>
+        <target>Selecionar listas</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>No list</source>
+        <target>Sin listas</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>n lists selected</source>
+        <target>{0} listas seleccionadas</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Write a comment...</source>
+        <target>Escribe un comentario...</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Close</source>
+        <target>Cerrar</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Click here or drop files to upload</source>
+        <target>Hacer clic o arrastrar archivos para enviar</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>The user %user% is not a subscriber!</source>
+        <target>¡El usuario %user% no es suscriptor!</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>The user %user% has not posted content!</source>
+        <target>¡El usuario %user% no ha publicado contenido!</target>
+     </trans-unit>
+     
+     <trans-unit>
+        <source>Sorry, you don't have permission to read %user% messages.</source>
+        <target>Lo sentimos, usted no tiene permiso para leer los mensajes de %user%.</target>
+     </trans-unit>
+     
+    </body>
+  </file>
+</xliff>

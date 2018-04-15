@@ -1,0 +1,1 @@
+<?php include_partial('aPager/simple', array('pager' => $pager, 'pagerUrl' =>  url_for('ar_comment_admin'))) ?>

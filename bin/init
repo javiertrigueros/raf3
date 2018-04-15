@@ -1,0 +1,26 @@
+#! /bin/bash
+CURRENT_PATH=$(pwd)
+SCRIPT_DIR=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
+APP_BASE_PATH=$SCRIPT_DIR
+APP_BASE_PATH+="/../"
+
+echo 'CURRENT PATH'
+echo $CURRENT_PATH
+
+echo 'APP BASE PATH'
+echo $APP_BASE_PATH
+
+cd $APP_BASE_PATH
+./symfony doctrine:build --all --and-load --no-confirmation
+./symfony cc
+./symfony arquematics:create-system-dirs
+
+cd $APP_BASE_PATH
+cd lib
+php composer.phar install
+
+cd $APP_BASE_PATH
+
+chmod 770 * -Rf
+chown www-data.www-data * -Rf
+

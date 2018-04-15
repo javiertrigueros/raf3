@@ -1,0 +1,62 @@
+# default values
+all:
+  facebook_enable: false
+  melody:
+    create_user: false               # to create a user for all melodies 
+    #callback: @sf_guard_signin  #general cuando se autentifica
+    callback: @ar_auth_signin_oauth  #general cuando se autentifica
+    linkedin:
+      key: 
+      secret: 
+      callback: @user_profile_configure
+    twitter:
+      key:  
+      secret: 
+      callback: @user_profile_configure
+      scope: [email]
+      user:
+        username: 
+          call: me
+          path: screen_name
+          prefix: Twitter_
+    google:
+      key:  
+      secret: 
+      callback: @user_profile_configure # cuando el usuario ya esta autentificado
+      scope: [email]                # needed to create an user based on his email_address
+      user:
+        username:                   # the name of a field of sfGuardUser
+          call: me                  # api call
+          path: id                  # path could be user.object.email for example to retrieve the right inforamtion
+          prefix: Facebook_
+        first_name:
+          call: me
+          path: first_name
+        last_name: 
+          call: me
+          path: last_name
+        email_address:               
+          call: me                  
+          path: email               
+          key: true     
+    facebook:
+      key: 
+      secret: 
+      callback: @user_profile_configure # cuando el usuario ya esta autentificado
+      scope: [email]                # needed to create an user based on his email_address
+      user:
+        username:                   # the name of a field of sfGuardUser
+          call: me                  # api call
+          path: id                  # path could be user.object.email for example to retrieve the right inforamtion
+          prefix: Facebook_
+        first_name:
+          call: me
+          path: first_name
+        last_name: 
+          call: me
+          path: last_name
+        email_address:               
+          call: me                  
+          path: email               
+          key: true                 # it's a key to retrieve user from other services based on this information
+                                    # if no field is a key all are keys by default.  

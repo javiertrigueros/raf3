@@ -1,0 +1,373 @@
+options:
+  collate: utf8_unicode_ci
+  charset: utf8
+  
+arDiagramHasArWallMessage:
+  actAs: [Timestampable]
+  columns:
+    diagram_id: integer
+    user_id: integer
+    wall_message_id: integer
+  indexes:
+    user_index:
+      fields: [user_id]
+  relations:
+    Diagram:
+      class: arDiagram
+      foreign: id
+      local: diagram_id
+      onDelete: CASCADE
+    Message:
+      class: arWallMessage
+      foreign: id
+      local: wall_message_id
+      onDelete: CASCADE
+
+arDiagramFavorite:
+  actAs:
+    Timestampable: ~
+  columns:
+    id:
+      type: integer
+      primary: true
+      autoincrement: true
+    diagram_id: integer
+    user_id: integer
+  indexes:
+    diagram_index:
+      fields: [diagram_id, user_id]
+  relations:
+    User:
+      class: sfGuardUser
+      local: user_id
+      foreign: id
+      foreignAlias: DiagramUserFavorite
+    Diagram:
+      class: arDiagram
+      local: diagram_id
+      foreign: id
+      onDelete: CASCADE
+
+arDiagramDelete:
+  actAs:
+    Timestampable: ~
+  columns:
+    id:
+      type: integer
+      primary: true
+      autoincrement: true
+    diagram_id: integer
+    user_id: integer
+  indexes:
+    diagram_index:
+      fields: [diagram_id, user_id]
+  relations:
+    User:
+      class: sfGuardUser
+      local: user_id
+      foreign: id
+      foreignAlias: DiagramUserDeleted
+    Diagram:
+      class: arDiagram
+      local: diagram_id
+      foreign: id
+      onDelete: CASCADE
+
+arDiagramTrash:
+  actAs:
+    Timestampable: ~
+  columns:
+    id:
+      type: integer
+      primary: true
+      autoincrement: true
+    diagram_id: integer
+    user_id: integer
+  indexes:
+    diagram_index:
+      fields: [diagram_id, user_id]
+  relations:
+    User:
+      class: sfGuardUser
+      local: user_id
+      foreign: id
+      foreignAlias: DiagramUserTrash
+    Diagram:
+      class: arDiagram
+      local: diagram_id
+      foreign: id
+      onDelete: CASCADE
+
+arDiagram:
+  actAs:
+    Timestampable: ~
+  columns:
+    id:
+      type: integer
+      primary: true
+      autoincrement: true
+    guid:
+      type: string(255)
+      unique: true
+      primary: false
+    title: clob
+    json: clob
+    data_image: clob
+    type: string(255)
+    user_id: integer
+  relations:
+    DiagramDeleted:
+      class: arDiagramDelete
+      local: id
+      foreign: diagram_id
+    DiagramFavorite:
+      class: arDiagramFavorite
+      local: id
+      foreign: diagram_id
+    DiagramTrash:
+      class: arDiagramTrash
+      local: id
+      foreign: diagram_id
+    User:
+      class: sfGuardUser
+      local: user_id
+      foreign: id
+      foreignAlias: UserDiagrams
+    Messages:
+      class: arWallMessage
+      refClass: arDiagramHasArWallMessage
+      local: diagram_id
+      foreign: wall_message_id
+      foreignAlias: Diagrams
+    EncContent:
+      class: arDiagramEnc
+      local: id
+      foreign: diagram_id
+
+arDiagramEnc:
+  actAs:
+    Timestampable: ~
+  columns:
+    id:
+      type: integer
+      primary: true
+      autoincrement: true
+    user_id: integer
+    diagram_id: integer
+    content: clob
+  indexes:
+    diagram_index:
+      fields: [diagram_id, user_id]
+  relations:
+    Diagram:
+      class: arDiagram
+      local: diagram_id
+      foreign: id
+      onDelete: CASCADE
+    User:
+      class: sfGuardUserProfile
+      local: user_id
+      foreign: id
+
+arLavernaDocHasArWallMessage:
+  actAs: [Timestampable]
+  columns:
+    laverna_id: integer
+    user_id: integer
+    wall_message_id: integer
+  indexes:
+    user_index:
+      fields: [user_id]
+  relations:
+    Laverna:
+      class: arLavernaDoc
+      foreign: id
+      local: laverna_id
+      onDelete: CASCADE
+    Message:
+      class: arWallMessage
+      foreign: id
+      local: wall_message_id
+      onDelete: CASCADE
+
+arLavernaDocFavorite:
+  actAs:
+    Timestampable: ~
+  columns:
+    id:
+      type: integer
+      primary: true
+      autoincrement: true
+    laverna_id: integer
+    user_id: integer
+  indexes:
+    laverna_index:
+      fields: [laverna_id, user_id]
+  relations:
+    User:
+      class: sfGuardUser
+      local: user_id
+      foreign: id
+      foreignAlias: LavernaFavorite
+    Laverna:
+      class: arLavernaDoc
+      local: laverna_id
+      foreign: id
+      onDelete: CASCADE
+      
+arLavernaDocTrash:
+  actAs:
+    Timestampable: ~
+  columns:
+    id:
+      type: integer
+      primary: true
+      autoincrement: true
+    laverna_id: integer
+    user_id: integer
+  indexes:
+    laverna_index:
+      fields: [laverna_id, user_id]
+  relations:
+    User:
+      class: sfGuardUser
+      local: user_id
+      foreign: id
+      foreignAlias: LavernaTrash
+    Laverna:
+      class: arLavernaDoc
+      local: laverna_id
+      foreign: id
+      onDelete: CASCADE
+      
+arLavernaDocDelete:
+  actAs:
+    Timestampable: ~
+  columns:
+    id:
+      type: integer
+      primary: true
+      autoincrement: true
+    laverna_id: integer
+    user_id: integer
+  indexes:
+    laverna_index:
+      fields: [laverna_id, user_id]
+  relations:
+    User:
+      class: sfGuardUser
+      local: user_id
+      foreign: id
+      foreignAlias: LavernaUserDeleted
+    Laverna:
+      class: arLavernaDoc
+      local: laverna_id
+      foreign: id
+      onDelete: CASCADE
+
+arLavernaFile:
+  actAs:
+    Timestampable: ~
+  columns:
+    id:
+      type: integer
+      primary: true
+      autoincrement: true
+    src: clob
+    type: string(255)
+    w: integer
+    h: integer
+    guid:
+      type: string(255)
+      unique: true
+      primary: false
+    user_id: integer
+    laverna_id: integer
+  relations:
+    User:
+      class: sfGuardUserProfile
+      local: user_id
+      foreign: id
+      foreignAlias: UserLavFiles
+    LavernaDoc:
+      class: arLavernaDoc
+      local: laverna_id
+      foreign: id
+      onDelete: CASCADE
+           
+arLavernaDoc:
+  actAs:
+    Timestampable: ~
+  columns:
+    id:
+      type: integer
+      primary: true
+      autoincrement: true
+    title: clob
+    content: clob
+    data_image: clob
+    type: string(255)
+    task_all: integer
+    task_complete: integer
+    guid:
+      type: string(255)
+      unique: true
+      primary: false
+    user_id: integer
+  relations:
+    LavernaFiles:
+      class: arLavernaFile
+      local: id
+      foreign: laverna_id
+    LavernaDeleted:
+      class: arLavernaDocDelete
+      local: id
+      foreign: laverna_id
+    LavernaFavorite:
+      class: arLavernaDocFavorite
+      local: id
+      foreign: laverna_id
+    LavernaTrash:
+      class: arLavernaDocTrash
+      local: id
+      foreign: laverna_id
+    Messages:
+      class: arWallMessage
+      refClass: arLavernaDocHasArWallMessage
+      local: laverna_id
+      foreign: wall_message_id
+      foreignAlias: LavernaDocs
+    User:
+      class: sfGuardUser
+      local: user_id
+      foreign: id
+      foreignAlias: UserDiagrams
+    EncContent:
+      class: arLavernaDocEnc
+      local: id
+      foreign: laverna_id
+      
+arLavernaDocEnc:
+  actAs:
+    Timestampable: ~
+  columns:
+    id:
+      type: integer
+      primary: true
+      autoincrement: true
+    user_id: integer
+    laverna_id: integer
+    content: clob
+  indexes:
+    laverna_index:
+      fields: [laverna_id, user_id]
+  relations:
+    Laverna:
+      class: arLavernaDoc
+      local: laverna_id
+      foreign: id
+      onDelete: CASCADE
+    User:
+      class: sfGuardUserProfile
+      local: user_id
+      foreign: id

@@ -1,0 +1,15 @@
+{
+  "name": "d3-time-format",
+  "homepage": "https://github.com/d3/d3-time-format",
+  "version": "2.0.2",
+  "_release": "2.0.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.0.2",
+    "commit": "b681bccd28dfc16f1d4f3d364e4b8360da01e1ea"
+  },
+  "_source": "https://github.com/d3/d3-time-format.git",
+  "_target": "~2.0.2",
+  "_originalSource": "d3-time-format",
+  "_direct": true
+}

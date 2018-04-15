@@ -1,0 +1,23 @@
+{
+  "name": "arquematicsTelegram",
+  "version": "0.0.1",
+  "author": "Javier Trigueros Martinez de los Huertos <javiertrigueros@arquematics.com>",
+  "description": "Telegram Web Client.",
+  "repository": {
+    "type": "git",
+    "url": "https://g.alcoor.com/telegram.git"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "contributors": [
+    "Javier Trigueros Martinez de los Huertos <javiertrigueros@arquematics.com>"
+  ],
+  "keywords": [],
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-angular-gettext": "~0.2.8"
+  },
+  "license": "To Use: WTFPL, To Contribute: Dojo CLA"
+}

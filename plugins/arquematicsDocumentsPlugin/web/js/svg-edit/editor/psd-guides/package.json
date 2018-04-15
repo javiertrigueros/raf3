@@ -1,0 +1,22 @@
+{
+  "name": "psd-guides",
+  "version": "1.0.1",
+  "description": "Draw photoshop-like guides",
+  "main": "./PSDGuides.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/noeldelgado/psd-guides.git"
+  },
+  "keywords": [
+    "rules",
+    "photoshop"
+  ],
+  "author": "Noel Delgado <auhcsei@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/noeldelgado/psd-guides/issues"
+  },
+  "homepage": "https://github.com/noeldelgado/psd-guides"
+}

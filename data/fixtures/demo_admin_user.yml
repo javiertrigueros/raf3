@@ -1,0 +1,149 @@
+# Up to two users by default: a superadmin (we suggest reserving this account for developer use and
+# removing it at production launch) and an admin (a member of the admin group). We suggest
+# giving the latter account to the client. The permissions dashboard is just plain dangerous, 
+# so we show only the users and groups dashboards to regular admins
+
+sfGuardUser:
+  # Uncomment if you want a superadmin. it's usually not a good idea,
+  # and you can use the guard:promote-user task if you need it later
+  
+  # sgu_superadmin:
+  #   username: superadmin
+  #   password: demo
+  #   first_name: Super
+  #   last_name: Admin
+  #   email_address: superadmin@apostrophe
+  #   is_super_admin: true
+  
+  # Regular user admin can do stuff that actually makes sense for, let's say,
+  # your client's lead editor but can't delete permissions and otherwise just
+  # plain break the system
+  sgu_admin:
+    username: admin
+    password: admin
+    first_name: Normal
+    last_name: Admin
+    email_address: admin@arquematics.com
+  ano_anonymous:
+    username: anonymous
+    password: anonymous
+    first_name: Anonymous
+    last_name: User
+    email_address: anonymous@arquematics.com
+    
+  test_user:
+    username: test
+    password: test
+    first_name: Test
+    last_name: User
+    email_address: test@arquematics.com
+  
+  test_user1:
+    username: test1
+    password: test
+    first_name: Test1
+    last_name: User
+    email_address: test1@arquematics.com
+ 
+  test_user2:
+    username: test2
+    password: test
+    first_name: Test2
+    last_name: User
+    email_address: test2@arquematics.com
+    
+  test_user3:
+    username: test3
+    password: test
+    first_name: Test3
+    last_name: User
+    email_address: test3@arquematics.com
+    
+  test_user4:
+    username: test4
+    password: test
+    first_name: Test4
+    last_name: User
+    email_address: test4@arquematics.com
+  
+  test_user5:
+    username: test5
+    password: test
+    first_name: Test5
+    last_name: User
+    email_address: test5@arquematics.com
+ 
+  test_user6:
+    username: test6
+    password: test
+    first_name: Test6
+    last_name: User
+    email_address: test6@arquematics.com
+  
+  test_user7:
+    username: test7
+    password: test
+    first_name: Test7
+    last_name: User
+    email_address: test7@arquematics.com
+
+<?php for ($i = 8; $i <= 200; $i++): ?>
+  test_user<?php echo $i ?>:
+    username: test<?php echo $i ?>
+    
+    password: test
+    
+    first_name: Test<?php echo $i ?>
+    
+    last_name: User
+    
+    email_address: test<?php echo $i ?>@arquematics.com
+<?php endfor ?>
+    
+sfGuardUserGroup:
+  sgug_test_user:
+    User: test_user
+    Group: sfGuardGroup_basic
+    
+  sgug_test_user1:
+    User: test_user1
+    Group: sfGuardGroup_editor
+  
+  sgug_test_user2:
+    User: test_user2
+    Group: sfGuardGroup_editor
+  
+  sgug_test_user3:
+    User: test_user3
+    Group: sfGuardGroup_basic
+  
+  sgug_test_user4:
+    User: test_user4
+    Group: sfGuardGroup_basic
+  
+  sgug_test_user5:
+    User: test_user5
+    Group: sfGuardGroup_basic
+  
+  sgug_test_user6:
+    User: test_user6
+    Group: sfGuardGroup_basic
+    
+  sgug_test_user7:
+    User: test_user7
+    Group: sfGuardGroup_basic
+
+<?php for ($i = 8; $i <= 200; $i++): ?>
+  sgug_test_user<?php echo $i ?>:
+    User: test_user<?php echo $i ?>
+    
+    Group: sfGuardGroup_basic
+    
+<?php endfor ?>
+    
+  sgug_admin_admin:
+    User: sgu_admin
+    Group: sfGuardGroup_admin
+  sgug_ano_anonymous:
+    User: ano_anonymous
+    Group: sfGuardGroup_guest

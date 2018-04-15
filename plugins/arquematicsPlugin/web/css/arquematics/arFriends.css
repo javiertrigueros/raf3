@@ -1,0 +1,8 @@
+.content-container-friends div.tab-content
+{
+	background-color: #FFFFFF;
+	min-height: 400px;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
